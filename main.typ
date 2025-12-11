@@ -1,20 +1,17 @@
 #import "./template.typ": *
 #show: master_thesis.with(
-  title: "Typstで書く修論のテンプレ",
-  author: "右往 左往",
-  university: "東京大学大学院",
-  school: "工学系研究科",
-  department: "航空宇宙工学専攻",
-  id: "12-345678",
-  mentor: "魚 竿",
-  mentor-post: "准教授",
+  title: "タイトル未定",
+  author: "阿部 潤",
+  university: "北海道大学",
+  school: "生命科学院",
+  department: "ソフトマター専攻",
+  term: "2025年度",
+  lab: "蛋白質科学研究室",
   class: "修士",
-  abstract_ja: [
-      近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい. 近年の宇宙ってほんますごい.
-  ],
-  keywords_ja: ("宇宙", "異常検知"),
   bibliography-file: "references.bib",
 )
+
+= 概要
 
 = 序論<Chap_1>
  Typstはmarkdown likeなコーディングでpdf, ポスター, スライド等のドキュメントを作成できます. Rust言語で書かれており, コンパイルが#LATEX に比べて早いのが特長です.

@@ -215,46 +215,6 @@
   )
 }
 
-// Definition of abstruct page
-#let abstract_page(abstract_ja, abstract_en, keywords_ja: (), keywords_en: ()) = {
-  if abstract_ja != [] {
-    show <_ja_abstract_>: {
-      align(center)[
-        #text(size: 20pt, "概要")
-      ]
-    }
-    [= 概要 <_ja_abstract_>]
-
-    v(30pt)
-    set text(size: 12pt)
-    h(1em)
-    abstract_ja
-    par(first-line-indent: 0em)[
-      #text(weight: "bold", size: 12pt)[
-      キーワード:
-      #keywords_ja.join(", ")
-      ]
-    ]
-  } else {
-    show <_en_abstract_>: {
-      align(center)[
-        #text(size: 18pt, "Abstruct")
-      ]
-    }
-    [= Abstract <_en_abstract_>]
-
-    set text(size: 12pt)
-    h(1em)
-    abstract_en
-    par(first-line-indent: 0em)[
-      #text(weight: "bold", size: 12pt)[
-        Key Words: 
-        #keywords_en.join("; ")
-      ]
-    ]
-  }
-}
-
 // Definition of content to string
 #let to-string(content) = {
   if content.has("text") {
@@ -316,83 +276,6 @@
  }
 }
 
-// Definition of image outline
-#let toc_img() = {
-  align(left)[
-    #text(size: 20pt, weight: "bold")[
-      #v(30pt)
-      図目次
-      #v(30pt)
-    ]
-  ]
-
-  set text(size: 12pt)
-  set par(leading: 1.24em, first-line-indent: 0pt)
-  
-  context {
-    let elements = query(
-      figure.where(
-        outlined: true,
-        kind: "image"
-      )
-    )
-    for el in elements {
-      let loc = el.location()
-      let chapt = counter(heading).at(loc).at(0)
-      let num = counter(el.kind + "-chapter" + str(chapt)).at(loc).at(0) + 1
-      let page_num = counter(page).at(loc).first()
-      let caption_body = to-string(el.caption.body)
-      
-      str(chapt)
-      "."
-      str(num)
-      h(1em)
-      caption_body
-      box(width: 1fr, h(0.5em) + box(width: 1fr, repeat[.]) + h(0.5em))
-      [#page_num]
-      linebreak()
-    }
-  }
-}
-
-// Definition of table outline
-#let toc_tbl() = {
-  align(left)[
-    #text(size: 20pt, weight: "bold")[
-      #v(30pt)
-      表目次
-      #v(30pt)
-    ]
-  ]
-
-  set text(size: 12pt)
-  set par(leading: 1.24em, first-line-indent: 0pt)
-  
-  context {
-    let elements = query(
-      figure.where(
-        outlined: true,
-        kind: "table"
-      )
-    )
-    for el in elements {
-      let loc = el.location()
-      let chapt = counter(heading).at(loc).at(0)
-      let num = counter(el.kind + "-chapter" + str(chapt)).at(loc).at(0) + 1
-      let page_num = counter(page).at(loc).first()
-      let caption_body = to-string(el.caption.body)
-      
-      str(chapt)
-      "."
-      str(num)
-      h(1em)
-      caption_body
-      box(width: 1fr, h(0.5em) + box(width: 1fr, repeat[.]) + h(0.5em))
-      [#page_num]
-      linebreak()
-    }
-  }
-}
 
 // Setting empty par
 #let empty_par() = {
@@ -412,19 +295,12 @@
   university: "",
   school: "",
   department: "",
-  id: "",
-  mentor: "",
-  mentor-post: "",
+  term: "",
+  lab: "",
   class: "修士",
   date: (datetime.today().year(), datetime.today().month(), datetime.today().day()),
 
   paper-type: "論文",
-
-  // Abstruct
-  abstract_ja: [],
-  abstract_en: [],
-  keywords_ja: (),
-  keywords_en: (),
 
   // The paper size to use.
   paper-size: "a4",
@@ -546,7 +422,13 @@
     #text(
       size: 16pt,
     )[
-      #university #school #department
+      #term
+    ]
+
+    #text(
+      size: 16pt,
+    )[
+      #school #department
     ]
 
     #text(
@@ -564,13 +446,19 @@
     #text(
       size: 16pt,
     )[
-      #id #author
+        #university #school #department
     ]
 
     #text(
       size: 16pt,
     )[
-      指導教員: #mentor #mentor-post
+        #lab
+    ]
+
+    #text(
+      size: 16pt,
+    )[
+        #author
     ]
     #v(40pt)
     #text(
@@ -582,19 +470,11 @@
   ]
 
   set page(
-    numbering: "i",
+    numbering: "1",
   )
 
   counter(page).update(1)
-  // Show abstruct
-  abstract_page(abstract_ja, abstract_en, keywords_ja: keywords_ja, keywords_en: keywords_en)
-  pagebreak()
-
-  // Configure paragraph properties.
-  set par(leading: 0.78em, first-line-indent: 12pt, justify: true)
-  set par(spacing: 0.78em)
-
-   // Configure chapter headings.
+     // Configure chapter headings.
   set heading(numbering: (..nums) => {
     nums.pos().map(str).join(".") + " "
   })
@@ -606,15 +486,13 @@
     let pre_chapt = if it.numbering != none {
           text()[
             #v(50pt)
-            第
             #numbering(it.numbering, ..counter(heading).at(it.location()))
-            章
-          ] 
+            #it.body
+          ]
         } else {none}
     text()[
       #pre_chapt \
-      #it.body \
-      #v(50pt)
+      #v(25pt)
     ]
   }
   show heading.where(level: 2): it => {
@@ -630,16 +508,14 @@
   } + empty_par()
 
 
+
+  // Configure paragraph properties.
+  set par(leading: 1.05em, first-line-indent: 12pt, justify: true)
+  set par(spacing: 1.05em)
+
+
   // Start with a chapter outline.
   toc()
-  pagebreak()
-  toc_img()
-  pagebreak()
-  toc_tbl()
-
-  set page(
-    numbering: "1",
-  )
 
   counter(page).update(1)
  
