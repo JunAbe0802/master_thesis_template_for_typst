@@ -271,7 +271,7 @@
      }]
      box(width: 1fr, h(0.5em) + box(width: 1fr, repeat[.]) + h(0.5em))
      [#page_num]
-     linebreak()
+    //  linebreak()
    }
  }
 }
@@ -304,10 +304,6 @@
 
   // The paper size to use.
   paper-size: "a4",
-
-  // The path to a bibliography file if you want to cite some external
-  // works.
-  bibliography-file: none,
 
   // The paper's content.
   body,
@@ -522,12 +518,6 @@
   set math.equation(supplement: [式], numbering: equation_num)
 
   body
-
-  // Display bibliography.
-  if bibliography-file != none {
-    show bibliography: set text(12pt)
-    bibliography(bibliography-file, title: "参考文献", style: "ieee")
-  }
 }
 
 // LATEX character
