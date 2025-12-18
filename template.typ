@@ -15,7 +15,7 @@
     ..args,
     body,
     number: auto,
-    numbering: "1.1",
+    numbering: "1.1.",
     refnumbering: auto,
     supplement: identifier,
     base: base,
@@ -271,16 +271,16 @@
      }]
      box(width: 1fr, h(0.5em) + box(width: 1fr, repeat[.]) + h(0.5em))
      [#page_num]
-    //  linebreak()
+     linebreak()
    }
  }
+ pagebreak()
 }
 
 
 // Setting empty par
 #let empty_par() = {
   v(-1em)
-  box()
 }
 
 // Construction of paper
@@ -304,6 +304,10 @@
 
   // The paper size to use.
   paper-size: "a4",
+
+  // // The path to a bibliography file if you want to cite some external
+  // // works.
+  // bibliography-file: none,
 
   // The paper's content.
   body,
@@ -399,11 +403,11 @@
   // Set the body font. TeX Gyre Pagella is a free alternative
   // to Palatino.
   set text(font: (
-    "Times New Roman", // Windows
-    // "Nimbus Roman", // Ubuntu
-    // "Hiragino Mincho ProN", // Mac
-    "Yu Mincho", // Windows
-    // "Noto Serif CJK JP", // Ubuntu
+    // "Times New Roman", // Windows
+    "Adobe Caslon Pro",
+    // "Yu Mincho", // Windows
+    "FOT-UDMincho Pr6N",
+    "Noto Serif JP",
     ), size: 12pt)
 
   // Configure the page properties.
@@ -475,40 +479,43 @@
     nums.pos().map(str).join(".") + " "
   })
   show heading.where(level: 1): it => {
-    pagebreak()
+    // pagebreak()
     counter(math.equation).update(0)
     set text(weight: "bold", size: 20pt)
     set block(spacing: 1.5em)
+    set align(center)
     let pre_chapt = if it.numbering != none {
           text()[
-            #v(50pt)
             #numbering(it.numbering, ..counter(heading).at(it.location()))
             #it.body
           ]
         } else {none}
     text()[
       #pre_chapt \
-      #v(25pt)
+      #v(20pt)
     ]
   }
   show heading.where(level: 2): it => {
     set text(weight: "bold", size: 16pt)
-    set block(above: 1.5em, below: 1.5em)
+    set block(above: 2em, below: 2em)
     it
   }
 
   show heading: it => {
     set text(weight: "bold", size: 14pt)
-    set block(above: 1.5em, below: 1.5em)
+    set block(above: 1.5em, below: 2em)
     it
   } + empty_par()
 
 
 
   // Configure paragraph properties.
-  set par(leading: 1.05em, first-line-indent: 12pt, justify: true)
-  set par(spacing: 1.05em)
-
+  set par(
+    leading: 1.05em, 
+    first-line-indent: (all: true, amount: 1em), 
+    justify: true, 
+    spacing: 1.05em
+  )
 
   // Start with a chapter outline.
   toc()
@@ -518,6 +525,12 @@
   set math.equation(supplement: [式], numbering: equation_num)
 
   body
+
+  // // Display bibliography.
+  // if bibliography-file != none {
+  //   show bibliography: set text(12pt)
+  //   bibliography(bibliography-file, title: "参考文献", style: "ieee")
+  // }
 }
 
 // LATEX character

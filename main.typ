@@ -25,7 +25,7 @@
 = 結論
 
 = 参考文献
-#bibliography("references.bib", full: true, )
+#bibliography("references.bib", full: true, title: none)
 
 = 図表
 
