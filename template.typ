@@ -405,8 +405,8 @@
   // to Palatino.
   set text(
     font: (
-      // "Times New Roman", // Windows
       "Adobe Caslon Pro",
+      "Times New Roman", // Windows
       // "Yu Mincho", // Windows
       "FOT-UDMincho Pr6N",
       "Noto Serif JP",
@@ -524,10 +524,10 @@
 
   // set table properties
   let frame(stroke) = (x, y) => (
-    left: if x > 0 { 0pt } else { stroke },
-    right: stroke,
+    left: none,
+    right: none,
     top: if y < 2 { stroke } else { 0pt },
-    bottom: stroke,
+    bottom: stroke, 
   )
   set table(
     fill: (_, y) => if calc.odd(y) { rgb("EEEEEE") },
