@@ -168,24 +168,24 @@
 }
 
 // Counting table number
-#let table_num(_) = {
-  context {
-    let chapt = counter(heading).get().at(0)
-    let c = counter("table-chapter" + str(chapt))
-    let n = c.get().at(0)
-    str(chapt) + "." + str(n + 1)
-  }
-}
+// #let table_num(_) = {
+//   context {
+//     let chapt = counter(heading).get().at(0)
+//     let c = counter("table-chapter" + str(chapt))
+//     let n = c.get().at(0)
+//     str(chapt) + "." + str(n + 1)
+//   }
+// }
 
 // Counting image number
-#let image_num(_) = {
-  context {
-    let chapt = counter(heading).get().at(0)
-    let c = counter("image-chapter" + str(chapt))
-    let n = c.get().at(0)
-    str(chapt) + "." + str(n + 1)
-  }
-}
+// #let image_num(_) = {
+//   context {
+//     let chapt = counter(heading).get().at(0)
+//     let c = counter("image-chapter" + str(chapt))
+//     let n = c.get().at(0)
+//     str(chapt) + "." + str(n + 1)
+//   }
+// }
 
 // Definition of table format
 #let tbl(tbl, caption: "") = {
@@ -193,7 +193,7 @@
     tbl,
     caption: caption,
     supplement: [表],
-    numbering: table_num,
+    // numbering: table_num,
     kind: "table",
   )
 }
@@ -210,7 +210,7 @@
     },
     caption: caption,
     supplement: [図],
-    numbering: image_num,
+    // numbering: image_num,
     kind: "image",
   )
 }
@@ -231,9 +231,9 @@
 // Definition of chapter outline
 #let toc() = {
  align(left)[
-   #text(size: 20pt, weight: "bold")[
+   #text(size: 20pt, weight: "bold",)[
      #v(30pt)
-     目次
+      #align(center)[目次]
      #v(30pt)
    ]
  ]
@@ -274,7 +274,7 @@
      linebreak()
    }
  }
- pagebreak()
+//  pagebreak()
 }
 
 
@@ -313,58 +313,59 @@
   body,
 ) = {
   // citation number
-  show ref: it => {
-    if it.element != none and it.element.func() == figure {
-      let el = it.element
-      let loc = el.location()
-      let chapt = counter(heading).at(loc).at(0)
+  // show ref: it => {
+  //   if it.element != none and it.element.func() == figure {
+  //     let el = it.element
+  //     let loc = el.location()
+  //     let chapt = counter(heading).at(loc).at(0)
 
-      link(loc)[#if el.kind == "image" or el.kind == "table" {
-        let num = counter(el.kind + "-chapter" + str(chapt)).at(loc).at(0) + 1
-        it.element.supplement
-        " "
-        str(chapt)
-        "."
-        str(num)
-      } else if el.kind == "thmenv" {
-        let thms = query(selector(<meta:thmenvcounter>))
-        let number = thmcounters.at(thms.first().location()).at("latest")
-        it.element.supplement
-        " "
-        numbering(it.element.numbering, ..number)
-      } else {
-        it
-      }]
-    } else if it.element != none and it.element.func() == math.equation {
-      let el = it.element
-      let loc = el.location()
-      let chapt = counter(heading).at(loc).at(0)
-      let num = counter(math.equation).at(loc).at(0)
+  //     link(loc)[#if el.kind == "image" or el.kind == "table" {
+  //       // let num = counter(el.kind + "-chapter" + str(chapt)).at(loc).at(0) + 1
+  //       // it.element.supplement
+  //       // " "
+  //       // str(chapt)
+  //       // "."
+  //       // str(num)
+  //       it
+  //     } else if el.kind == "thmenv" {
+  //       let thms = query(selector(<meta:thmenvcounter>))
+  //       let number = thmcounters.at(thms.first().location()).at("latest")
+  //       it.element.supplement
+  //       " "
+  //       numbering(it.element.numbering, ..number)
+  //     } else {
+  //       it
+  //     }]
+  //   } else if it.element != none and it.element.func() == math.equation {
+  //     let el = it.element
+  //     let loc = el.location()
+  //     let chapt = counter(heading).at(loc).at(0)
+  //     let num = counter(math.equation).at(loc).at(0)
 
-      it.element.supplement
-      " ("
-      str(chapt)
-      "."
-      str(num)
-      ")"
-    } else if it.element != none and it.element.func() == heading {
-      let el = it.element
-      let loc = el.location()
-      let num = numbering(el.numbering, ..counter(heading).at(loc))
-      if el.level == 1 {
-        str(num)
-        "章"
-      } else if el.level == 2 {
-        str(num)
-        "節"
-      } else if el.level == 3 {
-        str(num)
-        "項"
-      }
-    } else {
-      it
-    }
-  }
+  //     it.element.supplement
+  //     " ("
+  //     str(chapt)
+  //     "."
+  //     str(num)
+  //     ")"
+  //   } else if it.element != none and it.element.func() == heading {
+  //     let el = it.element
+  //     let loc = el.location()
+  //     let num = numbering(el.numbering, ..counter(heading).at(loc))
+  //     if el.level == 1 {
+  //       str(num)
+  //       "章"
+  //     } else if el.level == 2 {
+  //       str(num)
+  //       "節"
+  //     } else if el.level == 3 {
+  //       str(num)
+  //       "項"
+  //     }
+  //   } else {
+  //     it
+  //   }
+  // }
 
   // counting caption number
   show figure: it => {
@@ -402,13 +403,17 @@
 
   // Set the body font. TeX Gyre Pagella is a free alternative
   // to Palatino.
-  set text(font: (
-    // "Times New Roman", // Windows
-    "Adobe Caslon Pro",
-    // "Yu Mincho", // Windows
-    "FOT-UDMincho Pr6N",
-    "Noto Serif JP",
-    ), size: 12pt)
+  set text(
+    font: (
+      // "Times New Roman", // Windows
+      "Adobe Caslon Pro",
+      // "Yu Mincho", // Windows
+      "FOT-UDMincho Pr6N",
+      "Noto Serif JP",
+    ), 
+    size: 12pt,
+    lang: "ja"
+  )
 
   // Configure the page properties.
   set page(
@@ -479,7 +484,7 @@
     nums.pos().map(str).join(".") + " "
   })
   show heading.where(level: 1): it => {
-    // pagebreak()
+    pagebreak()
     counter(math.equation).update(0)
     set text(weight: "bold", size: 20pt)
     set block(spacing: 1.5em)
@@ -516,6 +521,22 @@
     justify: true, 
     spacing: 1.05em
   )
+
+  // set table properties
+  let frame(stroke) = (x, y) => (
+    left: if x > 0 { 0pt } else { stroke },
+    right: stroke,
+    top: if y < 2 { stroke } else { 0pt },
+    bottom: stroke,
+  )
+  set table(
+    fill: (_, y) => if calc.odd(y) { rgb("EEEEEE") },
+    stroke: frame(rgb("000000")),
+    align: center,
+    inset: 0.4em
+  )
+  show table.cell.where(y: 0): set text(weight: "semibold")
+
 
   // Start with a chapter outline.
   toc()
