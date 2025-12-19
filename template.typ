@@ -530,12 +530,12 @@
     bottom: stroke, 
   )
   set table(
-    fill: (_, y) => if calc.odd(y) { rgb("EEEEEE") },
+    // fill: (_, y) => if calc.odd(y) { rgb("EEEEEE") },
     stroke: frame(rgb("000000")),
-    align: center,
-    inset: 0.4em
+    align: left,
+    inset: (x:20pt, y:10pt),
   )
-  show table.cell.where(y: 0): set text(weight: "semibold")
+  show table.cell.where(y: 0): set text(weight: "bold")
 
 
   // Start with a chapter outline.
