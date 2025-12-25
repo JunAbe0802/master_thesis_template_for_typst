@@ -59,9 +59,15 @@ NMR スペクトルの測定には、CryoProbe#super[TM] および SampleJet を
 スペクトルデータの処理および濃度定量には、Chenomx NMR Suite 12.0（Chenomx Inc., Edmonton, Canada）を用いた。
 Chenomx Processor により、0.3 Hz のラインブロードニングを適用した指数関数をウィンドウ関数として乗じ、データポイント数が 262,144 となるようにゼロフィリングを行った後、フーリエ変換を実施した。
 位相およびベースラインを手動で補正し、全スペクトルを TSP の信号強度に基づいて規格化した。
+
 === 母乳
 Chenomx Profiler を用い、内蔵データベースを基に代謝物の同定と濃度定量を行った。
 データベースに未登録の代謝物については、標準物質を同一条件で測定（@sec4.3 参照）したスペクトルをリファレンスとして同定・定量を実施した。
+
+また、濃度定量の解析者による系統誤差を最小限に抑えるため、本作業の解析手順を統一し、文書化した。
+解析手順の統一性を評価するため、異なる5人の解析者が同一試料セット（n=4）を解析し、その定量値について、PCA（後述）および、Bland-Altman分析を実施した。
+
+
 === 母子糞便
 Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン領域の信号強度総和を算出した。
 ビンの幅は 0.02 ppm とし、化学シフト範囲は 0 ppm から 10 ppm までとした。ただし、水信号領域（4.68 ppm ～ 4.88 ppm）は解析から除外した。
@@ -72,7 +78,8 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 群間の統計学的比較には、Welch の t検定または Tukey-Kramer 法を用いた。
 
 = 結果
-この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
+== 母乳中代謝物の同定・定量
+実際に得られたNMRスペクトルの一例を図に示す。
 
 = 考察
 この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
@@ -138,6 +145,29 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
   \*5 37週未満。
 
 #set par(first-line-indent: 1em)
+
+
+#figure(
+  [
+    #image("Figures/10016010mMd_BM00541_1.svg", height: 23%)
+    #image("Figures/10016010mMd_BM00541_2.svg", height: 23%)
+    #image("Figures/10016010mMd_BM00541_3.svg", height: 23%)
+  ],
+  caption: [
+    母乳のNMRスペクトル。図中の番号は同定された代謝物を示す。
+
+    1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, Threonine; 12, Lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, Glutamate; 19, acetate; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-aconitate;, 32, ethanolamine; 33; choline; 34, O-phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, myo-Inositol; 44, Urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
+  ]
+)<fig1>
+
+
+#figure(
+  image(
+    "Figures/overall.png"
+  ), 
+  caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
+)
+
 
 = 謝辞
 本研究を進めるにあたり熱心にご指導くださった、北海道大学 大学院先端生命科学研究院 蛋白質科学研究室の相沢智康教授、新井達也助教、並びに副査として貴重なご意見を頂きました自然免疫研究室の中村公則教授、生物情報解析科学研究室の菊川峰志准教授に心より御礼申し上げます。
