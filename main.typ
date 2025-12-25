@@ -147,7 +147,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 #set par(first-line-indent: 1em)
 
 
-#figure(
+#img(
   [
     #image("Figures/10016010mMd_BM00541_1.svg", height: 23%)
     #image("Figures/10016010mMd_BM00541_2.svg", height: 23%)
@@ -161,12 +161,22 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 )<fig1>
 
 
-#figure(
+#img(
   image(
     "Figures/mean_concentration_barplot.png",
   ), 
   caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
-)
+)<fig2>
+
+#img(
+  image(
+    "Figures/bmManual.drawio.png", height: 80%,
+  ),
+  caption: [母乳中代謝物の濃度定量における解析者間の系統誤差の評価
+  
+  #align(left)[#h(-1em)A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。赤線は平均差の95%信頼区間を、青線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
+  ]]
+)<fig3>
 
 
 = 謝辞
