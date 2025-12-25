@@ -163,7 +163,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 
 #figure(
   image(
-    "Figures/overall.png"
+    "Figures/mean_concentration_barplot.png",
   ), 
   caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
 )
