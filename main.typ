@@ -201,8 +201,128 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
   ]
 )<fig5>
 
+#pagebreak()
+#img(
+  table(
+    columns: 4,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
 
+    image("Figures/bmUnivariate/timing_with_stats_2'-fucosyllactose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_3'-sialyllactose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_3-fucosyllactose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_6'-sialyllactose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Fucose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Galactose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Glucose.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Lactose.png",),
+  ),
+  caption: [
+    糖類の経時変化による母乳中代謝物濃度の比較。
+  ]
+)
 
+#img(
+  table(
+    columns: 5,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    image("Figures/bmUnivariate/timing_with_stats_2-Aminobutyrate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Alanine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Asparagine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Aspartate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Betaine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Glutamate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Glutamine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Glycine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Histidine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Isoleucine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Leucine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Lysine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Methionine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Phenylalanine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Proline.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Taurine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Threonine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Tryptophan.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Tyrosine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Urea.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Valine.png",),  
+  ),
+  caption: [
+    アミノ酸及びその関連代謝物の経時変化による母乳中代謝物濃度の比較。
+  ]
+)
+
+#img(
+  table(
+    columns: 4,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    image("Figures/bmUnivariate/timing_with_stats_2-Oxoglutarate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Acetone.png",),
+    image("Figures/bmUnivariate/timing_with_stats_cis-Aconitate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Citrate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Creatine phosphate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Creatine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Creatinine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Fumarate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Lactate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Pyruvate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Succinate.png",),
+ 
+  ),
+  caption: [
+    エネルギー関連代謝物の経時変化による母乳中代謝物濃度の比較。
+  ]
+)
+
+#img(
+  table(
+    columns: 4,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    image("Figures/bmUnivariate/timing_with_stats_Acetate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Butyrate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Caprate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Caprylate.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Choline.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Ethanolamine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Methanol.png",),
+    image("Figures/bmUnivariate/timing_with_stats_myo-Inositol.png",),
+    image("Figures/bmUnivariate/timing_with_stats_O-Phosphocholine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_sn-Glycero-3-phosphocholine.png",),
+    image("Figures/bmUnivariate/timing_with_stats_Uridine.png",),
+    
+
+  ),
+  caption: [
+    脂肪酸及びその他代謝物の経時変化による母乳中代謝物濃度の比較。
+  ]
+)
+
+#img(
+  table(
+    columns: 4,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    image("Figures/bmUnivariate/sec_with_stats_2'-fucosyllactose.png",),
+    image("Figures/bmUnivariate/sec_with_stats_3-fucosyllactose.png",),
+    image("Figures/bmUnivariate/sec_with_stats_Fucose.png",),
+  ),
+  caption: [
+    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物。青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
+  ]
+)
 
 
 = 謝辞
