@@ -320,7 +320,9 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
     image("Figures/bmUnivariate/sec_with_stats_Fucose.png",),
   ),
   caption: [
-    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物。青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
+    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物。
+    
+    青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
   ]
 )
 
