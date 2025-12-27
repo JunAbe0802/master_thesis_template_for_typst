@@ -372,7 +372,10 @@
     set align(center)
     if it.kind == "image" {
       set text(size: 12pt)
+      set par(first-line-indent: 0em)
       it.body
+
+      set align(left)
       it.supplement
       " " + it.counter.display(it.numbering)
       " " + it.caption.body

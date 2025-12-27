@@ -100,8 +100,8 @@ replace_dict = {
 fig = plt.figure(figsize=(18,18))
 gs = fig.add_gridspec(
   3, 3,
-  wspace=0.1,
-  hspace=0.1,
+  wspace=0.25,
+  hspace=0.25,
 )
 for group in itertools.combinations([-3, -2, -1], 2):
   # print(group)
@@ -121,10 +121,10 @@ for group in itertools.combinations([-3, -2, -1], 2):
     color='green',
     ax=ax
   )
-  # ax.set_ylabel(replace_dict[group[1]])
-  # ax.set_xlabel(replace_dict[group[0]])
-  ax.set_ylabel("")
-  ax.set_xlabel("")
+  ax.set_xlabel(replace_dict[group[1]])
+  ax.set_ylabel(replace_dict[group[0]])
+  # ax.set_ylabel("")
+  # ax.set_xlabel("")
 
   texts = []
   for i in range(len(loading_df)):
@@ -143,15 +143,16 @@ for group in itertools.combinations([-3, -2, -1], 2):
     x=score_df[:, group[0]].astype(float),
     y=score_df[:, group[1]].astype(float),
     hue=score_c,
-    alpha=0.8,
-    palette="coolwarm",
+    s=30,
+    alpha=0.6,
+    palette="jet_r",
     ax=ax
   )
   ax.legend_.remove()
   ax.set_xlabel(replace_dict[group[0]])
   ax.set_ylabel(replace_dict[group[1]])
-  ax.set_xlabel("")
-  ax.set_ylabel("")
+  # ax.set_xlabel("")
+  # ax.set_ylabel("")
 
 for i in range(len(replace_dict)):
   ax = fig.add_subplot(gs[i, i])
