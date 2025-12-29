@@ -57,7 +57,7 @@ y = df["M18.p(ctr)[1]"].to_numpy()
 z = df["M18.p(corr)[1]"].abs().to_numpy()
 
 # x, y, zの補間で細かくする
-num_points = 1000  # 細かくしたい点数
+num_points = 5000  # 細かくしたい点数
 f_x = interp1d(np.arange(len(x)), x)
 f_y = interp1d(np.arange(len(y)), y)
 f_z = interp1d(np.arange(len(z)), z)
