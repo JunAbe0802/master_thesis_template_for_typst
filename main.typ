@@ -180,7 +180,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 
 #img(
   image(
-    "/Figures/bmPCA_timeCourse.png",
+    "/Figures/bmPCA_timeCourse.svg",
     width: 100%,
   ),
   caption: [
@@ -325,6 +325,19 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
     青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
   ]
 )
+
+#pagebreak()
+#img(
+  image(
+    "Figures/cSx.svg",
+  ),
+  caption: [
+  母子糞便のNMRスペクトルの一例。図中の番号は同定された代謝物を示す。
+  
+  1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+]
+)
+
 
 
 = 謝辞

@@ -30,9 +30,9 @@ sns.scatterplot(
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 plt.savefig(
-  '../../bmPCA_secScore.png',
+  '../../bmOPLSDA_secScore.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 
 # %%
@@ -66,8 +66,8 @@ for i in range(len(loading_df)):
 adjust_text(texts, ax=ax)
   
 plt.savefig(
-  '../../bmPCA_secLoading.png',
+  '../../bmOPLSDA_secLoading.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 # %%

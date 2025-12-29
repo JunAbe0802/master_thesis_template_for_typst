@@ -168,8 +168,8 @@ for i in range(len(groups)):
   ax.axis('off')
 
 plt.savefig(
-  '../bmPCA_timeCourse.png',
+  '../../bmPCA_timeCourse.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 # %%

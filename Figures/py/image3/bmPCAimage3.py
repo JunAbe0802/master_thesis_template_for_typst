@@ -43,9 +43,9 @@ ax.legend(
   ncol=2,
 )
 plt.savefig(
-  '../../fePCAc_Score.png',
+  '../../fePCAc_Score.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 
 # %%
@@ -87,9 +87,9 @@ for i in range(len(loadingC_df)):
 adjust_text(texts, ax=ax)
   
 plt.savefig(
-  '../../fePCAc_Loading.png',
+  '../../fePCAc_Loading.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 # %%
 """
@@ -128,9 +128,9 @@ ax.legend(
   ncol=2,
 )
 plt.savefig(
-  '../../fePCAm_Score.png',
+  '../../fePCAm_Score.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 
 # %%
@@ -172,8 +172,8 @@ for i in range(len(loadingM_df)):
 adjust_text(texts, ax=ax)
   
 plt.savefig(
-  '../../fePCAm_Loading.png',
+  '../../fePCAm_Loading.svg',
   bbox_inches='tight',
-  dpi=600,
+  # dpi=600,
 )
 # %%
