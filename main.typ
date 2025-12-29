@@ -1,6 +1,6 @@
 #import "./template.typ": *
 #show: master_thesis.with(
-  title: "タイトル未定",
+  title: "岩見沢市母子健康調査 (SMILE Iwamizawa) における母乳と乳幼児糞便の統合NMRメタボロミクス",
   author: "阿部 潤",
   university: "北海道大学",
   school: "生命科学院",
@@ -168,13 +168,31 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
   caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
 )<fig2>
 
+#pagebreak()
 #img(
-  image(
-    "Figures/bmManual.drawio.png", height: 80%,
+  table(
+    columns: 1,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],
+    image(
+      "Figures/bmPCAmanual_Score.svg", 
+      width: 85%
+    ),
+    [B],
+    image(
+      "Figures/bmPCAmanual_blandaltman.svg", 
+      width: 85%
+    )
   ),
+  // image(
+  //   "Figures/bmManual.drawio.png", height: 80%,
+  // ),
   caption: [母乳中代謝物の濃度定量における解析者間の系統誤差の評価
   
-  A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。赤線は平均差の95%信頼区間を、青線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
+  A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
   ]
 )<fig3>
 
@@ -186,13 +204,21 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
   caption: [
     母乳中代謝物のPCA結果。
     
-    左下がスコアプロットであり、橙色は初乳、緑色は1ヶ月後の母乳、青色は4-5ヶ月後の母乳を示す。右上がローディングプロットであり、各代謝物の寄与度を示す。
+    左下：スコアプロット。右上：ローディングプロット。
 ]
 )<fig4>
 
 #img(
-  image(
-    "Figures/bmPCA_sec.drawio.png",
+  table(
+    columns: 2,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],[B],
+    image("Figures/bmOPLSDA_secScore.svg",),
+    image("Figures/bmOPLSDA_secLoading.svg",),
+
   ),
   caption: [
     母乳中代謝物のOPLS-DA結果。
@@ -332,12 +358,77 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
     "Figures/cSx.svg",
   ),
   caption: [
-  母子糞便のNMRスペクトルの一例。図中の番号は同定された代謝物を示す。
+  母子糞便のNMRスペクトルの一例。
   
-  1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+  図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
 ]
 )
 
+#img(
+  table(
+    columns: 2,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],[B],
+    image("Figures/fePCAc_Score.svg",),
+    image("Figures/fePCAc_Loading.svg",),
+    [C],[D],
+    image("Figures/fePCAm_Score.svg",),
+    image("Figures/fePCAm_Loading.svg",),
+  ),
+  caption: [
+    母子糞便のPCA結果。
+    
+    A: 子糞便のPCAスコアプロット。B: ローディングプロット。C: 親糞便のPCAスコアプロット。D: ローディングプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
+  ]
+)
+
+#img(
+  table(
+    columns: 2,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],[B],
+    image("Figures/feOPLSc_TimeCourseScore.svg",),
+    image("Figures/feOPLSc_TimeCourseSLine.svg",),
+    [C],[D],
+    image("Figures/feOPLSm_TimeCourseScore.svg",),
+    image("Figures/feOPLSm_TimeCourseSLine.svg",),
+  ),
+  caption: [
+    母子糞便のOPLS結果。
+    
+    A: 子糞便のスコアプロット。B: S-lineプロット。C: 親糞便のスコアプロット。D: S-lineプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
+  ]
+)
+
+#img(
+  table(
+    columns: 2,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],[B],
+    image("Figures/feOPLSc_sec1Score.svg",),
+    image("Figures/feOPLSc_sec1SLine.svg",),
+    [C],[D],
+    image("Figures/feOPLSc_sec2Score.svg",),
+    image("Figures/feOPLSc_sec2SLine.svg",),
+    [E],[F],
+    image("Figures/feOPLSc_sec3Score.svg",),
+    image("Figures/feOPLSc_sec3SLine.svg",),
+  ),
+  caption: [
+    母子糞便のOPLS-DA結果（子糞便）。
+    
+    A: スコアプロット（Se+ vs Se-）。B: S-lineプロット（Se+ vs Se-）。C: スコアプロット（母乳中2'-FL高濃度群 vs 低濃度群）。D: S-lineプロット（母乳中2'-FL高濃度群 vs 低濃度群）。E: スコアプロット（母乳中3'-SL高濃度群 vs 低濃度群）。F: S-lineプロット（母乳中3'-SL高濃度群 vs 低濃度群）。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
+  ]
+)
 
 
 = 謝辞
