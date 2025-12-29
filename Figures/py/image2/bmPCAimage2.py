@@ -46,7 +46,7 @@ sc = ax.scatter(
   x=loading_df[:, 1].astype(float),
   y=loading_df[:, 2].astype(float),
   c=loading_df[:, 3].astype(float),
-  cmap="viridis",
+  cmap="mako_r",
   marker='o',
 )
 ax.set_xlabel(replace_dict[1])

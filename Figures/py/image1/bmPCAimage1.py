@@ -103,8 +103,9 @@ gs = fig.add_gridspec(
   wspace=0.25,
   hspace=0.25,
 )
-for group in itertools.combinations([-3, -2, -1], 2):
-  # print(group)
+groups = list(itertools.combinations([-3, -2, -1], 2))
+for i in range(len(groups)):
+  group = groups[i]
   
   ax = fig.add_subplot(gs[(group[0]+len(replace_dict)), (group[1]+len(replace_dict))])
   # ax.scatter(
@@ -116,9 +117,9 @@ for group in itertools.combinations([-3, -2, -1], 2):
   sns.scatterplot(
     x=loading_df[:, group[1]].astype(float),
     y=loading_df[:, group[0]].astype(float),
-    s=40,
+    s=30,
     marker='o',
-    color='green',
+    color='gray',
     ax=ax
   )
   ax.set_xlabel(replace_dict[group[1]])
@@ -127,12 +128,12 @@ for group in itertools.combinations([-3, -2, -1], 2):
   # ax.set_xlabel("")
 
   texts = []
-  for i in range(len(loading_df)):
+  for j in range(len(loading_df)):
     texts.append(
       ax.text(
-        loading_df[i, group[1]].astype(float),
-        loading_df[i, group[0]].astype(float),
-        loading_df[i, 0],
+        loading_df[j, group[1]].astype(float),
+        loading_df[j, group[0]].astype(float),
+        loading_df[j, 0],
         size=8
       )
     )
@@ -143,18 +144,19 @@ for group in itertools.combinations([-3, -2, -1], 2):
     x=score_df[:, group[0]].astype(float),
     y=score_df[:, group[1]].astype(float),
     hue=score_c,
-    s=30,
-    alpha=0.6,
-    palette="jet_r",
+    s=20,
+    alpha=0.7,
+    palette="mako",
     ax=ax
   )
-  ax.legend_.remove()
   ax.set_xlabel(replace_dict[group[0]])
   ax.set_ylabel(replace_dict[group[1]])
   # ax.set_xlabel("")
   # ax.set_ylabel("")
+  if i!=0:
+    ax.legend_.remove()
 
-for i in range(len(replace_dict)):
+# for i in range(len(replace_dict)):
   ax = fig.add_subplot(gs[i, i])
   ax.text(
     0.5, 0.5, 
