@@ -38,7 +38,7 @@
 岩見沢市在住の妊婦が母子健康手帳の交付を受ける際に、本調査に関する説明を行い、書面によるインフォームド・コンセントを得た。
 なお、乳児の研究参加については、代諾者である母親の同意をもってこれに代えた。
 同意を得られた参加者（母、子）に対して、調査票などによる調査や母乳・糞便の採取を実施した。
-採取された試料は速やかに −20$degree$C で保管され、採取から約1ヶ月以内に分析時まで −80$degree$C で凍結保存された。参加者の臨床的特性については、@tbl1 に示す通りである。
+採取された試料は速やかに −20$degree$C で保管され、採取から約1ヶ月以内に分析時まで −80$degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に示す通りである。
 
 == サンプル回収・調製
 === 母乳<sec4.2.1>
@@ -79,58 +79,57 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 
 = 結果
 == 母乳の#super[1]H-NMR測定及び代謝物同定・定量<sec5.1>
-全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig1）。代謝物の同定はピークの組み合わせによって決定され、
+全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig-bmSpec）。代謝物の同定はピークの組み合わせによって決定され、
 // 糖類が8種類、アミノ酸及び関連代謝物が21種類、エネルギー関連代謝物が11種類、有機酸とその他化合物が11種類、
-計51種類の代謝物を同定・定量した。これらすべての代謝物の平均濃度は@fig2 に示すとおりである。
+計51種類の代謝物を同定・定量した。これらすべての代謝物の平均濃度は@fig-bmConc に示すとおりである。
 
 == 母乳中代謝物の定量における解析者間の系統誤差の評価
-@sec5.1 の解析において、解析者間による定量値の系統誤差の低減を目的に、本作業の解析手順を統一し、その評価を実施した（@fig3）。PCAスコアプロット（@fig3 A）において、5人の解析者が同一試料セット（n=4）を解析した結果が重なり合って分布しており、解析者間で大きな差異がないことが示された。Bland-Altman分析（@fig3 B）においても、各代謝物について5人の解析者が得た定量値の平均値と、各解析者の定量値と平均値との差をプロットした結果、ほとんどの代謝物が平均差の95%信頼区間内に収まっており、解析者間で大きな系統誤差がないことが確認された。以降、本研究における母乳中代謝物の濃度定量は、この統一された手順に基づいて実施した結果を用いることとした。
+@sec5.1 の解析において、解析者間による定量値の系統誤差の低減を目的に、本作業の解析手順を統一し、その評価を実施した（@fig-bmManual）。PCAスコアプロット（@fig-bmManual A）において、5人の解析者が同一試料セット（n=4）を解析した結果が重なり合って分布しており、解析者間で大きな差異がないことが示された。Bland-Altman分析（@fig-bmManual B）においても、各代謝物について5人の解析者が得た定量値の平均値と、各解析者の定量値と平均値との差をプロットした結果、ほとんどの代謝物が平均差の95%信頼区間内に収まっており、解析者間で大きな系統誤差がないことが確認された。以降、本研究における母乳中代謝物の濃度定量は、この統一された手順に基づいて実施した結果を用いることとした。
 
 == 産後時期別の母乳中メタボローム解析<sec5.3>
-母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig4）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-fucosyllactose (2'-FL）、3'-sialyllactose、6'-sialyllactoseなどのヒトミルクオリゴ棟（HMOs）が初乳群の特徴的な代謝物であった一方、Lactoseなどエネルギーの供給源となる代謝部や、Caprate、Caprylateなどの中鎖脂肪酸は、産後1ヶ月・産後4-5ヶ月群で特徴的であった。また、産後1ヶ月群と産後4-5ヶ月群の分離には、第3主成分が寄与しており、HMOsの一種である3-fucosyllactose（3-FL）やLactate・Pyruvateなどの短鎖脂肪酸が産後1ヶ月群で、CitrateやO-phosphocholineが産後4-5ヶ月に特徴的な代謝物であった。
-// fig4のレイアウトを修正。
+母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig-bmPCA）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-fucosyllactose (2'-FL）、3'-sialyllactose、6'-sialyllactoseなどのヒトミルクオリゴ棟（HMOs）が初乳群の特徴的な代謝物であった一方、Lactoseなどエネルギーの供給源となる代謝部や、Caprate、Caprylateなどの中鎖脂肪酸は、産後1ヶ月・産後4-5ヶ月群で特徴的であった。また、産後1ヶ月群と産後4-5ヶ月群の分離には、第3主成分が寄与しており、HMOsの一種である3-fucosyllactose（3-FL）やLactate・Pyruvateなどの短鎖脂肪酸が産後1ヶ月群で、CitrateやO-phosphocholineが産後4-5ヶ月に特徴的な代謝物であった。
+// fig-bmPCAのレイアウトを修正。
 
-定量された各代謝物濃度の産後時期別の単変量解析を行った（@fig6 - @fig9）。
-@fig6 では、2'-FLの濃度分布が二峰性を示した。
+定量された各代謝物濃度の産後時期別の単変量解析を行った（@fig-bmSugar - @fig-bmOther）。
+@fig-bmSugar では、2'-FLの濃度分布が二峰性を示した。
 2'-FLは代表的なHMOsの一つで、LactoseにFucoseがα1,2結合したオリゴ糖であり、その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
 FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、HMOs全体の約30%を占める @vanniekerkHumanMilkOligosaccharides2014 。一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。// 引用文献を追加。
 
 以降の解析では、2'-FL濃度が 0.1 mM を閾値として、Se+群（2'-FL濃度 > 0.1 mM）とSe-群（2'-FL濃度 ≤ 0.1 mM）に分類し、各群の母乳中代謝物プロファイルの比較を実施している。
 このとき、分泌型の個体は全体の81%を占めていた（Se+: 110, Se-: 26）。これは、日本人集団におけるFUT2分泌型の頻度が約80%であることと一致していた @kodaMolecularBasisSecretor1996 。
-// fig5とfig6-9の位置を入れ替える。
 
 == 分泌型/非分泌型における母乳中メタボロームの差異解析
-@sec5.3 のPCA及び単変量解析の結果を踏まえ、2'-FLに注目した詳細な解析を実施するため、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（ @fig5 ）。
-分離の良いモデルを構築することができ（@fig5 A）、ローディングプロット及びVIP値（@fig5 B）から、FucoseがSe+群で特徴的な代謝物であり、3-FLがSe-群で特徴的な代謝物であることが示された。それ以外の代謝物については、Se+群とSe-群の間で特徴的な差異は認められなかった。
+@sec5.3 のPCA及び単変量解析の結果を踏まえ、2'-FLに注目した詳細な解析を実施するため、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（ @fig-bmOPLSDA ）。
+分離の良いモデルを構築することができ（@fig-bmOPLSDA A）、ローディングプロット及びVIP値（@fig-bmOPLSDA B）から、FucoseがSe+群で特徴的な代謝物であり、3-FLがSe-群で特徴的な代謝物であることが示された。それ以外の代謝物については、Se+群とSe-群の間で特徴的な差異は認められなかった。
 
-2'-FL分泌型/非分泌型による母乳中2'-FL、3-FL、Fucose濃度の比較を、産後時期別に単変量解析を実施した（@fig10）。
+2'-FL分泌型/非分泌型による母乳中2'-FL、3-FL、Fucose濃度の比較を、産後時期別に単変量解析を実施した（@fig-bmSecConc）。
 その結果からも、2'-FL、FucoseはSe+群で、3-FLはSe-群で有意に高く、その差異も2倍以上であることが確認された。
 
 == 糞便の#super[1]H-NMR測定及び代謝物同定
-全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig11）。代謝物の同定はピークの組み合わせによって決定され、最大76種類の代謝物を同定した。
+全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig-feSpec）。代謝物の同定はピークの組み合わせによって決定され、最大76種類の代謝物を同定した。
 
 == 母子糞便中メタボロームの主成分分析
-母子ともに、産後時期別に糞便中メタボロームを可視化するため、糞便測定スペクトルから作成したビニングデータをもとにPCAを実施した（@fig12）。
+母子ともに、産後時期別に糞便中メタボロームを可視化するため、糞便測定スペクトルから作成したビニングデータをもとにPCAを実施した（@fig-fePCA）。
 母乳同様に、スコアプロットを産後時期別に色分けした結果、乳児ではクラスターの形成が確認でき、出産直後と産後1ヶ月の群、及び産後1.5年以降の群は重なり合って分布していた。
 これらは第1主成分が分離に寄与していた。
 一方、母親では産後時期によるクラスターの形成は確認できなかった。
 また、母子ともに2'-FL分泌型/非分泌型による明確な分離は認められなかった。
 
 == 母子糞便中メタボロームの産後時期によるOPLS-R解析
-母子ともに、産後の糞便中メタボロームの経時変化を詳細に解析するため、サンプル採取時期を目的変数としてOPLS-Rを実施した（@fig13）。
+母子ともに、産後の糞便中メタボロームの経時変化を詳細に解析するため、サンプル採取時期を目的変数としてOPLS-Rを実施した（@fig-feOPLSR）。
 === 乳児
-@fig13 A に示すように、良好なモデルを構築することができ、S-Lineプロット（@fig13 B）から、Glucose、Lactose、Galactoseなどの糖類やmyo-Inositolが出産後初期に特徴的な代謝物であることが示された。
+@fig-feOPLSR A に示すように、良好なモデルを構築することができ、S-Lineプロット（@fig-feOPLSR B）から、Glucose、Lactose、Galactoseなどの糖類やmyo-Inositolが出産後初期に特徴的な代謝物であることが示された。
 
 === 母親
-母親の糞便中メタボロームについても、良好なモデルを構築することができ（@fig13 C）、S-Lineプロット（@fig13 D）から、aspartateが出産後後期に特徴的な代謝物であることが示された。
+母親の糞便中メタボロームについても、良好なモデルを構築することができ（@fig-feOPLSR C）、S-Lineプロット（@fig-feOPLSR D）から、aspartateが出産後後期に特徴的な代謝物であることが示された。
 // aspartate: 2.83ppm
 // L-dopa (6.79 ppm)が出産後後期に特徴的かもしれない。周辺ビンは特徴的としてカウントされている。
 
 == 分泌型/非分泌型における母子糞便中メタボロームの差異解析
-母子ともに、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（@fig14）。
-乳児では、授乳時期別に出産直後、生後1ヶ月、生後4-5ヶ月では良好なモデルを構築することができた（@fig14 A、C、E）。
-S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが分泌型で、3-FLとInosineが非分泌型で特徴的であることが示された。
-生後1ヶ月（@fig14 D）では2'-FLとLactuloseが分泌型で特徴的であること、生後4ヶ月ではInosineが非分泌型で特徴的であることが示された。
+母子ともに、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（@fig-feOPLSDA）。
+乳児では、授乳時期別に出産直後、生後1ヶ月、生後4-5ヶ月では良好なモデルを構築することができた（@fig-feOPLSDA A、C、E）。
+S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactuloseが分泌型で、3-FLとInosineが非分泌型で特徴的であることが示された。
+生後1ヶ月（@fig-feOPLSDA D）では2'-FLとLactuloseが分泌型で特徴的であること、生後4ヶ月ではInosineが非分泌型で特徴的であることが示された。
 一方、生後8ヶ月以降では明確な分離は認められなかった。
 また、母親ではいずれの時期においても明確な分離は認められなかった。
 
@@ -181,7 +180,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     )
   ],
   caption: "研究参加者の母子特性",
-)<tbl1>
+)<tbl-basicInfo>
 #set par(first-line-indent: 0em)
   \*1 平均値 ± 標準偏差。
 
@@ -211,7 +210,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
 
     1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, Threonine; 12, Lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, Glutamate; 19, acetate; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-aconitate;, 32, ethanolamine; 33; choline; 34, O-phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, myo-Inositol; 44, Urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
   ]
-)<fig1>
+)<fig-bmSpec>
 
 
 #img(
@@ -219,7 +218,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     "Figures/mean_concentration_barplot.png",
   ), 
   caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
-)<fig2>
+)<fig-bmConc>
 
 #pagebreak()
 #img(
@@ -247,7 +246,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   
   A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
   ]
-)<fig3>
+)<fig-bmManual>
 
 #img(
   image(
@@ -259,28 +258,8 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     
     左下：スコアプロット。右上：ローディングプロット。
 ]
-)<fig4>
+)<fig-bmPCA>
 
-#img(
-  table(
-    columns: 2,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
-
-    [A],[B],
-    image("Figures/bmOPLSDA_secScore.svg",),
-    image("Figures/bmOPLSDA_secLoading.svg",),
-
-  ),
-  caption: [
-    母乳中代謝物の2'-FL分泌型によるOPLS-DA結果。
-    
-    A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色）は2'-FL非分泌型個体を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
-  ]
-)<fig5>
-
-#pagebreak()
 #img(
   table(
     columns: 4,
@@ -300,7 +279,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   caption: [
     糖類の経時変化による母乳中代謝物濃度の比較。
   ]
-)<fig6>
+)<fig-bmSugar>
 
 #img(
   table(
@@ -334,7 +313,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   caption: [
     アミノ酸及びその関連代謝物の経時変化による母乳中代謝物濃度の比較。
   ]
-)<fig7>
+)<fig-bmAmino>
 
 #img(
   table(
@@ -359,7 +338,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   caption: [
     エネルギー関連代謝物の経時変化による母乳中代謝物濃度の比較。
   ]
-)<fig8>
+)<fig-bmEnergy>
 
 #img(
   table(
@@ -385,8 +364,28 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   caption: [
     脂肪酸及びその他代謝物の経時変化による母乳中代謝物濃度の比較。
   ]
-)<fig9>
+)<fig-bmOther>
 
+#img(
+  table(
+    columns: 2,
+    fill: none,
+    stroke: none,
+    inset: 5pt,
+
+    [A],[B],
+    image("Figures/bmOPLSDA_secScore.svg",),
+    image("Figures/bmOPLSDA_secLoading.svg",),
+
+  ),
+  caption: [
+    母乳中代謝物の2'-FL分泌型によるOPLS-DA結果。
+    
+    A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色）は2'-FL非分泌型個体を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
+  ]
+)<fig-bmOPLSDA>
+
+#pagebreak()
 #img(
   table(
     columns: 4,
@@ -403,7 +402,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     
     青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
   ]
-)<fig10>
+)<fig-bmSecConc>
 // =0.000はおかしいので直す
 
 #pagebreak()
@@ -416,7 +415,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
   
   図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
 ]
-)<fig11>
+)<fig-feSpec>
 
 #img(
   table(
@@ -437,7 +436,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     
     A: 子糞便のPCAスコアプロット。B: ローディングプロット。（R2Y: 0.907, Q2: 0.866）C: 親糞便のPCAスコアプロット。D: ローディングプロット。（R2Y: 0.396, Q2: 0.118）スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
   ]
-)<fig12>
+)<fig-fePCA>
 
 #img(
   table(
@@ -458,7 +457,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     
     A: 子糞便のスコアプロット。B: S-lineプロット。C: 親糞便のスコアプロット。D: S-lineプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
   ]
-)<fig13>
+)<fig-feOPLSR>
 
 #img(
   table(
@@ -482,7 +481,7 @@ S-Lineプロットから、出産直後（@fig14 B）では2'-FLとLactuloseが�
     
     A: スコアプロット（Se+ vs Se-）。B: S-lineプロット（Se+ vs Se-）。C: スコアプロット（母乳中2'-FL高濃度群 vs 低濃度群）。D: S-lineプロット（母乳中2'-FL高濃度群 vs 低濃度群）。E: スコアプロット（母乳中3'-SL高濃度群 vs 低濃度群）。F: S-lineプロット（母乳中3'-SL高濃度群 vs 低濃度群）。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
   ]
-)<fig14>
+)<fig-feOPLSDA>
 
 
 = 謝辞
