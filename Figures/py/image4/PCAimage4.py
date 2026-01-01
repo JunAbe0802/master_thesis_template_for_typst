@@ -32,7 +32,7 @@ sns.scatterplot(
   hue=hues,
   hue_order=sorted(hues.unique()),
   palette='viridis',
-  s=30,
+  s=40,
   alpha=0.9,
   ax=ax
 )
@@ -125,7 +125,7 @@ sns.scatterplot(
   hue=hues,
   hue_order=sorted(hues.unique()),
   palette='viridis',
-  s=30,
+  s=40,
   alpha=0.9,
   ax=ax
 )

@@ -37,7 +37,7 @@ sns.scatterplot(
   hue=hues,
   hue_order=sorted(hues.unique()),
   palette='viridis',
-  s=30,
+  s=40,
   alpha=0.9,
   ax=ax
 )
@@ -85,7 +85,7 @@ lc = LineCollection(
     norm=norm,
 )
 lc.set_array(sline_1_z_fine[:-1])  # 各セグメントに色を割り当て
-lc.set_linewidth(1)        # 線幅を細く（例: 1）
+lc.set_linewidth(2)        # 線幅を細く（例: 1）
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 
@@ -135,7 +135,7 @@ sns.scatterplot(
   hue=hues,
   hue_order=sorted(hues.unique()),
   palette='viridis',
-  s=30,
+  s=40,
   alpha=0.9,
   ax=ax
 )
@@ -183,7 +183,7 @@ lc = LineCollection(
     norm=norm,
 )
 lc.set_array(sline_2_z_fine[:-1])  # 各セグメントに色を割り当て
-lc.set_linewidth(1)        # 線幅を細く（例: 1）
+lc.set_linewidth(2)        # 線幅を細く（例: 1）
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 
@@ -232,7 +232,7 @@ sns.scatterplot(
   hue=hues,
   hue_order=sorted(hues.unique()),
   palette='viridis',
-  s=30,
+  s=40,
   alpha=0.9,
   ax=ax
 )
@@ -280,7 +280,7 @@ lc = LineCollection(
     norm=norm,
 )
 lc.set_array(sline_3_z_fine[:-1])  # 各セグメントに色を割り当て
-lc.set_linewidth(1)        # 線幅を細く（例: 1）
+lc.set_linewidth(2)        # 線幅を細く（例: 1）
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 
