@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 # 対象path
-path = './tables/subjectFeature.csv'
+path = './sampleNumber.csv'
 
 # 文字列作成
 df = np.loadtxt(path, delimiter=',', dtype=str)
