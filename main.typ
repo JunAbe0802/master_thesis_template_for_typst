@@ -1,6 +1,12 @@
 #import "./template.typ": *
 #show: master_thesis.with(
-  title: "岩見沢市母子健康調査 (SMILE Iwamizawa) における母乳と乳幼児糞便の統合NMRメタボロミクス",
+  title: [
+    岩見沢市母子健康調査 (SMILE Iwamizawa) 
+    
+    における母乳と乳幼児糞便の統合NMR
+    
+    メタボロミクス
+  ],
   author: "阿部 潤",
   university: "北海道大学",
   school: "生命科学院",
@@ -17,7 +23,7 @@
 
 // この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
 
-この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
+// この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
 
 
 = 諸言
@@ -54,6 +60,10 @@
 - 母乳中には色々な成分がある
   - 脂質、蛋白質、炭水化物、抗体、ビタミン、ミネラル
   - 代謝物も大事
+  - とくにHMOs
+    - 乳児の腸内細菌叢形成に重要
+    - 2'-FLのシェアが大きく、FUT2遺伝子の分泌型/非分泌型が影響を与える
+    // 2'-FLは代表的なHMOsの一つで、LactoseにFucoseがα1,2結合したオリゴ糖であり、その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、HMOs全体の約30%を占める @vanniekerkHumanMilkOligosaccharides2014 。一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。// 引用文献を追加。
 - マクロ栄養素についてはよく調べられている
   - 時系列変化が存在する
 - 母乳は乳児が摂取する唯一の栄養→腸内細菌のえさとして重要
@@ -104,6 +114,7 @@ Chenomx Profiler を用い、内蔵データベースを基に代謝物の同定
 また、濃度定量の解析者による系統誤差を最小限に抑えるため、本作業の解析手順を統一し、文書化した。
 解析手順の統一性を評価するため、異なる5人の解析者が同一試料セット（n=4）を解析し、その定量値について、主成分分析（PCA）および、Bland-Altman分析を実施した。
 
+また、2'-FL分泌型/非分泌型の比較を目的に、2'-FL濃度 0.1 mM を閾値として、Se+群（2'-FL濃度 > 0.1 mM）とSe-群（2'-FL濃度 ≤ 0.1 mM）に分類した。
 
 === 母子糞便
 Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン領域の信号強度総和を算出した。
@@ -127,32 +138,15 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig-bmPCA）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-fucosyllactose (2'-FL）、3'-sialyllactose、6'-sialyllactoseなどのヒトミルクオリゴ糖（HMOs）やmyo-Inositolが初乳群の特徴的な代謝物であった。
 一方産後1ヶ月・産後4-5ヶ月群では、Lactoseなどエネルギーの供給源となる代謝物や、Caprate、Caprylateなどの中鎖脂肪酸が特徴的であった。
 また、産後1ヶ月群と産後4-5ヶ月群の分離には、第3主成分が寄与しており、HMOsの一種である3-fucosyllactose（3-FL）やLactate・Pyruvateなどの短鎖脂肪酸が産後1ヶ月群で、CitrateやO-phosphocholineが産後4-5ヶ月に特徴的な代謝物であった。
-// 考察ポイント
-// ヒトミルクオリゴ糖の説明
-// 短鎖脂肪酸・中鎖脂肪酸の機能
-// 3'-SLの明確な減少はこのコホートの特徴な気がする（他の研究ではそこまで顕著ではない？）
-
-定量された各代謝物濃度の産後時期別の単変量解析を行った（@fig-bmSugar - @fig-bmOther）。
-@fig-bmSugar では、2'-FLの濃度分布が二峰性を示した。
-2'-FLは代表的なHMOsの一つで、LactoseにFucoseがα1,2結合したオリゴ糖であり、その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
-FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、HMOs全体の約30%を占める @vanniekerkHumanMilkOligosaccharides2014 。一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。// 引用文献を追加。
-// 本研究でも反映が確認された
-
-以降の解析では、2'-FL濃度が 0.1 mM を閾値として、Se+群（2'-FL濃度 > 0.1 mM）とSe-群（2'-FL濃度 ≤ 0.1 mM）に分類し、各群の母乳中代謝物プロファイルの比較を実施している。
-このとき、分泌型の個体は全体の81%を占めていた（Se+: 110, Se-: 26）。これは、日本人集団におけるFUT2分泌型の頻度が約80%であることと一致していた @kodaMolecularBasisSecretor1996 。
 
 == 分泌型/非分泌型における母乳中メタボロームの差異解析
 @sec5.3 のPCA及び単変量解析の結果を踏まえ、2'-FLに注目した詳細な解析を実施するため、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（ @fig-bmOPLSDA ）。
+このとき、分泌型の個体は全体の81%を占めており（Se+: 110, Se-: 26）、日本人集団におけるFUT2分泌型の頻度が約80%であることと一致していた @kodaMolecularBasisSecretor1996 。
 分離の良いモデルを構築することができ（@fig-bmOPLSDA A）、ローディングプロット及びVIP値（@fig-bmOPLSDA B）から、FucoseがSe+群で特徴的な代謝物であり、3-FLがSe-群で特徴的な代謝物であることが示された。それ以外の代謝物については、Se+群とSe-群の間で特徴的な差異は認められなかった。
 
 2'-FL分泌型/非分泌型による母乳中2'-FL、3-FL、Fucose濃度の比較を、産後時期別に単変量解析を実施した（@fig-bmSecConc）。
 その結果からも、2'-FL、FucoseはSe+群で、3-FLはSe-群で有意に高く、その差異も2倍以上であることが確認された。
 
-// 考察ポイント
-// Secはフコース糖関連代謝以外には影響を与えない
-// 2'-FLと3-FLの競合的合成が起きている可能性を指摘
-// 現に餌の機能は同じ
-// Fucoseは全体的なFucose糖が減少しているので、Se-ではそもそもの合成量がフィードバックにより制限されている？（この辺はトランスクリプトームなどで詳細解析したほうがいい）
 
 == 糞便の#super[1]H-NMR測定及び代謝物同定
 全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig-feSpec）。代謝物の同定はピークの組み合わせによって決定され、最大76種類の代謝物を同定した。
@@ -188,9 +182,60 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 // InosineはSe-で高いのはなぜ？母乳中にはほとんど含まれていない。
 
 = 考察
-この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
+*母乳 x 時系列*
+（Dynamic Changes in the Human Milk Metabolome Over 25 Weeks of Lactation）
+- 3'-SL, 6'-SL, 2'-FLの明確な減少
+  - それぞれの細かい機能
+  - 他のコホートでも報告されている
+- Glu, Gln以外のアミノ酸の減少
+  - 遊離アミノ酸の量は減少傾向にあることは報告されている
+- Glu, Glnの増加（Dynamic Changes in the Human Milk Metabolome Over 25 Weeks of Lactation）
+  - 報告がある
+  - Glnは腸の成熟に関係あり
+  - 免疫系・腸内細菌叢と相互作用する
+- Caprate, Caprylateの増加
+  - 中鎖脂肪酸の機能
+  - 報告あり
 
-この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
+*母乳 x 分泌型*
+- 基本変わらない
+  - Fucosyllactose系統の代謝以外への影響は最小限
+- 3-FLがSe-で高い
+  - 競合的合成
+    - GDPフコースを取り合っている
+  - 機能的冗長性
+    - 2'-FLと3-FLは細菌のエサとなる点では一緒
+    - 他の機能も似ている
+- FucoseがSe+で高い
+  - 全体的なFucose糖が減少しているので、Se-ではそもそものFucose合成量がフィードバックにより制限されている or 分解量が多くなっている？
+    - （この辺はトランスクリプトームなどで詳細解析したほうがいい）
+
+*糞便・時系列*
+- 乳児糞便でlactose, glucose, galactoseが前期に多く出てくる
+  - lactose -> glucose + galactose
+  - 母乳中の糖が未消化で出てきている
+  - 初期は消化吸収能力が低い
+- 母親糞便でaspartateが後期に多く出てくる（https://ccpat.net/ccpat/wp-content/uploads/2020/05/FCCSOBBook-2017-Ch01-Physiologic-Changes-During-Pregnancyen-ja.pdf ）
+  - 出産直後のアスパラギン酸アミノトランスフェラーゼの低下が有名らしい
+    - 反映しているならこの酵素はアスパラギン酸をつくる反応なので、アスパラギン酸が増えるのは納得できる
+    - でも対となる反応のアラニンアミノトランスフェラーゼ関連は何も出てないからコレは違うかもしれん
+  - 出産時はプロテオバクテリア門が増えて、出産後徐々に減少していく
+    - プロテオバクテリアはアスパラギン酸が餌になる
+
+*糞便・分泌型*
+- 乳児糞便で2'-FL, 3-FL, Lactulose, Inosineが分泌型/非分泌型で差が出ている
+  - 2'-FL, 3-FLは母乳中の影響を反映している
+  - Lactuloseはなぜか分泌型で高い
+    - 母乳中にはほとんど含まれておらず、粉ミルク中にいる
+      - 混合育児と母乳のみが半々くらい
+    - 全体的なHMOsの摂取量が多いと、腸内細菌が使い切れずに一部が糞便中に出てきている？
+  - Inosineはなぜか非分泌型で高い（https://chatgpt.com/share/6958fb1a-785c-8006-be9a-1dd03a5d7b71 ）
+    - 母乳中にはほとんど含まれていない
+    - 非分泌型ではInosine産生菌が多い？
+      - ビフィズス菌がイノシン産生する
+      - 細菌叢解析の結果と付き合わせたい
+    - 代謝経路がシフトし、核酸・ヌクレオチドをエネルギー源として使うようになると、イノシンが増える？AMP→Inosine
+      - HMOsが少ないから、他のエネルギー源を使うようになる？
 
 = 結論
 この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
@@ -334,111 +379,111 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 ]
 )<fig-bmPCA>
 
-#img(
-  table(
-    columns: 4,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+// #img(
+//   table(
+//     columns: 4,
+//     fill: none,
+//     stroke: none,
+//     inset: 5pt,
 
-    image("Figures/bmUnivariate/timing_with_stats_2'-fucosyllactose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_3'-sialyllactose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_3-fucosyllactose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_6'-sialyllactose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Fucose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Galactose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Glucose.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Lactose.png",),
-  ),
-  caption: [
-    糖類の経時変化による母乳中代謝物濃度の比較。
-  ]
-)<fig-bmSugar>
+//     image("Figures/bmUnivariate/timing_with_stats_2'-fucosyllactose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_3'-sialyllactose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_3-fucosyllactose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_6'-sialyllactose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Fucose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Galactose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Glucose.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Lactose.png",),
+//   ),
+//   caption: [
+//     糖類の経時変化による母乳中代謝物濃度の比較。
+//   ]
+// )<fig-bmSugar>
 
-#img(
-  table(
-    columns: 5,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+// #img(
+//   table(
+//     columns: 5,
+//     fill: none,
+//     stroke: none,
+//     inset: 5pt,
 
-    image("Figures/bmUnivariate/timing_with_stats_2-Aminobutyrate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Alanine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Asparagine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Aspartate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Betaine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Glutamate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Glutamine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Glycine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Histidine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Isoleucine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Leucine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Lysine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Methionine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Phenylalanine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Proline.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Taurine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Threonine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Tryptophan.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Tyrosine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Urea.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Valine.png",),  
-  ),
-  caption: [
-    アミノ酸及びその関連代謝物の経時変化による母乳中代謝物濃度の比較。
-  ]
-)<fig-bmAmino>
+//     image("Figures/bmUnivariate/timing_with_stats_2-Aminobutyrate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Alanine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Asparagine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Aspartate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Betaine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Glutamate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Glutamine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Glycine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Histidine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Isoleucine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Leucine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Lysine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Methionine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Phenylalanine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Proline.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Taurine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Threonine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Tryptophan.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Tyrosine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Urea.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Valine.png",),  
+//   ),
+//   caption: [
+//     アミノ酸及びその関連代謝物の経時変化による母乳中代謝物濃度の比較。
+//   ]
+// )<fig-bmAmino>
 
-#img(
-  table(
-    columns: 4,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+// #img(
+//   table(
+//     columns: 4,
+//     fill: none,
+//     stroke: none,
+//     inset: 5pt,
 
-    image("Figures/bmUnivariate/timing_with_stats_2-Oxoglutarate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Acetone.png",),
-    image("Figures/bmUnivariate/timing_with_stats_cis-Aconitate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Citrate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Creatine phosphate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Creatine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Creatinine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Fumarate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Lactate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Pyruvate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Succinate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_2-Oxoglutarate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Acetone.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_cis-Aconitate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Citrate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Creatine phosphate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Creatine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Creatinine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Fumarate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Lactate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Pyruvate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Succinate.png",),
  
-  ),
-  caption: [
-    エネルギー関連代謝物の経時変化による母乳中代謝物濃度の比較。
-  ]
-)<fig-bmEnergy>
+//   ),
+//   caption: [
+//     エネルギー関連代謝物の経時変化による母乳中代謝物濃度の比較。
+//   ]
+// )<fig-bmEnergy>
 
-#img(
-  table(
-    columns: 4,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+// #img(
+//   table(
+//     columns: 4,
+//     fill: none,
+//     stroke: none,
+//     inset: 5pt,
 
-    image("Figures/bmUnivariate/timing_with_stats_Acetate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Butyrate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Caprate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Caprylate.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Choline.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Ethanolamine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Methanol.png",),
-    image("Figures/bmUnivariate/timing_with_stats_myo-Inositol.png",),
-    image("Figures/bmUnivariate/timing_with_stats_O-Phosphocholine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_sn-Glycero-3-phosphocholine.png",),
-    image("Figures/bmUnivariate/timing_with_stats_Uridine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Acetate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Butyrate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Caprate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Caprylate.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Choline.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Ethanolamine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Methanol.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_myo-Inositol.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_O-Phosphocholine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_sn-Glycero-3-phosphocholine.png",),
+//     image("Figures/bmUnivariate/timing_with_stats_Uridine.png",),
     
 
-  ),
-  caption: [
-    脂肪酸及びその他代謝物の経時変化による母乳中代謝物濃度の比較。
-  ]
-)<fig-bmOther>
+//   ),
+//   caption: [
+//     脂肪酸及びその他代謝物の経時変化による母乳中代謝物濃度の比較。
+//   ]
+// )<fig-bmOther>
 
 #img(
   table(
