@@ -60,15 +60,15 @@ for i in range(len(groups)):
   
   ax = fig.add_subplot(gs[i, 1])
   sns.scatterplot(
-    x=loading_df[:, group[1]].astype(float),
-    y=loading_df[:, group[0]].astype(float),
+    x=loading_df[:, group[0]].astype(float),
+    y=loading_df[:, group[1]].astype(float),
     s=30,
     marker='o',
     color='gray',
     ax=ax
   )
-  ax.set_xlabel(replace_dict[group[1]])
-  ax.set_ylabel(replace_dict[group[0]])
+  ax.set_xlabel(replace_dict[group[0]])
+  ax.set_ylabel(replace_dict[group[1]])
   # ax.set_ylabel("")
   # ax.set_xlabel("")
 
@@ -76,8 +76,8 @@ for i in range(len(groups)):
   for j in range(len(loading_df)):
     texts.append(
       ax.text(
-        loading_df[j, group[1]].astype(float),
         loading_df[j, group[0]].astype(float),
+        loading_df[j, group[1]].astype(float),
         loading_df[j, 0],
         size=8
       )
