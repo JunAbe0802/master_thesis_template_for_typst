@@ -74,7 +74,7 @@ segments = np.concatenate([points[:-1], points[1:]], axis=1)
 fig = plt.figure()
 ax = fig.add_subplot(111)
 
-norm = plt.Normalize(sline_c_z_fine.min(), sline_c_z_fine.max())
+norm = plt.Normalize(0, 1)
 lc = LineCollection(
     segments,
     cmap='mako_r',
@@ -167,7 +167,7 @@ segments = np.concatenate([points[:-1], points[1:]], axis=1)
 fig = plt.figure()
 ax = fig.add_subplot(111)
 
-norm = plt.Normalize(sline_m_z_fine.min(), sline_m_z_fine.max())
+norm = plt.Normalize(0, 1)
 lc = LineCollection(
     segments,
     cmap='mako_r',
