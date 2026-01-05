@@ -551,7 +551,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
     image("Figures/fePCAm_Loading.svg",),
   ),
   caption: [
-    母子糞便のPCA結果。
+    母子糞便のPCA解析。
     
     A: 子糞便のPCAスコアプロット。B: ローディングプロット。（R2Y: 0.907, Q2: 0.866）C: 親糞便のPCAスコアプロット。D: ローディングプロット。（R2Y: 0.396, Q2: 0.118）スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
   ]
@@ -566,10 +566,10 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 
     [A],[B],
     image("Figures/feOPLSc_TimeCourseScore.svg",),
-    image("Figures/feOPLSc_TimeCourseSLine.svg",),
+    image("Figures/feOPLSc_TimeCourseSLine_add.svg",),
     [C],[D],
     image("Figures/feOPLSm_TimeCourseScore.svg",),
-    image("Figures/feOPLSm_TimeCourseSLine.svg",),
+    image("Figures/feOPLSm_TimeCourseSLine_add.svg",),
   ),
   caption: [
     母子糞便の時期別OPLS-R解析。
@@ -587,16 +587,16 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 
     [A],[B],
     image("Figures/feOPLSc_sec1Score.svg",),
-    image("Figures/feOPLSc_sec1SLine.svg",),
+    image("Figures/feOPLSc_sec1SLine_add.svg",),
     [C],[D],
     image("Figures/feOPLSc_sec2Score.svg",),
-    image("Figures/feOPLSc_sec2SLine.svg",),
+    image("Figures/feOPLSc_sec2SLine_add.svg",),
     [E],[F],
     image("Figures/feOPLSc_sec3Score.svg",),
-    image("Figures/feOPLSc_sec3SLine.svg",),
+    image("Figures/feOPLSc_sec3SLine_add.svg",),
   ),
   caption: [
-    子糞便のOPLS-DA。
+    子糞便のOPLS-DA解析。
     
     A,C,E: スコアプロット（Se+ vs Se-（上部））。A: 出産直後、C: 産後1ヶ月、E: 産後4-5ヶ月。
 
