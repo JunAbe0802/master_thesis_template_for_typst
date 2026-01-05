@@ -86,6 +86,7 @@ lc = LineCollection(
 )
 lc.set_array(sline_1_z_fine[:-1])  # 各セグメントに色を割り当て
 lc.set_linewidth(2)        # 線幅を細く（例: 1）
+lc.set_alpha(0.7)
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 
@@ -184,6 +185,7 @@ lc = LineCollection(
 )
 lc.set_array(sline_2_z_fine[:-1])  # 各セグメントに色を割り当て
 lc.set_linewidth(2)        # 線幅を細く（例: 1）
+lc.set_alpha(0.7)
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 
@@ -281,6 +283,7 @@ lc = LineCollection(
 )
 lc.set_array(sline_3_z_fine[:-1])  # 各セグメントに色を割り当て
 lc.set_linewidth(2)        # 線幅を細く（例: 1）
+lc.set_alpha(0.7)
 line = ax.add_collection(lc)
 fig.colorbar(
   line, 

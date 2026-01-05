@@ -79,7 +79,8 @@ lc = LineCollection(
     segments,
     cmap='mako_r',
     norm=norm,
-    alpha=0.8      # 透明度を0.8に設定
+    alpha=0.7,   # 透明度を0.5に設定
+    linewidth=5
 )
 lc.set_array(sline_c_z_fine[:-1])  # 各セグメントに色を割り当て
 lc.set_linewidth(1)        # 線幅を細く（例: 1）
@@ -172,7 +173,8 @@ lc = LineCollection(
     segments,
     cmap='mako_r',
     norm=norm,
-    alpha=0.8      # 透明度を0.8に設定
+    alpha=0.7,      # 透明度を0.8に設定
+    linewidth=5
 )
 lc.set_array(sline_m_z_fine[:-1])  # 各セグメントに色を割り当て
 lc.set_linewidth(1)        # 線幅を細く（例: 1）
