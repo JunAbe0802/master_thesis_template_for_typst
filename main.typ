@@ -17,14 +17,6 @@
 )
 
 // = 概要
-// この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。  
-
-// この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
-
-// この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
-
-// この文書は、著作権の対象となっている文章を、ウィキペディア日本語版において引用する際に守るべき事項を定めたものです。なお、この文書において「引用」とは、参考文献に掲載されている文章等を抜粋し、転載すること (Quotation) をいい、執筆者独自の文章に対し、その文章の作成において参照された文献の書誌情報のみを表示すること (Citation) を指すものではありません。後者に関する詳しい説明は、Wikipedia:出典を明記するを参照してください。
-
 
 = 諸言
 // *乳児の成長・便・腸内細菌について*
@@ -295,8 +287,17 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 ]
 
 = 図表
+#show outline.entry: it => {
+  
+  it
+}
+#outline(
+  target: figure,
+  title: none,
+)
+
 #let table_subjectFeature = csv("./tables/subjectFeature.csv")
-#tbl(
+#figure(
   [
     #table(
       columns: 2,
@@ -345,7 +346,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
   \*5 37週未満。
 
 #pagebreak()
-#tbl(
+#figure(
   table(
     columns: 4,
 
@@ -369,64 +370,60 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 #set par(first-line-indent: 1em)
 
 
-#img(
+#figure(
   [
     #image("Figures/10016010mMd_BM00541_1.svg", height: 23%)
     #image("Figures/10016010mMd_BM00541_2.svg", height: 23%)
     #image("Figures/10016010mMd_BM00541_3.svg", height: 23%)
   ],
   caption: [
-    母乳のNMRスペクトル。図中の番号は同定された代謝物を示す。
-
-    1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, Threonine; 12, Lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, Glutamate; 19, acetate; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-aconitate;, 32, ethanolamine; 33; choline; 34, O-phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, myo-Inositol; 44, Urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
+    母乳のNMRスペクトル
   ]
 )<fig-bmSpec>
+図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, Threonine; 12, Lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, Glutamate; 19, acetate; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-aconitate;, 32, ethanolamine; 33; choline; 34, O-phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, myo-Inositol; 44, Urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
 
 
-#img(
+#figure(
   image(
     "Figures/mean_concentration_barplot.png",
   ), 
-  caption: [同定できた化合物の平均濃度。エラーバーは標準偏差を示す。]
+  caption: [同定できた化合物の平均濃度]
 )<fig-bmConc>
+エラーバーは標準偏差を示す。
 
 #pagebreak()
-#img(
-  table(
-    columns: 1,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+#figure(
+  grid(
+    columns: (1em, 1.3fr, 1em, 1em, 2fr),
 
     [A],
     image(
       "Figures/bmPCAmanual_Score.svg", 
-      width: 85%
+      // width: 66%
     ),
+    h(1em),
     [B],
     image(
       "Figures/bmPCAmanual_blandaltman.svg", 
-      width: 85%
+      // width: 85%
     )
   ),
-  caption: [母乳中代謝物の濃度定量における解析者間の系統誤差の評価
-  
-  A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
+  caption: [
+    母乳中代謝物の濃度定量における解析者間の系統誤差の評価
   ]
 )<fig-bmManual>
-// 縦並びにレイアウトを修正する。
+A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
 
-#img(
+#figure(
   image(
     "/Figures/bmPCA_timeCourse.svg",
     width: 100%,
   ),
   caption: [
-    母乳中代謝物のPCA結果。
-    
-    左：スコアプロット。右：ローディングプロット。
+    母乳中代謝物のPCA結果
 ]
 )<fig-bmPCA>
+左：スコアプロット。右：ローディングプロット。
 
 // #img(
 //   table(
@@ -534,127 +531,122 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 //   ]
 // )<fig-bmOther>
 
-#img(
-  table(
-    columns: 2,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+#figure(
+  grid(
+    columns: 5,
 
-    [A],[B],
+    [A],
     image("Figures/bmOPLSDA_secScore.svg",),
+    h(1em),
+    [B],
     image("Figures/bmOPLSDA_secLoading.svg",),
 
   ),
   caption: [
-    母乳中代謝物の2'-FL分泌型によるOPLS-DA結果。
-    
-    A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色）は2'-FL非分泌型個体を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
+    母乳中代謝物の2'-FL分泌型によるOPLS-DA結果
   ]
 )<fig-bmOPLSDA>
+A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色）は2'-FL非分泌型個体を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
 
 #pagebreak()
-#img(
-  table(
-    columns: 4,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
-
+#figure(
+  // table(
+  //   columns: 4,
+  //   fill: none,
+  //   stroke: none,
+  //   inset: 5pt,
+  grid(columns: 3,
     image("Figures/bmUnivariate/sec_with_stats_2'-fucosyllactose.png",),
     image("Figures/bmUnivariate/sec_with_stats_3-fucosyllactose.png",),
     image("Figures/bmUnivariate/sec_with_stats_Fucose.png",),
   ),
+
   caption: [
-    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物。
-    
-    青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
-  ]
+    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物
+  ],
 )<fig-bmSecConc>
 // =0.000はおかしいので直す
+青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
 
 #pagebreak()
-#img(
+#figure(
   image(
     "Figures/cSx.svg",
   ),
   caption: [
-  母子糞便のNMRスペクトルの一例。
-  
-  図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+  母子糞便のNMRスペクトルの一例
 ]
 )<fig-feSpec>
+図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
 
-#img(
-  table(
-    columns: 2,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+#figure(
+  grid(
+    columns: 5,
 
-    [A],[B],
+    [A],
     image("Figures/fePCAc_Score.svg",),
+    h(1em),
+    [B],
     image("Figures/fePCAc_Loading.svg",),
-    [C],[D],
+    [C],
     image("Figures/fePCAm_Score.svg",),
+    h(1em),
+    [D],
     image("Figures/fePCAm_Loading.svg",),
   ),
   caption: [
-    母子糞便のPCA解析。
-    
-    A: 子糞便のPCAスコアプロット。B: ローディングプロット。C: 親糞便のPCAスコアプロット。D: ローディングプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
+    母子糞便のPCA解析
   ]
 )<fig-fePCA>
+A: 子糞便のPCAスコアプロット。B: ローディングプロット。C: 親糞便のPCAスコアプロット。D: ローディングプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
 
-#img(
-  table(
-    columns: 2,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+#figure(
+  grid(
+    columns: 5,
 
-    [A],[B],
+    [A],
     image("Figures/feOPLSc_TimeCourseScore.svg",),
+    h(1em),
+    [B],
     image("Figures/feOPLSc_TimeCourseSLine_add.svg",),
-    [C],[D],
+    [C],
     image("Figures/feOPLSm_TimeCourseScore.svg",),
+    h(1em),
+    [D],
     image("Figures/feOPLSm_TimeCourseSLine_add.svg",),
   ),
   caption: [
-    母子糞便の時期別OPLS-R解析。
-    
-    A,C: スコアプロット（A: 子（R2Y: 0.907, Q2: 0.866）, C: 親（R2Y: 0.396, Q2: 0.118））。スコアプロットは時期により色分けされている（b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年）。B, D: S-lineプロット（B: 子, D: 親）。横軸は#super[1]H-NMRのケミカルシフト、縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与すること示す。
+    母子糞便の時期別OPLS-R解析
   ]
 )<fig-feOPLSR>
+A,C: スコアプロット（A: 子（R2Y: 0.907, Q2: 0.866）, C: 親（R2Y: 0.396, Q2: 0.118））。スコアプロットは時期により色分けされている（b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年）。B, D: S-lineプロット（B: 子, D: 親）。横軸は#super[1]H-NMRのケミカルシフト、縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与すること示す。
 
-#img(
-  table(
-    columns: 2,
-    fill: none,
-    stroke: none,
-    inset: 5pt,
+#figure(
+  grid(
+    columns: 5,
 
-    [A],[B],
+    [A],
     image("Figures/feOPLSc_sec1Score.svg",),
+    h(1em),
+    [B],
     image("Figures/feOPLSc_sec1SLine_add.svg",),
-    [C],[D],
+    [C],
     image("Figures/feOPLSc_sec2Score.svg",),
+    h(1em),
+    [D],
     image("Figures/feOPLSc_sec2SLine_add.svg",),
-    [E],[F],
+    [E],
     image("Figures/feOPLSc_sec3Score.svg",),
+    h(1em),
+    [F],
     image("Figures/feOPLSc_sec3SLine_add.svg",),
   ),
   caption: [
-    子糞便のSe+/Se-の区分によるOPLS-DA解析。
-    
-    A,C,E: スコアプロット（Se+ vs Se-）。A: 出産直後（R2Y: 0.701, Q2: 0.332）、C: 産後1ヶ月（R2Y: 0.882, Q2: 0.37）、E: 産後4-5ヶ月（R2Y: 0.747, Q2: -0.107）。
-
-    B,D,F: S-lineプロット（Se+（下部） vs Se-（上部））。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
-
-
+    子糞便のSe+/Se-の区分によるOPLS-DA解析
   ]
 )<fig-feOPLSDA>
-
+A,C,E: スコアプロット（Se+ vs Se-）。A: 出産直後（R2Y: 0.701, Q2: 0.332）、C: 産後1ヶ月（R2Y: 0.882, Q2: 0.37）、E: 産後4-5ヶ月（R2Y: 0.747, Q2: -0.107）。
+B,D,F: S-lineプロット（Se+（下部） vs Se-（上部））。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
 
 = 謝辞
 本研究を進めるにあたり熱心にご指導くださった、北海道大学 大学院先端生命科学研究院 蛋白質科学研究室の相沢智康教授、新井達也助教、並びに副査として貴重なご意見を頂きました自然免疫研究室の中村公則教授、生物情報解析科学研究室の菊川峰志准教授に心より御礼申し上げます。

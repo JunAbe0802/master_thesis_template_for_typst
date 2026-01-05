@@ -23,7 +23,7 @@ labels = score1_df["person"].replace(
 )
 # %%
 fig = plt.figure(
-  # figsize=(8,8)
+  figsize=(4,5)
 )
 ax = fig.add_subplot(111)
 sns.scatterplot(
