@@ -179,8 +179,6 @@
     depth: 2,
   )
 
-  counter(page).update(1)
-
   body
 }
 
