@@ -113,7 +113,7 @@
     nums.pos().map(str).join(".") + " "
   })
   show heading.where(level: 1): it => {
-    colbreak()
+    pagebreak()
     set text(weight: "bold", size: 20pt)
     set block(spacing: 1.5em, below: 2em)
     set align(center)
@@ -174,11 +174,12 @@
       it
     }
   }
+
   outline(
     title: "目次",
     depth: 2,
   )
-
+  counter(page).update(1)
   body
 }
 
