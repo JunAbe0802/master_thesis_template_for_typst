@@ -176,7 +176,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 @sec5.1 の解析において、解析者間による定量値の系統誤差の低減を目的に、本作業の解析手順を統一し、その評価を実施した（@fig-bmManual）。PCAスコアプロット（@fig-bmManual A）において、5人の解析者が同一試料セット（n=4）を解析した結果が重なり合って分布しており、解析者間で大きな差異がないことが示された。Bland-Altman分析（@fig-bmManual B）においても、各代謝物について5人の解析者が得た定量値の平均値と、各解析者の定量値と平均値との差をプロットした結果、ほとんどの代謝物が平均差の95%信頼区間内に収まっており、解析者間で大きな系統誤差がないことが確認された。以降、本研究における母乳中代謝物の濃度定量は、この統一された手順に基づいて実施した結果を用いることとした。
 
 == 産後時期別の母乳中メタボローム解析<sec5.3>
-母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig-bmPCA）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-fucosyllactose (2'-FL）、3'-sialyllactose、6'-sialyllactoseなどのヒトミルクオリゴ糖（HMOs）やmyo-Inositolが初乳群の特徴的な代謝物であった。
+母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig-bmPCA）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-FL、3'-sialyllactose (3'-SL)、6'-sialyllactose (6'-SL) などのヒトミルクオリゴ糖（HMOs）やmyo-Inositolが初乳群の特徴的な代謝物であった。
 一方産後1ヶ月・産後4-5ヶ月群では、Lactoseなどエネルギーの供給源となる代謝物や、Caprate、Caprylateなどの中鎖脂肪酸が特徴的であった。
 また、産後1ヶ月群と産後4-5ヶ月群の分離には、第3主成分が寄与しており、HMOsの一種である3-fucosyllactose（3-FL）やLactate・Pyruvateなどの短鎖脂肪酸が産後1ヶ月群で、CitrateやO-phosphocholineが産後4-5ヶ月に特徴的な代謝物であった。
 
@@ -372,9 +372,10 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 
 #figure(
   [
-    #image("Figures/10016010mMd_BM00541_1.svg", height: 23%)
-    #image("Figures/10016010mMd_BM00541_2.svg", height: 23%)
-    #image("Figures/10016010mMd_BM00541_3.svg", height: 23%)
+    #image("Figures/10016010mMd_BM00541_1.svg", width: 67%)
+    #image("Figures/10016010mMd_BM00541_2.svg", width: 67%)
+    #image("Figures/10016010mMd_BM00541_3.svg", width: 67%)
+    #box(width: 100%)
   ],
   caption: [
     母乳のNMRスペクトル
@@ -385,7 +386,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
 
 #figure(
   image(
-    "Figures/mean_concentration_barplot.png",
+    "Figures/mean_concentration_barplot.svg",
   ), 
   caption: [同定できた化合物の平均濃度]
 )<fig-bmConc>
