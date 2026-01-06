@@ -24,8 +24,6 @@
 //   - 乳児期に置かれた環境が成人後の生活習慣病リスクに影響を与える
 //   - 腸内細菌叢も環境の一部で、成長・発達に影響を与える
 // - 腸内細菌の形成過程
-//   - 分娩前
-//     - 胎盤・用水・胎便から非病原性DNAの検出例がある（議論あり）
 //   - 分娩時
 //     - 経腟分娩か帝王切開かで大きく異なる
 //   - 栄養状態
@@ -47,11 +45,9 @@
 //   - 食事・薬剤などの外的要因に対する応答がより反映される
 
 乳児期に置かれた環境が将来の健康や疾病リスクに強く影響を与えることは、DOHaD仮説@hansonDevelopmentalOriginsHealth2015 として広く知られている。
-腸内細菌叢もその環境の一部として、子供の成長・発達に影響を与えることが示唆されている。
+腸内細菌叢もその環境の一部として、子供の成長・発達に影響を与えることが示唆されている @stiemsmaRoleMicrobiomeDevelopmental2018 。
 // なにか疫学的研究を示せると良い。
-乳児の腸内細菌叢の形成過程は、分娩前、分娩時、栄養状態、生活環境における微生物曝露、成長に伴う変化など、様々な要因によって影響を受ける。
-//   - 分娩前
-//     - 胎盤・用水・胎便から非病原性DNAの検出例がある（議論あり）
+乳児の腸内細菌叢の形成過程は、分娩時、栄養状態、生活環境における微生物曝露、成長に伴う変化など、様々な要因によって影響を受ける @borrego-ruizEarlylifeGutMicrobiome2025, @zhuShapingOralIntestinal2025 。
 //   - 分娩時
 //     - 経腟分娩か帝王切開かで大きく異なる
 //   - 栄養状態
@@ -65,15 +61,16 @@
 //     - 離乳すると植物性多糖類や動物性タンパク質を分解できる成人様の菌群（Bacteroidetes門、Firmicutes門）が急速に増加する。
 //     - 3歳頃までに成人型の腸内細菌叢に近づく。その後は比較的安定。食習慣や抗菌薬投与などで変化することも。
 
-腸内細菌叢を調べる際には、装置の簡便さなどの理由から糞便サンプル中の最近由来の遺伝子を分析するメタゲノミクス解析が広く用いられているが、それのみでは腸内細菌叢を十分に評価できない可能性がある。
+腸内細菌叢を調べる際には、装置の簡便さなどの理由から糞便サンプル中の最近由来の遺伝子を分析するメタゲノミクス解析が広く用いられている。
+しかし、それのみでは腸内細菌叢を十分に評価できない可能性がある。
 メタゲノム情報では確かに、腸内細菌の種類やその構成比を把握することができるが、腸内細菌の実際の活性は考慮されておらず、死菌のDNAも含まれるため、最終的な機能的出力には必ずしも反映されない。
 また機能的冗長性により、ある特定の菌株が増減しても他の菌株がその機能を補完することで、最終的な出力には影響を与えない場合も考えられる。
+現に、炎症性腸疾患（IBD）等の疾患状態における研究では、ショットガン・メタゲノミクスによって特定の分類群の増減が確認されたとしても、それに基づいて計算された代謝経路の機能的ポテンシャルには有意な差が見られないケースが報告されている @jovelMetagenomicsMetatranscriptomicsMurine2022 。
 
-// - 炎症性腸疾患（IBD）等の疾患状態における研究では、ショットガン・メタゲノミクスによって特定の分類群の増減が確認されたとしても、それに基づいて計算された代謝経路の機能的ポテンシャルには有意な差が見られないケースが報告されている。
 そのため、腸内細菌叢の機能的な出力を評価するためには、メタゲノミクス解析に加えて、他のオミクス解析も加えることが重要である。
 腸内細菌は代謝の過程で脂肪酸などの低分子代謝物を放出するため、低分子代謝物の網羅的解析技術であるメタボロミクス解析を組み合わせることで、腸内細菌叢の機能的な状態やその変化をより正確に把握することが可能となる。
 また、同一個体由来のサンプルにおいて、メタボロームはメタゲノムよりも変動が小さいことが報告されており @sangermaniStabilityFecalMetabolites2024 、メタボロミクス解析は腸内細菌叢の機能的な評価においてより安定した指標を提供する可能性がある。
-さらに、食事や薬剤に対する応答がメタボロームにより強く反映されることも示されており、外的要因に対しての応答をより詳細に解析することにも貢献しうる。
+さらに、食事や薬剤に対する応答がメタボロームにより強く反映されることも示されており @zhangEffectsMetforminGut2020 、外的要因に対しての応答をより詳細に解析することにも貢献しうる。
 したがって、腸内細菌叢の機能的な理解を深めるためには、メタゲノミクス解析に加えてメタボロミクス解析を組み合わせることが重要である。
 
 
@@ -92,16 +89,16 @@
 // - 母乳は乳児が摂取する唯一の栄養→腸内細菌のえさとして重要
 
 母乳は乳児期の理想的な栄養源であり、母乳育児は乳児の健康や発達に対して重要な役割を果たす。
-// 疫学的研究があるよ
+授乳期間の長さが、言語能力、認知機能、運動能力の発達に正の影響を与えうることが、疫学的観点からも報告されている @goldshteinBreastfeedingDurationChild2025
 そのため、世界保健機関や国際連合児童基金では、少なくとも生後6ヶ月間の完全母乳育児を推奨しており、その後も2歳までは適切な補完食とともに母乳育児を継続することが推奨されている @worldhealthorganizationEssentialNutritionActions2019 。
-その理由として、母乳中には脂質、タンパク質、炭水化物、ビタミン、ミネラルのような古典的な栄養素だけでなくだけでなく、抗体や低分子代謝物など多様な成分が含まれている事が挙げられる。
-それぞれ乳児の成長や免疫機能の発達に寄与し、その組成や量は授乳期間中に変化する。
+その理由として、母乳中には脂質、タンパク質、炭水化物、ビタミン、ミネラルのような古典的な栄養素だけでなくだけでなく、抗体や低分子代謝物など多様な成分が含まれている事が挙げられる @andreasHumanBreastMilk2015 。
+それぞれ乳児の成長や免疫機能の発達に寄与し、その組成や量は授乳期間中に変化する @kimComponentsHumanBreast2020 。
 
 特に腸内細菌叢の形成に重要な役割を果たす低分子代謝物が、母乳中に含まれるオリゴ糖であるヒトミルクオリゴ糖（HMOs）である。
-HMOsはGlucose、Galactose、N-Acetylglucosamine、Fucose、シアル酸などの単糖が様々に結合した複雑な構造を持ち、その種類は200を超える。
+HMOsはGlucose、Galactose、N-Acetylglucosamine、Fucose、シアル酸などの単糖が様々に結合した複雑な構造を持ち、その種類は200を超える @thurlSystematicReviewConcentrations2017 。
 乳児の腸はHMOsを分解する酵素を持たず、未消化のまま腸管に到達する。
-特定のビフィズス菌はHMOsを分解・利用する能力を持ち、HMOsはこれらの善玉菌の増殖を促進するプレバイオティクス作用を有することが知られている。
-また、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体がこれらの糖鎖に結合するのを競合的に阻害し、感染を防ぐ抗感染作用も報告されている。
+特定のビフィズス菌はHMOsを分解・利用する能力を持つため、HMOsはこれらの善玉菌の増殖を促進するプレバイオティクス作用を有することが知られている @borewiczEffectPrebioticFortified2019 。
+また、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体がこれらの糖鎖に結合するのを競合的に阻害し、感染を防ぐ抗感染作用も報告されている @rousseauxHumanMilkOligosaccharides2021a 。
 
 HMOsのなかで最も豊富に含まれるのが2'-fucosyllactose (2'-FL)であり、母乳中のHMOs全体の約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
 その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
@@ -111,7 +108,7 @@ Se+/Se-の比率は人種によって異なり、日本人集団ではSe+が約8
 
 乳児期の腸内環境の形成過程を理解するためには、栄養源である母乳および最終的な出力である母子の糞便の代謝物プロファイルを同時に明らかにすることが重要である。
 ヒトにおけるメカニズムについては、コホートの希少性や測定に要するリソースの制約から、依然として解明が進んでいない。
-本研究では、授乳期における母乳および母子の糞便代謝物の変動、ならびにそれらの相関関係を明らかにすることを目的とし、北海道岩見沢市で実施中の前向きコホート研究である岩見沢市母子健康調査（SMILE Iwamizawa）に参加している母親とその乳児を対象に、母乳および母子糞便のNMRメタボローム解析を実施した。
+本研究では、授乳期における母乳および母子の糞便代謝物の変動、ならびにそれらの相関関係を明らかにすることを目的とし、北海道岩見沢市で実施中の前向きコホート研究である岩見沢市母子健康調査（SMILE Iwamizawa）@komatsuAssociationsMaternalDiet2023 に参加している母親とその乳児を対象に、母乳および母子糞便のNMRメタボローム解析を実施した。
 
 // NMRでやったことを強調してもいいと思うけど、一旦後回し
 
@@ -381,14 +378,14 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
     母乳のNMRスペクトル
   ]
 )<fig-bmSpec>
-図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, Threonine; 12, Lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, Glutamate; 19, acetate; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-aconitate;, 32, ethanolamine; 33; choline; 34, O-phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, myo-Inositol; 44, Urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
+図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-Fucosyllactose; 9, 2'-Fucosyllactose; 10, Fucose; 11, Threonine; 12, Lactate; 13, Alanine; 14, 6'-Sialyllactose; 15, 3'-Sialyllactose; 16, Acetate; 17, Proline; 18, Glutamate; 19, Acetate; 20, Pyruvate; 21, Succinate; 22, Glutamine; 23, Citrate; 24, Aspartate; 25, Asparagine; 26, 2-Oxoglutarate; 27, Lysine; 28, Creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-Aconitate;, 32, Ethanolamine; 33; Choline; 34, O-Phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, Glucose, 37, Betaine; 38, Lactose; 39, Methanol; 40, Taurine; 41, Fucose;, 42, Glycine; 43, myo-Inositol; 44, Urea; 45, Fumarate; 46, Tyrosine;, 47, Histidine; 48, Tryptophan; 49, Phenylalanine, 50, Uridine; 51, Formate.
 
 
 #figure(
   image(
     "Figures/mean_concentration_barplot.svg",
   ), 
-  caption: [同定できた化合物の平均濃度]
+  caption: [同定することができた母乳中代謝物の平均濃度]
 )<fig-bmConc>
 エラーバーは標準偏差を示す。
 
