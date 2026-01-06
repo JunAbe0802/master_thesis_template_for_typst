@@ -44,10 +44,10 @@
 //     - 炎症性腸疾患（IBD）等の疾患状態における研究では、ショットガン・メタゲノミクスによって特定の分類群の増減が確認されたとしても、それに基づいて計算された代謝経路の機能的ポテンシャルには有意な差が見られないケースが報告されている。
 //   - 食事・薬剤などの外的要因に対する応答がより反映される
 
-乳児期に置かれた環境が将来の健康や疾病リスクに強く影響を与えることは、DOHaD仮説@hansonDevelopmentalOriginsHealth2015 として広く知られている。
-腸内細菌叢もその環境の一部として、子供の成長・発達に影響を与えることが示唆されている @stiemsmaRoleMicrobiomeDevelopmental2018 。
+乳児期における環境が将来の健康や疾病リスクに多大な影響を及ぼすという概念は、DOHaD（Developmental Origins of Health and Disease）仮説@hansonDevelopmentalOriginsHealth2015 として広く知られている。
+腸内細菌叢もその環境因子の一つであり、子供の成長・発達に影響を与えることが示唆されている @stiemsmaRoleMicrobiomeDevelopmental2018 。
 // なにか疫学的研究を示せると良い。
-乳児の腸内細菌叢の形成過程は、分娩時、栄養状態、生活環境における微生物曝露、成長に伴う変化など、様々な要因によって影響を受ける @borrego-ruizEarlylifeGutMicrobiome2025, @zhuShapingOralIntestinal2025 。
+乳児の腸内細菌叢の形成過程は、分娩時、栄養状態、生活環境における微生物曝露、成長に伴う変化など、様々な要因によって規定される @borrego-ruizEarlylifeGutMicrobiome2025, @zhuShapingOralIntestinal2025 。
 //   - 分娩時
 //     - 経腟分娩か帝王切開かで大きく異なる
 //   - 栄養状態
@@ -61,17 +61,17 @@
 //     - 離乳すると植物性多糖類や動物性タンパク質を分解できる成人様の菌群（Bacteroidetes門、Firmicutes門）が急速に増加する。
 //     - 3歳頃までに成人型の腸内細菌叢に近づく。その後は比較的安定。食習慣や抗菌薬投与などで変化することも。
 
-腸内細菌叢を調べる際には、装置の簡便さなどの理由から糞便サンプル中の最近由来の遺伝子を分析するメタゲノミクス解析が広く用いられている。
-しかし、それのみでは腸内細菌叢を十分に評価できない可能性がある。
-メタゲノム情報では確かに、腸内細菌の種類やその構成比を把握することができるが、腸内細菌の実際の活性は考慮されておらず、死菌のDNAも含まれるため、最終的な機能的出力には必ずしも反映されない。
+腸内細菌叢の評価には、装置の簡便さから糞便サンプル中の細菌由来遺伝子を分析するメタゲノム解析が広く用いられてきた。
+しかし、遺伝子情報のみでは細菌叢の機能を十分に評価できない可能性がある。
+メタゲノム情報は細菌の種類や構成比を明らかにするが、実際の代謝活性は考慮されておらず、死菌のDNAも含まれるため、最終的な機能的出力を必ずしも反映しない。
 また機能的冗長性により、ある特定の菌株が増減しても他の菌株がその機能を補完することで、最終的な出力には影響を与えない場合も考えられる。
-現に、炎症性腸疾患（IBD）等の疾患状態における研究では、ショットガン・メタゲノミクスによって特定の分類群の増減が確認されたとしても、それに基づいて計算された代謝経路の機能的ポテンシャルには有意な差が見られないケースが報告されている @jovelMetagenomicsMetatranscriptomicsMurine2022 。
+実際に、炎症性腸疾患（IBD）などの疾患状態における研究では、特定の分類群の増減が確認されたとしても、それに基づいて計算された代謝経路の機能的ポテンシャルには有意な差が見られないケースが報告されている @jovelMetagenomicsMetatranscriptomicsMurine2022 。
 
-そのため、腸内細菌叢の機能的な出力を評価するためには、メタゲノミクス解析に加えて、他のオミクス解析も加えることが重要である。
-腸内細菌は代謝の過程で脂肪酸などの低分子代謝物を放出するため、低分子代謝物の網羅的解析技術であるメタボロミクス解析を組み合わせることで、腸内細菌叢の機能的な状態やその変化をより正確に把握することが可能となる。
-また、同一個体由来のサンプルにおいて、メタボロームはメタゲノムよりも変動が小さいことが報告されており @sangermaniStabilityFecalMetabolites2024 、メタボロミクス解析は腸内細菌叢の機能的な評価においてより安定した指標を提供する可能性がある。
+したがって、腸内細菌叢の機能的な出力を評価するためには、メタゲノム解析に加えて他のオミクス解析を組み合わせることが重要である。
+腸内細菌は代謝過程で短鎖脂肪酸などの低分子代謝物を放出するため、低分子代謝物の網羅的解析技術であるメタボローム解析を導入することで、細菌叢の機能的状態をより正確に把握することが可能となる。
+また、同一個体由来のサンプルにおいて、メタボロームはメタゲノムよりも変動が小さいことが報告されており @sangermaniStabilityFecalMetabolites2024 、メタボローム解析は腸内細菌叢の機能的な評価においてより安定した指標を提供する可能性がある。
 さらに、食事や薬剤に対する応答がメタボロームにより強く反映されることも示されており @zhangEffectsMetforminGut2020 、外的要因に対しての応答をより詳細に解析することにも貢献しうる。
-したがって、腸内細菌叢の機能的な理解を深めるためには、メタゲノミクス解析に加えてメタボロミクス解析を組み合わせることが重要である。
+したがって、腸内細菌叢の機能的な理解を深めるためには、メタゲノム解析に加えてメタボローム解析を組み合わせることが重要である。
 
 
 // *母乳について*
@@ -88,27 +88,27 @@
 //   - 時系列変化が存在する
 // - 母乳は乳児が摂取する唯一の栄養→腸内細菌のえさとして重要
 
-母乳は乳児期の理想的な栄養源であり、母乳育児は乳児の健康や発達に対して重要な役割を果たす。
-授乳期間の長さが、言語能力、認知機能、運動能力の発達に正の影響を与えうることが、疫学的観点からも報告されている @goldshteinBreastfeedingDurationChild2025
-そのため、世界保健機関や国際連合児童基金では、少なくとも生後6ヶ月間の完全母乳育児を推奨しており、その後も2歳までは適切な補完食とともに母乳育児を継続することが推奨されている @worldhealthorganizationEssentialNutritionActions2019 。
-その理由として、母乳中には脂質、タンパク質、炭水化物、ビタミン、ミネラルのような古典的な栄養素だけでなくだけでなく、抗体や低分子代謝物など多様な成分が含まれている事が挙げられる @andreasHumanBreastMilk2015 。
-それぞれ乳児の成長や免疫機能の発達に寄与し、その組成や量は授乳期間中に変化する @kimComponentsHumanBreast2020 。
+母乳は乳児期における理想的な栄養源であり、母乳育児は乳児の健康維持や発達において極めて重要な役割を担う。
+授乳期間の長さが、言語能力、認知機能、および運動能力の発達に正の影響を及ぼし得ることが、疫学的観点からも報告されている @goldshteinBreastfeedingDurationChild2025
+そのため、世界保健機関（WHO）や国際連合児童基金（UNICEF）は、生後6ヶ月間までの完全母乳育児を推奨しており、その後も2歳までは適切な補完食を併用しつつ母乳育児を継続することを提唱している @worldhealthorganizationEssentialNutritionActions2019 。
+母乳が多機能な役割を果たす背景には、脂質、タンパク質、炭水化物、ビタミン、ミネラルといった主要な栄養素に加え、抗体や低分子代謝物などの多様な生物活性成分が含まれていることが挙げられる @andreasHumanBreastMilk2015 。
+これらの成分は乳児の成長や免疫機能の発達に寄与し、その組成や含有量は授乳期間に応じて動的に変化する @kimComponentsHumanBreast2020 。
 
-特に腸内細菌叢の形成に重要な役割を果たす低分子代謝物が、母乳中に含まれるオリゴ糖であるヒトミルクオリゴ糖（HMOs）である。
-HMOsはGlucose、Galactose、N-Acetylglucosamine、Fucose、シアル酸などの単糖が様々に結合した複雑な構造を持ち、その種類は200を超える @thurlSystematicReviewConcentrations2017 。
-乳児の腸はHMOsを分解する酵素を持たず、未消化のまま腸管に到達する。
-特定のビフィズス菌はHMOsを分解・利用する能力を持つため、HMOsはこれらの善玉菌の増殖を促進するプレバイオティクス作用を有することが知られている @borewiczEffectPrebioticFortified2019 。
-また、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体がこれらの糖鎖に結合するのを競合的に阻害し、感染を防ぐ抗感染作用も報告されている @rousseauxHumanMilkOligosaccharides2021a 。
+特に、乳児の腸内細菌叢形成において重要な役割を担う低分子代謝物として、ヒトミルクオリゴ糖（Human Milk Oligosaccharides; HMOs）が挙げられる。HMOsは、グルコース、ガラクトース、N-アセチルグルコサミン、フコース、シアル酸などの単糖が複雑に結合した構造を持ち、その種類は200を超えるとされる @thurlSystematicReviewConcentrations2017 。
+乳児の消化管はHMOsを分解する酵素を保持していないため、これらは未消化のまま大腸へと到達する。
+特定のビフィズス菌はHMOsを分解・利用する能力を有しており、HMOsはこれら有益菌の増殖を優先的に促進するプレバイオティクスとして機能する @borewiczEffectPrebioticFortified2019 。
+加えて、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体が宿主細胞へ結合するのを競合的に阻害し、感染を防御する抗感染作用も報告されている@rousseauxHumanMilkOligosaccharides2021a 。
 
-HMOsのなかで最も豊富に含まれるのが2'-Fucosyllactose (2'-FL)であり、母乳中のHMOs全体の約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
-その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
-FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。
-Se+/Se-の比率は人種によって異なり、日本人集団ではSe+が約80%を占めることが報告されている @kodaMolecularBasisSecretor1996 。
-そして、Se+/Se-の違いは母乳中のHMOs組成に影響を与え、乳児の腸内細菌叢の形成にも影響を及ぼす可能性が示唆されている @lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 。
+HMOsの中で最も含有量が多い成分は2'-Fucosyllactose (2'-FL)であり、総HMOsの約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
+2'-FLの合成には、FUT2遺伝子にコードされる$alpha$1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
+FUT2の活性には遺伝的多型（Secretor/Non-secretor）が関与しており、分泌型（Se+）の個体は母乳中に2'-FLを豊富に分泌する一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しない。
+このSe+/Se-の比率は人種によって異なり、日本人集団ではSe+が約80%を占めることが知られている @kodaMolecularBasisSecretor1996 。
+こうした母体の遺伝的多型に起因する母乳中のHMOs組成の差異は、乳児の腸内細菌叢の定着や形成過程に直接的な影響を及ぼす可能性が示唆されている@lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 。
 
-乳児期の腸内環境の形成過程を理解するためには、栄養源である母乳および最終的な出力である母子の糞便の代謝物プロファイルを同時に明らかにすることが重要である。
-ヒトにおけるメカニズムについては、コホートの希少性や測定に要するリソースの制約から、依然として解明が進んでいない。
-本研究では、授乳期における母乳および母子の糞便代謝物の変動、ならびにそれらの相関関係を明らかにすることを目的とし、北海道岩見沢市で実施中の前向きコホート研究である岩見沢市母子健康調査（SMILE Iwamizawa）@komatsuAssociationsMaternalDiet2023 に参加している母親とその乳児を対象に、母乳および母子糞便のNMRメタボローム解析を実施した。
+乳児期の腸内環境形成プロセスを統合的に理解するには、供給源である母乳と、その代謝的出力である母子糞便の双方の代謝物プロファイルを同時に明らかにすることが不可欠である。
+しかし、ヒトを対象とした研究においては、コホートの希少性や高度な分析リソースの制約から、その動態や相互作用の詳細は依然として十分に解明されていない。
+そこで本研究では、授乳期における母乳および母子の糞便代謝物の経時的な変動、ならびにそれらの相関関係を明らかにすることを目的とした。
+具体的には、北海道岩見沢市で実施中の前向き母子コホート研究「岩見沢市母子健康調査（SMILE Iwamizawa）」 @komatsuAssociationsMaternalDiet2023 に参加する母親とその乳児を対象とし、核磁気共鳴（NMR）を用いたメタボローム解析により、母乳および糞便中の代謝物動態を包括的に評価した。
 
 // NMRでやったことを強調してもいいと思うけど、一旦後回し
 
@@ -122,7 +122,7 @@ Se+/Se-の比率は人種によって異なり、日本人集団ではSe+が約8
 岩見沢市在住の妊婦が母子健康手帳の交付を受ける際に、本調査に関する説明を行い、書面によるインフォームド・コンセントを得た。
 なお、乳児の研究参加については、代諾者である母親の同意をもってこれに代えた。
 同意を得られた参加者（母、子）に対して、調査票などによる調査や母乳・糞便の採取を実施した。
-採取された試料は速やかに −20$degree$C で保管され、採取から約1ヶ月以内に分析時まで −80$degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に示す通りである。
+採取された試料は速やかに -20$degree$C で保管され、採取から約1ヶ月以内に分析時まで -80$degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に示す通りである。
 また、サンプルの採取時期およびサンプル数については、@tbl-sampleInfo に示す通りである。
 
 == サンプル調製
@@ -165,41 +165,43 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 
 = 結果
 == 母乳の#super[1]H-NMR測定及び代謝物同定・定量<sec5.1>
-全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig-bmSpec）。代謝物の同定はピークの組み合わせによって決定され、
-// 糖類が8種類、アミノ酸及び関連代謝物が21種類、エネルギー関連代謝物が11種類、有機酸とその他化合物が11種類、
-計51種類の代謝物を同定・定量した。これらすべての代謝物の平均濃度は@fig-bmConc に示すとおりである。
+すべてのサンプルにおいて、シグナル強度が十分で明瞭な#super[1]H-NMRスペクトルを取得した（@fig-bmSpec）。
+代謝物の同定は、スペクトル上の各ピークの帰属およびChenomx内データベースとの照合により行い、最終的に計51種類の代謝物を同定・定量した。同定された全代謝物の平均濃度は、@fig-bmConc に示す通りである。
 
 == 母乳中代謝物の定量における解析者間の系統誤差の評価
-@sec5.1 の解析において、解析者間による定量値の系統誤差の低減を目的に、本作業の解析手順を統一し、その評価を実施した（@fig-bmManual）。PCAスコアプロット（@fig-bmManual A）において、5人の解析者が同一試料セット（n=4）を解析した結果が重なり合って分布しており、解析者間で大きな差異がないことが示された。Bland-Altman分析（@fig-bmManual B）においても、各代謝物について5人の解析者が得た定量値の平均値と、各解析者の定量値と平均値との差をプロットした結果、ほとんどの代謝物が平均差の95%信頼区間内に収まっており、解析者間で大きな系統誤差がないことが確認された。以降、本研究における母乳中代謝物の濃度定量は、この統一された手順に基づいて実施した結果を用いることとした。
+@sec5.1 における定量解析において、解析者間の手技に起因する系統誤差を最小化するため、解析プロトコルの統一とその妥当性評価を実施した（@fig-bmManual）。PCAスコアプロット（@fig-bmManual A）において、5名の解析者が同一の試料セット（n=4）を独立して解析した結果、各データ点は解析者によらず近接してプロットされており、クラスターの形成が確認できた。そのためPCAによる評価では、解析者間で顕著な差異がないことが示された。
+
+また、Bland-Altman分析（@fig-bmManual B）により、全解析者の定量値の平均値と各解析者の値との乖離を評価したところ、大半の代謝物が95%一致限界（Limits of Agreement）内に収まっていた。以上の結果から、本研究における解析手順は十分な再現性を有しており、解析者間の系統誤差は無視できるほど小さいことが確認された。したがって、以降の解析には、この統一された手順に基づいて算出された定量値を用いることとした。
 
 == 産後時期別の母乳中メタボローム解析<sec5.3>
-母乳中メタボロームを可視化するため、濃度定量値をもとにPCAを実施した（@fig-bmPCA）。スコアプロットを母乳の採取時期別に色分けした結果、初乳・産後1ヶ月・産後4-5ヶ月の各群でクラスターの形成が確認できた。これらのクラスターは第1主成分・第2主成分が初乳とその他の群の分離に寄与しており、ローディングプロットにおいて、2'-FL、3'-Sialyllactose (3'-SL)、6'-Sialyllactose (6'-SL) などのヒトミルクオリゴ糖（HMOs）やmyo-Inositolが初乳群の特徴的な代謝物であった。
-一方産後1ヶ月・産後4-5ヶ月群では、Lactoseなどエネルギーの供給源となる代謝物や、Caprate、Caprylateなどの中鎖脂肪酸が特徴的であった。
-また、産後1ヶ月群と産後4-5ヶ月群の分離には、第3主成分が寄与しており、HMOsの一種である3-Fucosyllactose（3-FL）やLactate・Pyruvateなどの短鎖脂肪酸が産後1ヶ月群で、CitrateやO-Phosphocholineが産後4-5ヶ月に特徴的な代謝物であった。
+母乳中メタボロームの経時的な変化を俯瞰的に評価するため、代謝物の濃度定量値に基づいた主成分分析（PCA）を実施した（@fig-bmPCA）。採取時期別に色分けしたスコアプロットの結果、初乳、産後1ヶ月、および産後4–5ヶ月の各群において、明確なクラスターの形成が認められた。
 
-== 分泌型/非分泌型における母乳中メタボロームの差異解析
-@sec5.3 のPCA及び単変量解析の結果を踏まえ、2'-FLに注目した詳細な解析を実施するため、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（ @fig-bmOPLSDA ）。
-このとき、分泌型の個体は全体の81%を占めており（Se+: 110, Se-: 26）、日本人集団におけるFUT2分泌型の頻度が約80%であることと一致していた @kodaMolecularBasisSecretor1996 。
-分離の良いモデルを構築することができ（@fig-bmOPLSDA A）、ローディングプロット及びVIP値（@fig-bmOPLSDA B）から、FucoseがSe+群で特徴的な代謝物であり、3-FLがSe-群で特徴的な代謝物であることが示された。それ以外の代謝物については、Se+群とSe-群の間で特徴的な差異は認められなかった。
+第1主成分（PC1）および第2主成分（PC2）は、主に初乳とそれ以外の群（産後1ヶ月・4–5ヶ月）の分離に寄与していた。ローディングプロットの解析から、2'-Fucosyllactose (2'-FL)、3'-Sialyllactose (3'-SL)、6'-Sialyllactose (6'-SL) といったヒトミルクオリゴ糖（HMOs）や _myo_-Inositol が、初乳群を特徴付ける主要な代謝物であることが示された。対して、産後1ヶ月および4–5ヶ月群では、主要なエネルギー源である Lactose や、Caprate、Caprylateなどの中鎖脂肪酸（MCFAs）が特徴的であった。
 
-2'-FL分泌型/非分泌型による母乳中2'-FL、3-FL、Fucose濃度の比較を、産後時期別に単変量解析を実施した（@fig-bmSecConc）。
-その結果からも、2'-FL、FucoseはSe+群で、3-FLはSe-群で有意に高く、その差異も2倍以上であることが確認された。
+また、第3主成分（PC3）は、産後1ヶ月群と4–5ヶ月群の分離に寄与していた。産後1ヶ月群では、HMOsの一種である 3-Fucosyllactose (3-FL) や、Lactate、Pyruvate などの有機酸が相対的に高値を示した。一方、産後4–5ヶ月群では Citrate や _O_-Phosphocholine が特徴的な代謝物として同定された。
+
+== 分泌型/非分泌型における母乳中メタボロームの差異
+@sec5.3 におけるPCAおよび単変量解析の結果、2'-FLの濃度変動が顕著であった。そこで、2'-FLに注目した詳細な解析を行うため、分泌型（Se+）および非分泌型（Se-）を目的変数とした判別分析（OPLS-DA）を実施した（@fig-bmOPLSDA）。
+本解析の対象において、分泌型（Se+）の個体は110名（81%）、非分泌型（Se-）は26名（19%）であり、日本人集団における 2'-FL 分泌型の頻度が約80%であるという既報と一致していた @kodaMolecularBasisSecretor1996 。
+構築されたOPLS-DAモデルは良好な分離能を示し（@fig-bmOPLSDA A）、ローディングプロットおよびVIP（Variable Importance in Projection）スコアの解析から、Fucose および 2'-FL がSe+群を、3-FL がSe-群をそれぞれ特徴付ける主要な代謝物であることが示された（@fig-bmOPLSDA B）。なお、これら以外の代謝物については、両群間で特徴的な差異は認められなかった。
+
+続いて、母乳中の2'-FL、3-FL、および Fucose 濃度に対する分泌型／非分泌型の影響をより詳細に検討するため、産後時期別に単変量解析を実施した（@fig-bmSecConc）。その結果、すべての時期において、2'-FL および Fucose 濃度はSe+群で有意に高く、逆に 3-FL 濃度はSe-群において有意に高値を示した。これらの代謝物濃度には、群間で2倍以上の顕著な差異があることが確認された。
 
 
 == 糞便の#super[1]H-NMR測定及び代謝物同定
-全てのサンプルについて、良好な#super[1]H-NMRスペクトルを得た（@fig-feSpec）。代謝物の同定はピークの組み合わせによって決定され、最大76種類の代謝物を同定した。
+すべてのサンプルにおいて、解析に十分なシグナル強度を有する明瞭な#super[1]H-NMRスペクトルを取得した（@fig-feSpec）。代謝物の同定は、スペクトル上のシグナルパターンの解析およびChenomx内データベースとの照合により行い、最終的に計76種類の代謝物を同定した。
 
 == 母子糞便中メタボロームの主成分分析
-母子ともに、産後時期別に糞便中メタボロームを可視化するため、糞便測定スペクトルから作成したビニングデータをもとにPCAを実施した（@fig-fePCA）。
-母乳同様に、スコアプロットを産後時期別に色分けした結果、乳児ではクラスターの形成が確認でき、出産直後と産後1ヶ月の群、及び産後1.5年以降の群は重なり合って分布していた。
-これらは第1主成分が分離に寄与していた。
-一方、母親では産後時期によるクラスターの形成は確認できなかった。
-また、母子ともに2'-FL分泌型/非分泌型による明確な分離は認められなかった。
+母児それぞれの糞便メタボロームの時期的な変遷を俯瞰的に評価するため、NMRスペクトルのビン積分値データを用いた主成分分析（PCA）を実施した（@fig-fePCA）。
+
+乳児の糞便サンプルにおいて、採取時期別に色分けしたスコアプロットを作成したところ、成長に伴う明確なクラスターの形成が認められた。具体的には、第1主成分（PC1）の寄与により、日齢の低い「出産直後および産後1ヶ月」の群と、離乳が進んだ「産後1.5年以降」の各群が、それぞれ特徴的な領域にクラスターを形成して分布していた。
+そして、その間を産後4ヶ月から8ヶ月の群が連続的に結ぶような分布を示していた。
+一方、母親の糞便サンプルにおいては、乳児で見られたような産後時期に伴う明確なクラスター形成や、経時的なメタボローム構成の変化は認められなかった。また、母子いずれのサンプルにおいても、母体の2'-FL分泌型（Se+）および非分泌型（Se-）の違いに基づく明確な分離は確認されなかった。
 
 == 母子糞便中メタボロームの産後時期によるOPLS-R解析
-母子ともに、産後の糞便中メタボロームの経時変化を詳細に解析するため、サンプル採取時期を目的変数としてOPLS-Rを実施した（@fig-feOPLSR）。
-乳児糞便では@fig-feOPLSR A に示すように、良好なモデルを構築することができ、S-Lineプロット（@fig-feOPLSR B）から、Glucose、Lactose、Galactoseなどの糖類やmyo-Inositolが出産後初期に特徴的な代謝物であることが示された。
-母親の糞便中メタボロームについても、良好なモデルを構築することができ（@fig-feOPLSR C）、S-Lineプロット（@fig-feOPLSR D）から、Aspartateが出産後後期に特徴的な代謝物であることが示された。
+母児それぞれの糞便中メタボロームにおける経時的な変動をより詳細に評価するため、サンプルの採取時期を目的変数とした直交部分最小二乗回帰（OPLS-R）解析を実施した（@fig-feOPLSR）。
+乳児の糞便においては、@fig-feOPLSR A に示す通り、適合度および予測精度の高い回帰モデルを構築することができた。S-lineプロット（@fig-feOPLSR B）を用いた解析の結果、Glucose、Lactose、Galactose などの糖類や _myo_-Inositol が、産後早期の糞便を特徴付ける主要な代謝物であることが示された。
+母親の糞便中メタボロームについても、産後時期を目的変数とした回帰モデルを構築した（@fig-feOPLSR C）。S-lineプロット（@fig-feOPLSR D）の解析からは、Aspartateが産後後期の糞便において相対的に高い寄与を示す代謝物として同定された。
 // aspartate: 2.83ppm
 // L-dopa (6.79 ppm)が出産後後期に特徴的かもしれない。周辺ビンは特徴的としてカウントされている。
 // 
@@ -207,13 +209,11 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 // 乳児糞便での糖類が初期で出てくるのは、母乳の糖類が未消化で出てくるから？
 // myo-Inositolは母乳中に多く出てくるからそれが反映されている？でもなんで町内に残っているかは不明すぎる
 
-== 分泌型/非分泌型における母子糞便中メタボロームの差異解析
-母子ともに、2'-FL分泌型/非分泌型を目的変数としたOPLS-DAを実施した（@fig-feOPLSDA）。
-乳児では、授乳時期別に出産直後、生後1ヶ月、生後4-5ヶ月では良好なモデルを構築することができた（@fig-feOPLSDA A、C、E）。
-S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactuloseが分泌型で、3-FLとInosineが非分泌型で特徴的であることが示された。
-生後1ヶ月（@fig-feOPLSDA D）では2'-FLとLactuloseが分泌型で特徴的であること、生後4ヶ月ではInosineが非分泌型で特徴的であることが示された。
-一方、生後8ヶ月以降では明確な分離は認められなかった。
-また、母親ではいずれの時期においても明確な分離は認められなかった。
+== 分泌型/非分泌型における母子糞便中メタボロームの差異
+母体の FUT2 遺伝的多型（分泌型/非分泌型）が、母児それぞれの糞便中メタボロームに及ぼす影響を評価するため、分泌型（Se+）および非分泌型（Se-）を目的変数とした判別分析（OPLS-DA）を実施した（@fig-feOPLSDA）。
+
+乳児の糞便については、出産直後、生後1ヶ月、および生後4-5ヶ月の各時期において、良好な判別能を有するモデルを構築することができた（@fig-feOPLSDA A, C, E）。S-lineプロットを用いた解析の結果、出産直後（@fig-feOPLSDA B）においては、2'-FL および Lactulose がSe+群を、3-FL および Inosine がSe-群をそれぞれ特徴付ける主要な代謝物として同定された。生後1ヶ月（@fig-feOPLSDA D）においても同様の傾向が認められ、2'-FL および Lactulose がSe+群において特徴的であった。また、生後4-5ヶ月においては、Inosine がSe-群を特徴付ける代謝物として抽出された。
+一方で、離乳が進む生後8ヶ月以降の乳児糞便、およびすべての時期の母親糞便においては、分泌型/非分泌型による明確なグループ間の分離は認められなかった。
 // 考察ポイント
 // 2'-FLと3-FLは母乳メタボライトを反映しているんだと思う
 // LactuloseがSe+で高いのは腸内で使い切れないから？
@@ -325,7 +325,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
       [早産分娩#super[\*5] [n (%)]],[1 (0.84)]
     )
   ],
-  caption: "研究参加者の母子特性",
+  caption: "研究参加者の母子特性および臨床的背景",
 )<tbl-basicInfo>
 #set par(first-line-indent: 0em)
   \*1 平均値 ± 標準偏差。
@@ -358,7 +358,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
     [生後5年],[-],[-],[15],
   ),
   caption: [
-    サンプル採取時期とサンプル数
+    母乳および母児糞便サンプルの採取時期と解析数
   ],
 )<tbl-sampleInfo>
 \- はサンプル未採取を示す。
@@ -372,19 +372,19 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
     #box(width: 100%)
   ],
   caption: [
-    母乳のNMRスペクトル
+    母乳サンプルの代表的な #super[1]H-NMR スペクトル
   ]
 )<fig-bmSpec>
-図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-Fucosyllactose; 9, 2'-Fucosyllactose; 10, Fucose; 11, Threonine; 12, Lactate; 13, Alanine; 14, 6'-Sialyllactose; 15, 3'-Sialyllactose; 16, Acetate; 17, Proline; 18, Glutamate; 19, Acetate; 20, Pyruvate; 21, Succinate; 22, Glutamine; 23, Citrate; 24, Aspartate; 25, Asparagine; 26, 2-Oxoglutarate; 27, Lysine; 28, Creatine; 29, Creatine phosphate; 30, Creatinine; 31, cis-Aconitate;, 32, Ethanolamine; 33; Choline; 34, O-Phosphocholine; 35, sn-Glycero-3-phosphocholine; 36, Glucose, 37, Betaine; 38, Lactose; 39, Methanol; 40, Taurine; 41, Fucose;, 42, Glycine; 43, myo-Inositol; 44, Urea; 45, Fumarate; 46, Tyrosine;, 47, Histidine; 48, Tryptophan; 49, Phenylalanine, 50, Uridine; 51, Formate.
+図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-Fucosyllactose; 9, 2'-Fucosyllactose; 10, Fucose; 11, Threonine; 12, Lactate; 13, Alanine; 14, 6'-Sialyllactose; 15, 3'-Sialyllactose; 16, Acetate; 17, Proline; 18, Glutamate; 19, Acetate; 20, Pyruvate; 21, Succinate; 22, Glutamine; 23, Citrate; 24, Aspartate; 25, Asparagine; 26, 2-Oxoglutarate; 27, Lysine; 28, Creatine; 29, Creatine phosphate; 30, Creatinine; 31, _cis_-Aconitate;, 32, Ethanolamine; 33; Choline; 34, _O_-Phosphocholine; 35, _sn_-Glycero-3-phosphocholine; 36, Glucose, 37, Betaine; 38, Lactose; 39, Methanol; 40, Taurine; 41, Fucose;, 42, Glycine; 43, _myo_-Inositol; 44, Urea; 45, Fumarate; 46, Tyrosine;, 47, Histidine; 48, Tryptophan; 49, Phenylalanine, 50, Uridine; 51, Formate.
 
 
 #figure(
   image(
     "Figures/mean_concentration_barplot.svg",
   ), 
-  caption: [同定することができた母乳中代謝物の平均濃度]
+  caption: [同定・定量された母乳中代謝物の平均濃度プロファイル]
 )<fig-bmConc>
-エラーバーは標準偏差を示す。
+エラーバーは標準偏差（SD）を示す。各代謝物の平均値およびばらつきを算出した。
 
 #pagebreak()
 #figure(
@@ -404,7 +404,7 @@ S-Lineプロットから、出産直後（@fig-feOPLSDA B）では2'-FLとLactul
     )
   ),
   caption: [
-    母乳中代謝物の濃度定量における解析者間の系統誤差の評価
+    解析手順の統一による母乳代謝物定量値の解析者間誤差の評価
   ]
 )<fig-bmManual>
 A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
@@ -415,109 +415,96 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
     width: 100%,
   ),
   caption: [
-    母乳中代謝物のPCA結果
+    産後時期に基づく母乳中メタボロームの主成分分析（PCA）
 ]
 )<fig-bmPCA>
 左：スコアプロット。右：ローディングプロット。
 
-// #img(
-//   table(
+// #figure(
+//   grid(
 //     columns: 4,
-//     fill: none,
-//     stroke: none,
-//     inset: 5pt,
 
-//     image("Figures/bmUnivariate/timing_with_stats_2'-fucosyllactose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_3'-sialyllactose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_3-fucosyllactose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_6'-sialyllactose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Fucose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Galactose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Glucose.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Lactose.png",),
+//     image("Figures/bmUnivariate/2'-fucosyllactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/3'-sialyllactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/3-fucosyllactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/6'-sialyllactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/Fucose_timingStats.svg",),
+//     image("Figures/bmUnivariate/Galactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/Glucose_timingStats.svg",),
+//     image("Figures/bmUnivariate/Lactose_timingStats.svg",),
 //   ),
 //   caption: [
 //     糖類の経時変化による母乳中代謝物濃度の比較。
 //   ]
 // )<fig-bmSugar>
 
-// #img(
-//   table(
+// #figure(
+//   grid(
 //     columns: 5,
-//     fill: none,
-//     stroke: none,
-//     inset: 5pt,
 
-//     image("Figures/bmUnivariate/timing_with_stats_2-Aminobutyrate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Alanine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Asparagine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Aspartate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Betaine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Glutamate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Glutamine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Glycine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Histidine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Isoleucine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Leucine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Lysine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Methionine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Phenylalanine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Proline.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Taurine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Threonine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Tryptophan.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Tyrosine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Urea.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Valine.png",),  
+//     image("Figures/bmUnivariate/2-Aminobutyrate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Alanine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Asparagine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Aspartate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Betaine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Glutamate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Glutamine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Glycine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Histidine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Isoleucine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Leucine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Lysine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Methionine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Phenylalanine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Proline_timingStats.svg",),
+//     image("Figures/bmUnivariate/Taurine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Threonine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Tryptophan_timingStats.svg",),
+//     image("Figures/bmUnivariate/Tyrosine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Urea_timingStats.svg",),
+//     image("Figures/bmUnivariate/Valine_timingStats.svg",),  
 //   ),
 //   caption: [
 //     アミノ酸及びその関連代謝物の経時変化による母乳中代謝物濃度の比較。
 //   ]
 // )<fig-bmAmino>
 
-// #img(
-//   table(
+// #figure(
+//   grid(
 //     columns: 4,
-//     fill: none,
-//     stroke: none,
-//     inset: 5pt,
 
-//     image("Figures/bmUnivariate/timing_with_stats_2-Oxoglutarate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Acetone.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_cis-Aconitate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Citrate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Creatine phosphate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Creatine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Creatinine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Fumarate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Lactate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Pyruvate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Succinate.png",),
- 
+//     image("Figures/bmUnivariate/2-Oxoglutarate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Acetone_timingStats.svg",),
+//     image("Figures/bmUnivariate/cis-Aconitate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Citrate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Creatine phosphate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Creatine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Creatinine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Fumarate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Lactate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Pyruvate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Succinate_timingStats.svg",),
 //   ),
 //   caption: [
 //     エネルギー関連代謝物の経時変化による母乳中代謝物濃度の比較。
 //   ]
 // )<fig-bmEnergy>
 
-// #img(
-//   table(
+// #figure(
+//   grid(
 //     columns: 4,
-//     fill: none,
-//     stroke: none,
-//     inset: 5pt,
 
-//     image("Figures/bmUnivariate/timing_with_stats_Acetate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Butyrate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Caprate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Caprylate.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Choline.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Ethanolamine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Methanol.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_myo-Inositol.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_O-Phosphocholine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_sn-Glycero-3-phosphocholine.png",),
-//     image("Figures/bmUnivariate/timing_with_stats_Uridine.png",),
+//     image("Figures/bmUnivariate/Acetate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Butyrate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Caprate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Caprylate_timingStats.svg",),
+//     image("Figures/bmUnivariate/Choline_timingStats.svg",),
+//     image("Figures/bmUnivariate/Ethanolamine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Methanol_timingStats.svg",),
+//     image("Figures/bmUnivariate/myo-Inositol_timingStats.svg",),
+//     image("Figures/bmUnivariate/O-Phosphocholine_timingStats.svg",),
+//     image("Figures/bmUnivariate/sn-Glycero-3-phosphocholine_timingStats.svg",),
+//     image("Figures/bmUnivariate/Uridine_timingStats.svg",),
     
 
 //   ),
@@ -538,7 +525,7 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 
   ),
   caption: [
-    母乳中代謝物の2'-FL分泌型によるOPLS-DA結果
+    分泌型（Se+）および非分泌型（Se-）に基づく母乳中メタボロームの OPLS-DA 解析
   ]
 )<fig-bmOPLSDA>
 A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色）は2'-FL非分泌型個体を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
@@ -557,10 +544,9 @@ A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色
   ),
 
   caption: [
-    2'-FL分泌型個体・非分泌型個体間で、優位な濃度差が見られた代謝物
+    母体の分泌型/非分泌型間で有意な濃度差を示した母乳中代謝物
   ],
 )<fig-bmSecConc>
-// =0.000はおかしいので直す
 Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
 
 #pagebreak()
@@ -569,10 +555,10 @@ Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
     "Figures/cSx.svg",
   ),
   caption: [
-  母子糞便のNMRスペクトルの一例
+  母児糞便サンプルの代表的な #super[1]H-NMR スペクトル
 ]
 )<fig-feSpec>
-図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, myo-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+図中の番号は同定された一部の代謝物を示す。1, Lactate; 2, 3-Fucosyllactose; 3, 2'-Fucosyllactose; 4, Acetate; 5, Succinate; 6, 3'-Sialyllactose; 7, Galactose; 8, Glucose; 9, Lactose; 10, _myo_-Inositol; 11, Lactulose; 12, Fumarate; 13, Tyrosine; 14, Phenylalanine; 15, Formate
 
 #figure(
   grid(
@@ -590,10 +576,10 @@ Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
     image("Figures/fePCAm_Loading.svg",),
   ),
   caption: [
-    母子糞便のPCA解析
+    母児糞便中メタボロームの産後時期別主成分分析（PCA）
   ]
 )<fig-fePCA>
-A: 子糞便のPCAスコアプロット。B: ローディングプロット。C: 親糞便のPCAスコアプロット。D: ローディングプロット。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。
+A, C: スコアプロット（A: 乳児、C: 母親）。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。B, D: ローディングプロット。
 
 #figure(
   grid(
@@ -611,10 +597,10 @@ A: 子糞便のPCAスコアプロット。B: ローディングプロット。C:
     image("Figures/feOPLSm_TimeCourseSLine_add.svg",),
   ),
   caption: [
-    母子糞便の時期別OPLS-R解析
+    母児糞便中メタボロームの経時的変化に関する OPLS-R 回帰分析
   ]
 )<fig-feOPLSR>
-A,C: スコアプロット（A: 子（R2Y: 0.907, Q2: 0.866）, C: 親（R2Y: 0.396, Q2: 0.118））。スコアプロットは時期により色分けされている（b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年）。B, D: S-lineプロット（B: 子, D: 親）。横軸は#super[1]H-NMRのケミカルシフト、縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与すること示す。
+A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母親（$R^2Y=0.396$, $Q^2=0.118$））。スコアプロットは時期により色分けされている（b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年）。B, D: S-lineプロット（B: 乳児, D: 母親）。横軸は#super[1]H-NMRのケミカルシフトである。縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与することを示す。
 
 #figure(
   grid(
@@ -637,20 +623,20 @@ A,C: スコアプロット（A: 子（R2Y: 0.907, Q2: 0.866）, C: 親（R2Y: 0.
     image("Figures/feOPLSc_sec3SLine_add.svg",),
   ),
   caption: [
-    子糞便のSe+/Se-の区分によるOPLS-DA解析
+    母体の分泌型（Se+/Se-）が乳児糞便メタボロームに及ぼす影響に関する OPLS-DA 判別解析
   ]
 )<fig-feOPLSDA>
-A,C,E: スコアプロット（Se+ vs Se-）。A: 出産直後（R2Y: 0.701, Q2: 0.332）、C: 産後1ヶ月（R2Y: 0.882, Q2: 0.37）、E: 産後4-5ヶ月（R2Y: 0.747, Q2: -0.107）。
-B,D,F: S-lineプロット（Se+（下部） vs Se-（上部））。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
+A, C, E: スコアプロット（Se+ vs Se-）。A: 出産直後（$R^2Y=0.701$, $Q^2=0.332$）、C: 産後1ヶ月（$R^2Y=0.882$, $Q^2=0.37$）、E: 産後4-5ヶ月（$R^2Y=0.747$, $Q^2=-0.107$）。
+B, D, F: S-lineプロット。上方向のピークが Se- 群、下方向のピークが Se+ 群に特徴的な代謝物を示す。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
 
 = 謝辞
 #set par(first-line-indent: 
   (amount: 1em, all: true) 
 )
-本研究を進めるにあたり熱心にご指導くださった、北海道大学 大学院先端生命科学研究院 蛋白質科学研究室の相沢智康教授、新井達也助教、並びに副査として貴重なご意見を頂きました自然免疫研究室の中村公則教授、生物情報解析科学研究室の菊川峰志准教授に心より御礼申し上げます。
+本研究を遂行するにあたり、終始熱心かつ丁寧なご指導を賜りました北海道大学大学院先端生命科学研究院 蛋白質科学研究室の相沢智康教授、ならびに新井達也助教に深く感謝申し上げます。また、副査として論文をご精読いただき、学術的な観点から貴重なご助言を賜りました同研究院 自然免疫研究室の中村公則教授、ならびに生物情報解析科学研究室の菊川峰志准教授に心より御礼申し上げます。
 
-NMR実験に関して多くのサポートをしていただきました久米田博之博士、熊木康裕博士、大西裕季博士、また実験手法や考察において多くのお力添えをいただきました森永乳業株式会社の和泉裕久様、田畑風華様に深く感謝申し上げます。
+NMR測定において多大なるご支援をいただきました久米田博之博士、熊木康裕博士、大西裕季博士に厚く御礼申し上げます。また、解析手法の確立や考察において有益なご示唆をいただきました森永乳業株式会社の和泉裕久様、田畑風華様に深く感謝の意を表します。
 
-本研究を進めるにあたり、研究デザインや試料提供の調整などでご尽力いただきました、北海道大学医学研究院社会医学分野公衆衛生学教室の玉越暁子教授をはじめとした、岩見沢市母子健康調査研究グループの皆さまに厚く御礼申し上げます。並びに、本研究にご協力いただきました岩見沢市の皆様に心より感謝申し上げます。
+本研究の基盤となる岩見沢市母子健康調査（SMILE Iwamizawa）において、研究デザインの構築や試料提供のご調整に多大なるご尽力をいただきました、北海道大学大学院医学研究院 社会医学分野公衆衛生学教室の玉越暁子教授をはじめとする研究グループの皆様に厚く御礼申し上げます。何より、本調査の趣旨をご理解いただき、貴重な試料をご提供くださいました岩見沢市の参加者の皆様に、深く感謝申し上げます。
 
-様々な助言をいただいた蛋白質科学研究室の皆さま、研究室での生活において数々のご支援をいただきました技術補佐員の大貫しのぶ様に感謝の意を表します。
+最後に、日々の研究生活において有益な議論と刺激をいただいた蛋白質科学研究室の皆様、ならびに研究室運営や事務手続きにおいて多大なるご支援をいただきました技術補佐員の大貫しのぶ様に、心より感謝申し上げます。
