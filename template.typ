@@ -158,8 +158,8 @@
 
   // Configure figure caption
   show figure.caption: it => {
-    set text(size: 12pt)
     set par(first-line-indent: 0em)
+    set text(weight: "bold")
     set align(left)
     it
   }
