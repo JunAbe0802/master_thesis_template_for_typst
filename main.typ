@@ -556,10 +556,10 @@ A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色
   //   fill: none,
   //   stroke: none,
   //   inset: 5pt,
-  grid(columns: 3,
-    image("Figures/bmUnivariate/sec_with_stats_2'-fucosyllactose.png",),
-    image("Figures/bmUnivariate/sec_with_stats_3-fucosyllactose.png",),
-    image("Figures/bmUnivariate/sec_with_stats_Fucose.png",),
+  grid(columns: 2,
+    image("Figures/bmUnivariate/2'-fucosyllactose_timingSec_secStats.svg",),
+    image("Figures/bmUnivariate/3-fucosyllactose_timingSec_secStats.svg",),
+    image("Figures/bmUnivariate/Fucose_timingSec_secStats.svg",),
   ),
 
   caption: [
@@ -567,7 +567,7 @@ A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色
   ],
 )<fig-bmSecConc>
 // =0.000はおかしいので直す
-青色はSe+（2'-FL分泌型個体）、橙色はSe-（2'-FL非分泌型個体）を示す。
+Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
 
 #pagebreak()
 #figure(
