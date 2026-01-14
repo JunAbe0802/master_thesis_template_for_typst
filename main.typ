@@ -107,7 +107,7 @@
 加えて、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体が宿主細胞へ結合するのを競合的に阻害し、感染を防御する抗感染作用も報告されている@rousseauxHumanMilkOligosaccharides2021a 。
 
 HMOsの中で最も含有量が多い成分は2'-Fucosyllactose (2'-FL)であり、総HMOsの約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
-2'-FLの合成には、FUT2遺伝子にコードされる$alpha$1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
+2'-FLの合成には、_FUT2_遺伝子にコードされる$alpha$1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
 FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与しており、分泌型（Se+）の個体は母乳中に2'-FLを豊富に分泌する一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しない。
 このSe+/Se-の比率は人種によって異なり、日本人集団ではSe+が約80%を占めることが知られている @kodaMolecularBasisSecretor1996 。
 こうした母体の遺伝的多型に起因する母乳中のHMOs組成の差異は、乳児の腸内細菌叢の定着や形成過程に直接的な影響を及ぼす可能性が示唆されている@lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 。
@@ -129,21 +129,21 @@ FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与してお
 岩見沢市在住の妊婦が母児健康手帳の交付を受ける際に、本調査に関する説明を行い、書面によるインフォームド・コンセントを得た。
 なお、乳児の研究参加については、代諾者である母親の同意をもってこれに代えた。
 同意を得られた参加者（母、子）に対して、調査票などによる調査や母乳・糞便の採取を実施した。
-採取された試料は速やかに -20$degree$C で保管され、採取から約1ヶ月以内に分析時まで -80$degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に、サンプルの採取時期およびサンプル数については、@tbl-sampleInfo に示す通りである。
+採取された試料は速やかに -20 $degree$C で保管され、採取から約1ヶ月以内に分析時まで -80 $degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に、サンプルの採取時期およびサンプル数については、@tbl-sampleInfo に示す通りである。
 また、授乳期の栄養方法について、分泌型/非分泌型別での状況については、@fig-nutrition に示す通りである。
 
 == サンプル調製
 === 母乳<sec4.2.1>
-解凍した母乳試料 1 mL を、15,000 rpm、4$degree$C で30分間遠心分離し、脂質層と水層を分離させた。回収した水層画分 400 μL を、分子量 5 kDa 以上の高分子除去用遠心式限外ろ過フィルターユニット（UFC3LCCNB-HMT; Human Metabolome Technologies, Tsuruoka, Japan）に充填し、9,100 $times$g、4$degree$C で完全にろ過されるまで遠心を行った。なお、フィルターユニットの洗浄のため、事前に超純水 300 μL を用いた遠心（9,100 $times$g、4$degree$C、30分間）を3回繰り返した。 得られたろ液 270 μL に対し、超純水 270 μL および NMR 測定用緩衝液 60 μL（pH 7.4, 50 mM Sodium phosphate, 0.5 mM 3-(trimethylsilyl)propionic acid-d4 sodium salt (TSP), 0.04% NaN#sub[3], 1 mM formate, 10% D#sub[2]O；濃度はすべて終濃度）を添加した。この混合液 600 μL のうち 540 μL を外径 5 mm の NMR 試料管（SJ-5; Shigemi, Hachioji, Japan）に充填した。その後、試料中の溶存酸素を除去するため、試料管を超音波洗浄機に数秒間供し、脱気を行った。
+解凍した母乳試料 1 mL を、15,000 rpm、4 $degree$C で30分間遠心分離し、脂質層と水層を分離させた。回収した水層画分 400 μL を、分子量 5 kDa 以上の高分子除去用遠心式限外ろ過フィルターユニット（UFC3LCCNB-HMT; Human Metabolome Technologies, Tsuruoka, Japan）に充填し、9,100 $times$g、4 $degree$C で完全にろ過されるまで遠心を行った。なお、フィルターユニットの洗浄のため、事前に超純水 300 μL を用いた遠心（9,100 $times$g、4 $degree$C、30分間）を3回繰り返した。 得られたろ液 270 μL に対し、超純水 270 μL および NMR 測定用緩衝液 60 μL（pH 7.4, 50 mM Sodium phosphate, 0.5 mM 3-(trimethylsilyl)propionic acid-d4 sodium salt (TSP), 0.04% NaN#sub[3], 1 mM formate, 10% D#sub[2]O；濃度はすべて終濃度）を添加した。この混合液 600 μL のうち 540 μL を外径 5 mm の NMR 試料管（SJ-5; Shigemi, Hachioji, Japan）に充填した。その後、試料中の溶存酸素を除去するため、試料管を超音波洗浄機に数秒間供し、脱気を行った。
 
 === 母児糞便
-凍結保存された糞便試料を 4$degree$C で解凍し、スパーテルを用いて2分間均一に撹拌した後、約 200 mg を分注した。
-秤量した試料重量に対して10倍量の NMR 測定用緩衝液（組成は #ref(<sec4.2.1>)と同一）を添加し、1,800 rpm、4$degree$C で15分間振とう抽出を行った。
-抽出後、13,000 rpm、4$degree$C で5分間遠心分離し、上清約 1.5 mL を回収して -80$degree$C で保存した。
-測定直前に 4$degree$C で再解凍し、15,000 rpm、4$degree$C で10分間遠心分離した後の上清 540 μL を、外径 5 mm の NMR 試料管（SJ-5; Shigemi, Hachioji, Japan）に充填した。
+凍結保存された糞便試料を 4 $degree$C で解凍し、スパーテルを用いて2分間均一に撹拌した後、約 200 mg を分注した。
+秤量した試料重量に対して10倍量の NMR 測定用緩衝液（組成は #ref(<sec4.2.1>)と同一）を添加し、1,800 rpm、4 $degree$C で15分間振とう抽出を行った。
+抽出後、13,000 rpm、4 $degree$C で5分間遠心分離し、上清約 1.5 mL を回収して -80 $degree$C で保存した。
+測定直前に 4 $degree$C で再解凍し、15,000 rpm、4 $degree$C で10分間遠心分離した後の上清 540 μL を、外径 5 mm の NMR 試料管（SJ-5; Shigemi, Hachioji, Japan）に充填した。
 
 == NMR測定 <sec4.3>
-NMR スペクトルの測定には、CryoProbe#super[TM] および SampleJet を装着した Bruker Avance Neo 800 MHz 分光計を用い、すべての測定を 25$degree$Cで実施した。
+NMR スペクトルの測定には、CryoProbe#super[TM] および SampleJet を装着した Bruker Avance Neo 800 MHz 分光計を用い、すべての測定を 25 $degree$Cで実施した。
 パルスシーケンスにはプレサチュレーション付き1次元 #super[1]H NOESY（noesypr1d）を用いた。
 主な測定パラメータは、観測範囲 12 ppm, データポイント数 65,536、ダミースキャン回数 8回、積算回数 128回、取り込み時間 3.4秒、待ち時間 1.6秒、NOE混合時間 0.1秒とした。
 
@@ -183,7 +183,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 == 産後時期別の母乳中メタボローム解析<sec5.3>
 母乳中メタボロームの経時的な変化を俯瞰的に評価するため、代謝物の濃度定量値に基づいた主成分分析（PCA）を実施した（@fig-bmPCA）。採取時期別に色分けしたスコアプロットの結果、初乳、産後1ヶ月、および産後4–5ヶ月の各群において、明確なクラスターの形成が認められた。
 
-第1主成分（PC1）および第2主成分（PC2）は、主に初乳とそれ以外の群（産後1ヶ月・4–5ヶ月）の分離に寄与していた。ローディングプロットの解析から、2'-Fucosyllactose (2'-FL)、3'-Sialyllactose (3'-SL)、6'-Sialyllactose (6'-SL) といったヒトミルクオリゴ糖（HMOs）や _myo_-Inositol が、初乳群を特徴付ける主要な代謝物であることが示された。対して、産後1ヶ月および4–5ヶ月群では、主要なエネルギー源である Lactose や、Butylate、Caprate、Caprylateなどの脂肪酸が特徴的であった。
+第1主成分（PC1）および第2主成分（PC2）は、主に初乳とそれ以外の群（産後1ヶ月・4–5ヶ月）の分離に寄与していた。ローディングプロットの解析から、2'-Fucosyllactose (2'-FL)、3'-Sialyllactose (3'-SL)、6'-Sialyllactose (6'-SL) といったヒトミルクオリゴ糖（HMOs）や _myo_-Inositol が、初乳群を特徴付ける主要な代謝物であることが示された。対して、産後1ヶ月および4–5ヶ月群では、主要なエネルギー源である Lactose や、Butyrate、Caprate、Caprylateなどの脂肪酸が特徴的であった。
 
 また、第3主成分（PC3）は、産後1ヶ月群と4–5ヶ月群の分離に寄与していた。産後1ヶ月群では、HMOsの一種である 3-Fucosyllactose (3-FL) や、Lactate、Pyruvate などの有機酸が相対的に高値を示した。一方、産後4–5ヶ月群では Citrate や _O_-Phosphocholine が特徴的な代謝物として同定された。
 
@@ -233,7 +233,7 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 先行研究では、2′-FL や 3′-SL が乳児の神経発達スコア（ASQ-3）や頭囲と正の相関を示すことや@satoAbsoluteQuantificationEight2024a 、6′-SL が社会性の発達指標（ASQ:SE-2）と相関し、脳の関連領域における髄鞘形成を促進すること@rajhansRoleHumanMilk2023 が報告されている 。
 本コホートは学童期までの追跡調査が継続中であり、今後、頭囲などの発達指標と本研究で得られた代謝物データとの関連性を詳細に検証する予定である。
 
-また、授乳期間の経過に従い増加した代謝物として、短鎖脂肪酸（Short Chain Fatty Acids; SCFAs）であるButylateや、中鎖脂肪酸（Midium Chain Fatty Acids; MCFAs）であるCaprate、Caprylateなどの脂肪酸が同定されており、これらの傾向も既報と一致している @sundekildeEffectGestationalLactational2016 @poulsenDynamicChangesHuman2022 。MCFAs はエネルギー源としての機能に加え、免疫系への調整作用や腸内細菌叢への影響も指摘されている成分である @roopashreeEffectMediumChain2021 。母乳の脂肪酸組成は母親の食習慣を反映することが知られており、例えば低脂肪食を摂取する母親では母乳中の MCFAs が増加するという報告も存在する @nasserEffectControlledManipulation2010 。本コホートは母児の食習慣について、簡易型自記式食事歴法質問票（Brief Diet History Questionnaire; BDHQ） @sasakiFoodNutrientIntakes を用いた母親の栄養調査も実施されているため、今後は食事内容と母乳代謝物プロファイルとの相関関係についても解析を深めていく。
+また、授乳期間の経過に従い増加した代謝物として、短鎖脂肪酸（Short Chain Fatty Acids; SCFAs）であるButyrateや、中鎖脂肪酸（Medium Chain Fatty Acids; MCFAs）であるCaprate、Caprylateなどの脂肪酸が同定されており、これらの傾向も既報と一致している @sundekildeEffectGestationalLactational2016 @poulsenDynamicChangesHuman2022 。MCFAs はエネルギー源としての機能に加え、免疫系への調整作用や腸内細菌叢への影響も指摘されている成分である @roopashreeEffectMediumChain2021 。母乳の脂肪酸組成は母親の食習慣を反映することが知られており、例えば低脂肪食を摂取する母親では母乳中の MCFAs が増加するという報告も存在する @nasserEffectControlledManipulation2010 。本コホートは母児の食習慣について、簡易型自記式食事歴法質問票（Brief Diet History Questionnaire; BDHQ） @sasakiFoodNutrientIntakes を用いた母親の栄養調査も実施されているため、今後は食事内容と母乳代謝物プロファイルとの相関関係についても解析を深めていく。
 
 母体の FUT2 遺伝的多型（分泌型/非分泌型）が母乳中メタボロームに及ぼす影響を検討したところ、Fucose および 3-FL の濃度において顕著な群間差が認められた。Se+群では Fucose が高値を示したのに対し、Se-群では 3-FL が高値を示した。
 2'-FL及び3-FLはともにLactoseにFucoseが結合した構造を持つが、前者は$alpha$1,2-結合、後者は$alpha$1,3-結合と、その結合様式が異なる。FUT2 は 2'-FL の合成を担う一方で、3-FL の合成には関与せず、後者の合成には$alpha$1,3-フコシルトランスフェラーゼ（FUT3）が関与する。すなわち、両酵素は同一の基質を共有しており、2'-FL と 3-FL の合成は競合的な関係にあると推察される。
@@ -311,13 +311,13 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
       // ..table_subjectFeature.flatten(),
 
       [母親の特徴量],[値 (n=121)],
-      [年齢 (歳)#super[\*1]],[31.4 ± 4.7],
-      [身長 (cm)#super[\*1]],[158.9 ± 5.5],
-      [妊娠初期の体重 (kg)#super[\*1]],[55.0 ± 10.1],
-      [妊娠初期のBMI#super[\*2] (kg/m2)#super[\*1]],[21.6 ± 3.3],
-      [妊娠中の体重増加量#super[\*3] (kg)#super[\*1]],[9.7 ± 4.1],
-      [妊娠期間 (週)#super[\*1]],[39.0 ± 1.2],
-      [妊娠回数 [n (%)]],[2.21 ± 1.4],
+      [年齢 [歳]#super[\*1]],[31.4 ± 4.7],
+      [身長 [cm]#super[\*1]],[158.9 ± 5.5],
+      [妊娠初期の体重 [kg]#super[\*1]],[55.0 ± 10.1],
+      [妊娠初期のBMI#super[\*2] [kg/m#super[2]]#super[\*1]],[21.6 ± 3.3],
+      [妊娠中の体重増加量#super[\*3] [kg]#super[\*1]],[9.7 ± 4.1],
+      [妊娠期間 [週]#super[\*1]],[39.0 ± 1.2],
+      [妊娠回数 #super[\*1] [n]],[2.21 ± 1.4],
       [初産婦 [n (%)]],[25 (20.7)],
       [帝王切開 [n (%)]],[16 (13.2)],
     )
@@ -326,8 +326,8 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
 
       [新生児の特徴量],[値 (n=119)],
       [性別（男の子） [n (%)]],[66 (55.4)],
-      [出生体重#super[\*1] (g)],[3149.6 ± 412.8],
-      [出生身長#super[\*1] (cm)],[49.0 ± 2.1],
+      [出生体重#super[\*1] [g]],[3149.6 ± 412.8],
+      [出生身長#super[\*1] [cm]],[49.0 ± 2.1],
       //計算が面倒なので、後で追加 
       // [SGA#super[\*4] [n (%)]],[6 (8.5)],
       // [LGA#super[\*5] [n (%)]],[5 (7.0)],
@@ -335,7 +335,7 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
       [早産分娩#super[\*5] [n (%)]],[1 (0.84)]
     )
   ],
-  caption: "研究参加者の母児特性および臨床的背景",
+  caption: "母児の背景情報および臨床的特性",
 )<tbl-basicInfo>
 #set par(first-line-indent: 0em)
   \*1 平均値 ± 標準偏差。
@@ -358,45 +358,50 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
     columns: 4,
 
     [採取時期],[母乳],[母親糞便],[乳児糞便],
-    [出産前24週],[-],[113],[-],
+    [出産前24週],[n.d.],[113],[n.d.],
     [出産直後],[136],[122],[106],
     [生後1ヶ月],[136],[102],[78],
     [生後4-5ヶ月],[98],[106],[85],
-    [生後8ヶ月],[-],[-],[106],
-    [生後1年半],[-],[-],[88],
-    [生後3年],[-],[-],[50],
-    [生後5年],[-],[-],[15],
+    [生後8ヶ月],[n.d.],[n.d.],[106],
+    [生後1年半],[n.d.],[n.d.],[88],
+    [生後3年],[n.d.],[n.d.],[50],
+    [生後5年],[n.d.],[n.d.],[15],
   ),
   caption: [
-    母乳および母児糞便サンプルの採取時期と解析数
+    各採取時期における解析サンプル数
   ],
 )<tbl-sampleInfo>
-\- はサンプル未採取を示す。
+n.d. はサンプル未採取を示す。
 
 #figure(
-  [
-    #image(
-      "Figures/nutrients_Se+.svg"
-    )
-    #image(
-      "Figures/nutrients_Se-.svg"
-    )
-  ],
+  grid(
+    columns: 1,
+    image(
+      "Figures/nutrients_Se+.svg", height: 45%,
+    ),
+    image(
+      "Figures/nutrients_Se-.svg", height: 45%,
+    ),
+    box(width: 100%)
+  ),
   caption: [
-    分泌型（Se+）および非分泌型（Se-）別での授乳期の栄養方法
+    分泌型別での授乳期の栄養方法
   ]
 )<fig-nutrition>
 
-#pagebreak()
+上図: Se+（分泌型）、下図: Se-（非分泌型）。
+
+
 #figure(
-  [
-    #image("Figures/10016010mMd_BM00541_1.svg", width: 67%)
-    #image("Figures/10016010mMd_BM00541_2.svg", width: 67%)
-    #image("Figures/10016010mMd_BM00541_3.svg", width: 67%)
-    #box(width: 100%)
-  ],
+  grid(
+    columns: 1,
+    image("Figures/10016010mMd_BM00541_1.svg", width: 72%),
+    image("Figures/10016010mMd_BM00541_2.svg", width: 72%),
+    image("Figures/10016010mMd_BM00541_3.svg", width: 72%),
+    box(width: 100%)
+  ),
   caption: [
-    母乳サンプルの代表的な #super[1]H-NMR スペクトル
+    母乳サンプルの代表的な #super[1]H-NMR スペクトルと代謝物帰属
   ]
 )<fig-bmSpec>
 図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-Fucosyllactose; 9, 2'-Fucosyllactose; 10, Fucose; 11, Threonine; 12, Lactate; 13, Alanine; 14, 6'-Sialyllactose; 15, 3'-Sialyllactose; 16, Acetate; 17, Proline; 18, Glutamate; 19, Acetate; 20, Pyruvate; 21, Succinate; 22, Glutamine; 23, Citrate; 24, Aspartate; 25, Asparagine; 26, 2-Oxoglutarate; 27, Lysine; 28, Creatine; 29, Creatine phosphate; 30, Creatinine; 31, _cis_-Aconitate;, 32, Ethanolamine; 33; Choline; 34, _O_-Phosphocholine; 35, _sn_-Glycero-3-phosphocholine; 36, Glucose, 37, Betaine; 38, Lactose; 39, Methanol; 40, Taurine; 41, Fucose;, 42, Glycine; 43, _myo_-Inositol; 44, Urea; 45, Fumarate; 46, Tyrosine;, 47, Histidine; 48, Tryptophan; 49, Phenylalanine, 50, Uridine; 51, Formate.
@@ -428,7 +433,7 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
     )
   ),
   caption: [
-    解析手順の統一による母乳代謝物定量値の解析者間誤差の評価
+    解析プロトコルの統一に伴う母乳中代謝物定量値の再現性評価
   ]
 )<fig-bmManual>
 A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
@@ -439,7 +444,7 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
     width: 100%,
   ),
   caption: [
-    産後時期に基づく母乳中メタボロームの主成分分析（PCA）
+    産後日数に伴う母乳中メタボロームのPCA解析
 ]
 )<fig-bmPCA>
 左：スコアプロット。右：ローディングプロット。
