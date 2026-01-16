@@ -574,70 +574,10 @@ Se+は2'-FL分泌型の母親、Se-は2'-FL非分泌型の母親を示す。
 ]
 )<fig-feSpec>
 図中の番号は一部の同定された代謝物を示す。比較的明瞭な分離が見られるピークについて、注釈をつけている。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, _myo_-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+#v(1em)
+また、上図には注釈をつけていないが、以下の代謝物についてピークからの同定に成功したが。
 
-2-aminobutyrate
-2-hydroxyisobutyrate
-2-hydroxyisovalerate
-4-aminobutyrate
-4-hydroxyphenylacetate
-4-hydroxyphenyllactate
-6'-sialyllactose
-acetoin
-acetone
-alanine
-arabinose
-asparagine
-aspartate
-betaine
-butyrate
-caprate
-choline
-cis-aconitate
-citrate
-creatine phosphate
-cystine
-cytosine
-D-lactate
-ethanol
-fucose
-glutamate
-glutamine
-glycerol
-histidine
-hypoxanthine
-indole-3-lactate
-inosine
-isoleucine
-isovalerate
-leucine
-lysine
-methanol
-methionine
-_N_-acetylglucosamine
-_N_-acetylneuraminate
-nicotinate
-orotate
-phenylacetate
-proline
-propionate
-propylene glycol
-pyroglutamate
-pyruvate
-serine
-threonine
-trans-aconitate
-tryptophan
-tyramine
-uracil
-urea
-uridine
-valine
-β-alanine
-5-aminopentanoate
-cholate
-glycine
-trimethylamine
-
+2-aminobutyrate, 2-hydroxyisobutyrate, 2-hydroxyisovalerate, 4-aminobutyrate, 4-hydroxyphenylacetate, 4-hydroxyphenyllactate, 5-aminopentanoate, 6'-sialyllactose, acetoin, acetone, alanine, arabinose, asparagine, aspartate, betaine, butyrate, caprate, cholate, choline, cis-aconitate, citrate, creatine phosphate, cystine, cytosine, D-lactate, ethanol, fucose, glutamate, glutamine, glycerol, glycine, histidine, hypoxanthine, indole-3-lactate, inosine, isoleucine, isovalerate, leucine, lysine, methanol, methionine, _N_-acetylglucosamine, _N_-acetylneuraminate, nicotinate, orotate, phenylacetate, proline, propionate, propylene glycol, pyroglutamate, pyruvate, serine, threonine, _trans_-aconitate, trimethylamine, tryptophan, tyramine, uracil, urea, uridine, valine, $β$-alanine
 
 #figure(
   grid(
