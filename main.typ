@@ -665,22 +665,14 @@ A, C, E: スコアプロット（Se+ vs Se-）。A: 出産直後（$R^2Y=0.701$,
 B, D, F: S-lineプロット。上方向のピークが Se- 群、下方向のピークが Se+ 群で高値である代謝物を示す。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
 
 #figure(
-  grid(
-    columns: 1,
-    image(
-      "Figures/nutrients_Se+.svg", height: 45%,
+      image(
+      "Figures/nutrients.svg",
     ),
-    image(
-      "Figures/nutrients_Se-.svg", height: 45%,
-    ),
-    box(width: 100%)
-  ),
   caption: [
     分泌型別での授乳期の栄養方法
   ]
 )<fig-nutrition>
-
-上図: Se+（分泌型）、下図: Se-（非分泌型）。
+左図: Se+（分泌型）、右図: Se-（非分泌型）。
 
 = 謝辞
 #set par(first-line-indent: 
