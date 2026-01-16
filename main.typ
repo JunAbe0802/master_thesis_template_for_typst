@@ -415,8 +415,7 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
     母乳試料の代表的な #super[1]H-NMR スペクトルと代謝物帰属
   ]
 )<fig-bmSpec>
-// アノテーションをつけた基準について、独立ピークでつけましたと明記する
-図中の番号は同定された代謝物を示す。1, caprate; 2, caprylate; 3, butyrate; 4, Isoleucine; 5, leucine; 6, 2-aminobutyrate; 7, valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, threonine; 12, lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, glutamate; 19, acetone; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, creatine phosphate; 30, creatinine; 31, _cis_-aconitate;, 32, ethanolamine; 33; choline; 34, _O_-phosphocholine; 35, _sn_-glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, _myo_-inositol; 44, urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
+図中の番号は同定された代謝物を示す。比較的明瞭な分離が見られるピークについて、注釈をつけている。1, caprate; 2, caprylate; 3, butyrate; 4, Isoleucine; 5, leucine; 6, 2-aminobutyrate; 7, valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, threonine; 12, lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, glutamate; 19, acetone; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, creatine phosphate; 30, creatinine; 31, _cis_-aconitate;, 32, ethanolamine; 33; choline; 34, _O_-phosphocholine; 35, _sn_-glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, _myo_-inositol; 44, urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
 
 #figure(
   image(
@@ -574,7 +573,71 @@ Se+は2'-FL分泌型の母親、Se-は2'-FL非分泌型の母親を示す。
   母子便試料の代表的な #super[1]H-NMR スペクトル
 ]
 )<fig-feSpec>
-図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, _myo_-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+図中の番号は一部の同定された代謝物を示す。比較的明瞭な分離が見られるピークについて、注釈をつけている。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, _myo_-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
+
+2-aminobutyrate
+2-hydroxyisobutyrate
+2-hydroxyisovalerate
+4-aminobutyrate
+4-hydroxyphenylacetate
+4-hydroxyphenyllactate
+6'-sialyllactose
+acetoin
+acetone
+alanine
+arabinose
+asparagine
+aspartate
+betaine
+butyrate
+caprate
+choline
+cis-aconitate
+citrate
+creatine phosphate
+cystine
+cytosine
+D-lactate
+ethanol
+fucose
+glutamate
+glutamine
+glycerol
+histidine
+hypoxanthine
+indole-3-lactate
+inosine
+isoleucine
+isovalerate
+leucine
+lysine
+methanol
+methionine
+_N_-acetylglucosamine
+_N_-acetylneuraminate
+nicotinate
+orotate
+phenylacetate
+proline
+propionate
+propylene glycol
+pyroglutamate
+pyruvate
+serine
+threonine
+trans-aconitate
+tryptophan
+tyramine
+uracil
+urea
+uridine
+valine
+β-alanine
+5-aminopentanoate
+cholate
+glycine
+trimethylamine
+
 
 #figure(
   grid(
