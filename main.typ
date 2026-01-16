@@ -103,7 +103,7 @@
 
 特に、乳児の腸内細菌叢形成において重要な役割を担う低分子代謝物として、ヒトミルクオリゴ糖（Human Milk Oligosaccharides; HMOs）が挙げられる。HMOsは、glucose、galactose、N-acetylglucosamine、fucose、sialic acidなどの単糖が複雑に結合した構造を持ち、その種類は200を超えるとされる @thurlSystematicReviewConcentrations2017 。
 乳児の消化管はHMOsを分解する酵素を保持していないため、これらは未消化のまま大腸へと到達する。
-特定のビフィズス菌はHMOsを分解・利用する能力を有しており、HMOsはこれら有益菌の増殖を優先的に促進するプレバイオティクスとして機能する @borewiczEffectPrebioticFortified2019 。
+特定のbifidobacterum属の菌はHMOsを分解・利用する能力を有しており、HMOsはこれら有益菌の増殖を優先的に促進するプレバイオティクスとして機能する @borewiczEffectPrebioticFortified2019 。
 加えて、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体が宿主細胞へ結合するのを競合的に阻害し、感染を防御する抗感染作用も報告されている@rousseauxHumanMilkOligosaccharides2021a 。
 
 HMOsの中で最も含有量が多い成分は2'-fucosyllactose (2'-FL)であり、総HMOsの約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
@@ -112,7 +112,7 @@ FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与してお
 このSe+/Se-の比率は人種によって異なり、日本人集団ではSe+が約80%を占めることが知られている @kodaMolecularBasisSecretor1996 。
 こうした母体の2'–FL分泌型/非分泌型の差異に起因する母乳中のHMOs組成の差異は、乳児の腸内細菌叢の定着や形成過程に直接的な影響を及ぼす可能性が示唆されている@lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 が、実際のヒトにおける影響は未知の点も多い。
 
-乳児期の腸内環境形成プロセスを統合的に理解するには、供給源である母乳と、その代謝的出力である母子便の双方の代謝物プロファイルを同時に明らかにすることが不可欠である。
+乳児期の腸内環境形成プロセスを統合的に理解するには、供給源である母乳と、その代謝的出力である母子便の双方のメタボロームを同時に明らかにすることが不可欠である。
 しかし、ヒトを対象とした研究においては、コホートの希少性や高度な分析リソースの制約から、その動態や相互作用の詳細は依然として十分に解明されていない。
 そこで本研究では、授乳期における母乳および母子の便中メタボロームの経時的な変動、ならびにそれらの相関関係を明らかにすることを目的とした。
 本論文では、北海道岩見沢市で実施中の前向き母子コホート研究「岩見沢市母子健康調査（SMILE Iwamizawa）」 @komatsuAssociationsMaternalDiet2023 に参加する母親とその乳児を対象とし、核磁気共鳴（NMR）を用いたメタボローム解析により、母乳および便中の代謝物動態を包括的に評価した。
@@ -124,12 +124,12 @@ FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与してお
 本研究は、北海道岩見沢市で実施中の前向きコホート研究である、岩見沢市母子健康調査（SMILE Iwamizawa）@komatsuAssociationsMaternalDiet2023 の一環として実施された。
 本調査は、健康な妊婦を対象に、妊娠中の環境の把握から始め、出産、乳児期から幼児期、学童期まで子供の生活習慣、健康状態を調査することで、子供の成長発達に影響を与える因子や、近年増加している子どものアレルギーや肥満などの様々な疾患の原因を明らかにすることを目的としている。
 
-本研究はヘルシンキ宣言の精神に則り実施された。
-ヒトを対象とする全ての実施手順は、北海道大学大学院医学研究院医の倫理委員会（承認番号：16-039）および森永乳業倫理委員会（承認番号：16005-144）の承認を得ている。
+本研究はヘルシンキ宣言の倫理原則に則り実施された。
+ヒトを対象とする全ての実施手順は、北海道大学大学院医学研究院医の倫理委員会（承認番号：16-039）および森永乳業倫理委員会（承認番号：16005-144）の承認を得て実施した。
 岩見沢市在住の妊婦が母子健康手帳の交付を受ける際に、本調査に関する説明を行い、書面によるインフォームド・コンセントを得た。
 なお、乳児の研究参加については、代諾者である母親の同意をもってこれに代えた。
 同意を得られた参加者（母、子）に対して、調査票などによる調査や母乳・便の採取を実施した。
-採取された試料は速やかに -20 $degree$C で保管され、採取から約1ヶ月以内に分析時まで -80 $degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に、試料の採取時期および試料数については、@tbl-sampleInfo に示す通りである。
+採取された試料は速やかに -20 $degree$C で保管され、採取から約1ヶ月以内に分析時まで -80 $degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に、試料の採取時期および試料数については、@tbl-sampleInfo に示す通りであった。
 
 == 試料調製
 === 母乳<sec4.2.1>
@@ -170,10 +170,6 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 群間の統計学的比較には、Welch の t検定法を用いた。
 
 = 結果
-== 母乳の#super[1]H-NMR測定及び代謝物同定・定量<sec5.1>
-すべての試料において、シグナル強度が十分で明瞭な#super[1]H-NMRスペクトルを取得した（@fig-bmSpec）。
-代謝物の同定は、スペクトル上の各ピークの帰属およびChenomx内データベースとの照合により行い、最終的に計51種類の代謝物を同定・定量した。同定された全代謝物の平均濃度は、@fig-bmConc に示す通りであった。
-
 == 母乳中代謝物の定量における解析者間の系統誤差の評価<sec5.2>
 
 @sec5.1 における定量解析では、スペクトルに対してピークフィッティングを手動で行うことで濃度の定量を実施している。そこで解析者間のピークフィッティングに起因する系統誤差を最小化するため、解析プロトコルの統一とその妥当性評価を実施した（@fig-bmManual）。
@@ -181,6 +177,11 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 PCAスコアプロット（@fig-bmManual A）において、5名の解析者が同一の試料セット（n=4）を独立して解析した結果、各データ点は解析者によらず近接してプロットされており、クラスターの形成が確認できた。そのためPCAによる評価では、解析者間で顕著な差異がないことが示された。
 
 また、Bland-Altman分析（@fig-bmManual B）により、全解析者の定量値の平均値と各解析者の値との乖離を評価したところ、大半の代謝物が95%一致限界（Limits of Agreement）内に収まっていた。以上の結果から、本研究における解析手順は十分な再現性を有しており、解析者間の系統誤差は無視できるほど小さいことが確認された。したがって、以降の解析には、この統一された手順に基づいて算出された定量値を用いることとした。
+
+== 母乳の#super[1]H-NMR測定及び代謝物同定・定量<sec5.1>
+すべての試料において、シグナル強度が十分で明瞭な#super[1]H-NMRスペクトルを取得した（@fig-bmSpec）。
+代謝物の同定は、スペクトル上の各ピークの帰属およびChenomx内データベースとの照合により行い、最終的に計51種類の代謝物を同定・定量した。同定された全代謝物の平均濃度は、@fig-bmConc に示す通りであった。
+
 
 == 産後時期別の母乳中メタボローム解析<sec5.3>
 母乳中メタボロームの経時的な変化を俯瞰的に評価するため、代謝物の濃度定量値に基づいた主成分分析（PCA）を実施した（@fig-bmPCA）。採取時期別に色分けしたスコアプロットの結果、初乳、産後1ヶ月、および産後4–5ヶ月の各群において、明確なクラスターの形成が認められた。
@@ -204,7 +205,7 @@ PCAスコアプロット（@fig-bmManual A）において、5名の解析者が�
 == 母子便中メタボロームの主成分分析
 母子それぞれの便中メタボロームの時期的な変遷を俯瞰的に評価するため、NMRスペクトルのビン積分値データを用いた主成分分析（PCA）を実施した（@fig-fePCA）。
 
-乳児の便試料において、採取時期別に色分けしたスコアプロットを作成したところ、成長に伴う明確なクラスターの形成が認められた。具体的には、第1主成分（PC1）の寄与により、日齢の低い「出産直後」及び「産後1ヶ月」の各群と、離乳が進んだ「産後1.5年」・「産後3年」・「産後5年」の各群が、それぞれ特徴的な領域にクラスターを形成して分布していた。
+乳児の便試料において、採取時期別に色分けしたスコアプロットを作成したところ、成長に伴う明確なクラスターの形成が認められた。具体的には、第1主成分（PC1）の寄与により、日齢の低い「出産直後」群と、離乳が進んだ「産後1.5年」・「産後3年」・「産後5年」の各群が、それぞれクラスターを形成して分布していた。
 そして、その間を産後4ヶ月から8ヶ月の群が経時的に変化するような分布を示していた。
 一方、母親便においては、乳児で見られたような産後時期に伴う明確なクラスター形成や、経時的なメタボローム構成の変化は認められなかった。また、母子いずれの試料においても、母体の2'-FL 分泌型/非分泌型の差異に基づく明確な分離は確認されなかった。
 
@@ -380,28 +381,6 @@ lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
 )<tbl-sampleInfo>
 \- は試料未採取を示す。
 
-#figure(
-  grid(
-    columns: 1,
-    image("Figures/10016010mMd_BM00541_1.svg", width: 72%),
-    image("Figures/10016010mMd_BM00541_2.svg", width: 72%),
-    image("Figures/10016010mMd_BM00541_3.svg", width: 72%),
-    box(width: 100%)
-  ),
-  caption: [
-    母乳試料の代表的な #super[1]H-NMR スペクトルと代謝物帰属
-  ]
-)<fig-bmSpec>
-// アノテーションをつけた基準について、独立ピークでつけましたと明記する
-図中の番号は同定された代謝物を示す。1, caprate; 2, caprylate; 3, butyrate; 4, Isoleucine; 5, leucine; 6, 2-aminobutyrate; 7, valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, threonine; 12, lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, glutamate; 19, acetone; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, creatine phosphate; 30, creatinine; 31, _cis_-aconitate;, 32, ethanolamine; 33; choline; 34, _O_-phosphocholine; 35, _sn_-glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, _myo_-inositol; 44, urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
-
-#figure(
-  image(
-    "Figures/mean_concentration_barplot.svg",
-  ), 
-  caption: [同定・定量された母乳中代謝物の平均濃度プロファイル]
-)<fig-bmConc>
-
 #pagebreak()
 #figure(
   grid(
@@ -424,6 +403,28 @@ lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
   ]
 )<fig-bmManual>
 A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試料セット（n=4）を解析した結果を示す。B: Bland-Altman分析。各代謝物について、5人の解析者が得た濃度定量値の平均値と、各解析者の定量値と平均値との差をプロットした。橙線は平均差の95%信頼区間を、緑線は2つの測定方法の誤差の許容範囲（limits of agreement; LOA）を示し、「差の平均値±1.96×差の標準偏差」で表される。
+
+#figure(
+  grid(
+    columns: 1,
+    image("Figures/10016010mMd_BM00541_1.svg", width: 72%),
+    image("Figures/10016010mMd_BM00541_2.svg", width: 72%),
+    image("Figures/10016010mMd_BM00541_3.svg", width: 72%),
+    box(width: 100%)
+  ),
+  caption: [
+    母乳試料の代表的な #super[1]H-NMR スペクトルと代謝物帰属
+  ]
+)<fig-bmSpec>
+// アノテーションをつけた基準について、独立ピークでつけましたと明記する
+図中の番号は同定された代謝物を示す。1, caprate; 2, caprylate; 3, butyrate; 4, Isoleucine; 5, leucine; 6, 2-aminobutyrate; 7, valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, threonine; 12, lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, glutamate; 19, acetone; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, creatine phosphate; 30, creatinine; 31, _cis_-aconitate;, 32, ethanolamine; 33; choline; 34, _O_-phosphocholine; 35, _sn_-glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, _myo_-inositol; 44, urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
+
+#figure(
+  image(
+    "Figures/mean_concentration_barplot.svg",
+  ), 
+  caption: [同定・定量された母乳中代謝物の平均濃度プロファイル]
+)<fig-bmConc>
 
 #figure(
   image(
