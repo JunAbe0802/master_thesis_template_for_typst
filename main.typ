@@ -305,7 +305,6 @@ lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
 
 = 図表
 #show outline.entry: it => {
-  
   it
 }
 #outline(
@@ -433,7 +432,7 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
     width: 100%,
   ),
   caption: [
-    産後日数に伴う母乳中メタボロームのPCA解析
+    産後日数に伴う母乳中メタボロームのPCA分析
 ]
 )<fig-bmPCA>
 左：スコアプロット。右：ローディングプロット。
@@ -543,7 +542,7 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 
   ),
   caption: [
-    分泌型（Se+）および非分泌型（Se-）に基づく母乳中メタボロームの OPLS-DA 解析
+    分泌型（Se+）および非分泌型（Se-）に基づく母乳中メタボロームの OPLS-DA 判別分析
   ]
 )<fig-bmOPLSDA>
 A: スコアプロット。Se+（青色）は2'-FL分泌型の母親、Se-（橙色）は2'-FL非分泌型の母親を示す。B: ローディングプロット。図中点の色は、VIPの値により色分けされている。（R2Y: 0.678, Q2: 0.606）
@@ -578,7 +577,7 @@ Se+は2'-FL分泌型の母親、Se-は2'-FL非分泌型の母親を示す。
 )<fig-feSpec>
 図中の番号は一部の同定された代謝物を示す。比較的明瞭な分離が見られるピークについて、注釈をつけている。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, _myo_-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
 #v(1em)
-また、上図には注釈をつけていないが、以下の代謝物についてピークからの同定に成功したが。
+また、上図には注釈をつけていないが、以下の代謝物についてピークからの同定に成功した。
 
 2-aminobutyrate, 2-hydroxyisobutyrate, 2-hydroxyisovalerate, 4-aminobutyrate, 4-hydroxyphenylacetate, 4-hydroxyphenyllactate, 5-aminopentanoate, 6'-sialyllactose, acetoin, acetone, alanine, arabinose, asparagine, aspartate, betaine, butyrate, caprate, cholate, choline, cis-aconitate, citrate, creatine phosphate, cystine, cytosine, D-lactate, ethanol, fucose, glutamate, glutamine, glycerol, glycine, histidine, hypoxanthine, indole-3-lactate, inosine, isoleucine, isovalerate, leucine, lysine, methanol, methionine, _N_-acetylglucosamine, _N_-acetylneuraminate, nicotinate, orotate, phenylacetate, proline, propionate, propylene glycol, pyroglutamate, pyruvate, serine, threonine, _trans_-aconitate, trimethylamine, tryptophan, tyramine, uracil, urea, uridine, valine, $β$-alanine
 
@@ -600,7 +599,7 @@ Se+は2'-FL分泌型の母親、Se-は2'-FL非分泌型の母親を示す。
     image("Figures/fePCAm_Loading.svg",),
   ),
   caption: [
-    母子便中メタボロームの産後時期別主成分分析（PCA）
+    母子便中メタボロームのPCA分析
   ]
 )<fig-fePCA>
 A, C: スコアプロット（A: 乳児、C: 母親）。スコアプロットは時期により色分けされている。B, D: ローディングプロット。
@@ -658,7 +657,7 @@ A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母�
     image("Figures/feOPLSc_sec3SLine_add.svg",),
   ),
   caption: [
-    母体の分泌型（Se+/Se-）が乳児便メタボロームに及ぼす影響に関する OPLS-DA 判別解析
+    母体の分泌型（Se+/Se-）が乳児便メタボロームに及ぼす影響に関する OPLS-DA 回帰分析
   ]
 )<fig-feOPLSDA>
 A, C, E: スコアプロット（Se+ vs Se-）。A: 出産直後（$R^2Y=0.701$, $Q^2=0.332$）、C: 産後1ヶ月（$R^2Y=0.882$, $Q^2=0.37$）、E: 産後4-5ヶ月（$R^2Y=0.747$, $Q^2=-0.107$）。
