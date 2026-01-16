@@ -7,6 +7,8 @@ from matplotlib.colors import ListedColormap, BoundaryNorm
 import seaborn as sns
 from adjustText import adjust_text
 from scipy.interpolate import interp1d
+from matplotlib.patches import Ellipse
+from matplotlib import transforms
 # %%
 """
 Child
@@ -15,31 +17,83 @@ score_c_df = pd.read_csv(
   "./score_c.txt",
   delimiter="\t",
 )
+score_c_df["t"] = score_c_df["M7.t[1]"]
+score_c_df["to"] = score_c_df["M7.to[1]"]
 # %%
 replace_dict = {
   -2: 'Predictive Axis (10.9%)', 
   -1: 'Orthogonal Axis (9.1%)'
 }
-hues = score_c_df["Primary ID"].str[10]
+score_c_df["hue"] = score_c_df["Primary ID"].str[10].map({
+  "c": "Newborn",
+  "d": "Aft. 1 mo.",
+  "e": "Aft. 4-5 mos.",
+  "f": "Aft. 8 mos.",
+  "g": "Aft. 1.5 yrs.",
+  "h": "Aft. 3 yrs.",
+  "k": "Aft. 5 yrs.",
+})
 # %%
 fig = plt.figure(
   # figsize=(8,8)
 )
 ax = fig.add_subplot(111)
+palette = sns.color_palette("husl", n_colors=len(set(score_c_df["hue"])))
+order = ["Newborn", "Aft. 1 mo.", "Aft. 4-5 mos.", "Aft. 8 mos.", "Aft. 1.5 yrs.", "Aft. 3 yrs.", "Aft. 5 yrs."]
 sns.scatterplot(
-  x=score_c_df.iloc[:, -2].astype(float),
-  y=score_c_df.iloc[:, -1].astype(float),
-  hue=hues,
-  hue_order=sorted(hues.unique()),
-  palette='viridis',
+  data=score_c_df,
+  x="t",
+  y="to",
+  hue="hue",
+  hue_order=order,
+  palette=palette,
   s=40,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+for i in range(len(score_c_df["hue"].unique())):
+  n_std = 2
+  x = score_c_df[score_c_df["hue"]==order[i]]["t"].astype(float)
+  y = score_c_df[score_c_df["hue"]==order[i]]["to"].astype(float)
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=palette[i],
+    edgecolor=palette[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
+
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend(
   ncol=2,
+  handlelength=0.8,
+  handletextpad=0.2,
+  borderaxespad=0.2,
+  borderpad=0.4,
+  columnspacing=0.5,
 )
 plt.savefig(
   '../../feOPLSc_TimeCourseScore.svg',
@@ -109,31 +163,83 @@ score_m_df = pd.read_csv(
   "./score_m.txt",
   delimiter="\t",
 )
+score_m_df["t"] = score_m_df["M18.t[1]"]
+score_m_df["to"] = score_m_df["M18.to[1]"]
 # %%
 replace_dict = {
   -2: 'Predictive Axis (10.9%)', 
   -1: 'Orthogonal Axis (9.1%)'
 }
-hues = score_m_df["Primary ID"].str[10]
+score_m_df["hue"] = score_m_df["Primary ID"].str[10].map({
+  "b": "24 wks. pregnant",
+  "c": "Postpartum",
+  "d": "Aft. 1 mo.",
+  "e": "Aft. 4-5 mos.",
+})
 # %%
 fig = plt.figure(
   # figsize=(8,8)
 )
 ax = fig.add_subplot(111)
+order = [
+  "24 wks. pregnant",
+  "Postpartum",
+  "Aft. 1 mo.",
+  "Aft. 4-5 mos."
+]
 sns.scatterplot(
-  x=score_m_df.iloc[:, -2].astype(float),
-  y=score_m_df.iloc[:, -1].astype(float),
-  hue=hues,
-  hue_order=sorted(hues.unique()),
-  palette='viridis',
+  data=score_m_df,
+  x="t",
+  y="to",  
+  hue="hue",
+  hue_order=order,
+  palette='husl',
   s=40,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+for i in range(len(score_m_df["hue"].unique())):
+  n_std = 2
+  x = score_m_df[score_m_df["hue"]==order[i]]["t"].astype(float)
+  y = score_m_df[score_m_df["hue"]==order[i]]["to"].astype(float)
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=sns.color_palette("husl", n_colors=len(score_m_df["hue"].unique()))[i],
+    edgecolor=sns.color_palette("husl", n_colors=len(score_m_df["hue"].unique()))[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend(
   ncol=2,
+  handlelength=0.8,
+  handletextpad=0.2,
+  borderaxespad=0.2,
+  borderpad=0.4,
+  columnspacing=0.5,
 )
 plt.savefig(
   '../../feOPLSm_TimeCourseScore.svg',

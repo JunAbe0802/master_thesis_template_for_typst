@@ -6,37 +6,83 @@ import seaborn as sns
 import itertools
 from adjustText import adjust_text
 import pandas as pd
+from matplotlib.patches import Ellipse
+from matplotlib import transforms
 # %%
 """
 Child
 """
 # 3D画像の読み込み
-scoreC_df = np.loadtxt('./score_c.txt', delimiter="\t", skiprows=1, dtype=str)
-score_labels = pd.Series(scoreC_df[:, 0]).str[10]
-
+scoreC_df = pd.read_csv('./score_c.txt', delimiter="\t")
+scoreC_df["t"] = scoreC_df["M2.t[1]"]
+scoreC_df["to"] = scoreC_df["M2.t[2]"]
+scoreC_df["hue"] = scoreC_df["Primary ID"].str[10].map({
+  "c": "Newborn",
+  "d": "Aft. 1 mo.",
+  "e": "Aft. 4-5 mos.",
+  "f": "Aft. 8 mos.",
+  "g": "Aft. 1.5 yrs.",
+  "h": "Aft. 3 yrs.",
+  "k": "Aft. 5 yrs.",
+})
+order = ["Newborn", "Aft. 1 mo.", "Aft. 4-5 mos.", "Aft. 8 mos.", "Aft. 1.5 yrs.", "Aft. 3 yrs.", "Aft. 5 yrs."]  
 # 3D画像の読み込み
-loadingC_df = np.loadtxt('./loading_c.txt', delimiter="\t", skiprows=1, dtype=str)
-loading_labels = loadingC_df[:, 0]  # 化合物名
+loadingC_df = pd.read_csv('./loading_c.txt', delimiter="\t")
+loading_labels = loadingC_df.iloc[:, 0]  # 化合物名
 # %%
 replace_dict = {
   -2: 'PC1 (16.1%)', 
   -1: 'PC2 (6.2%)'
 }
-hues = scoreC_df[:, 0]
 fig = plt.figure(
   figsize=(8,8)
 )
 ax = fig.add_subplot(111)
 sns.scatterplot(
-  x=scoreC_df[:, -2].astype(float),
-  y=scoreC_df[:, -1].astype(float),
-  hue=score_labels,
-  hue_order=sorted(score_labels.unique()),
-  palette='viridis',
+  data=scoreC_df,
+  x="t",
+  y="to",
+  hue="hue",
+  hue_order=order,
+  palette='husl',
   s=40,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+for i in range(len(set(scoreC_df["hue"]))):
+  palette = sns.color_palette("husl", n_colors=len(set(scoreC_df["hue"])))
+  n_std = 2
+  x = scoreC_df[scoreC_df["hue"]==order[i]]["t"].astype(float)
+  y = scoreC_df[scoreC_df["hue"]==order[i]]["to"].astype(float)
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=palette[i],
+    edgecolor=palette[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
+
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend(
@@ -97,8 +143,13 @@ Mother
 """
 # 3D画像の読み込み
 scoreM_df = np.loadtxt('./score_m.txt', delimiter="\t", skiprows=1, dtype=str)
-score_labels = pd.Series(scoreM_df[:, 0]).str[10]
-
+score_labels = pd.Series(scoreM_df[:, 0]).str[10].map({
+  "b": "24 wks. pregnant",
+  "c": "Postpartum",
+  "d": "Aft. 1 mo.",
+  "e": "Aft. 4-5 mos.",
+})
+order = ["24 wks. pregnant", "Postpartum", "Aft. 1 mo.", "Aft. 4-5 mos."]
 # 3D画像の読み込み
 loadingM_df = np.loadtxt('./loading_m.txt', delimiter="\t", skiprows=1, dtype=str)
 loading_labels = loadingM_df[:, 0]  # 化合物名
@@ -112,16 +163,51 @@ fig = plt.figure(
   figsize=(8,8)
 )
 ax = fig.add_subplot(111)
+# colorPalette = sns.color_palette("Spectral", l=0.5, s=1)
 sns.scatterplot(
   x=scoreM_df[:, -2].astype(float),
   y=scoreM_df[:, -1].astype(float),
   hue=score_labels,
-  hue_order=sorted(score_labels.unique()),
-  palette='viridis',
+  hue_order=["24 wks. pregnant", "Postpartum", "Aft. 1 mo.", "Aft. 4-5 mos."],
+  palette="husl",
   s=40,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+for i in range(len(set(score_labels))):
+  paletteElipse = sns.color_palette("husl", n_colors=len(set(score_labels)))[i]
+  n_std = 2
+  x = scoreM_df[:, -2][np.array(score_labels)==order[i]].astype(float)
+  y = scoreM_df[:, -1][np.array(score_labels)==order[i]].astype(float)
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=paletteElipse,
+    edgecolor=paletteElipse,
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
+
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend(

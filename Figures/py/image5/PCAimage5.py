@@ -7,6 +7,8 @@ from matplotlib.colors import ListedColormap, BoundaryNorm
 import seaborn as sns
 from adjustText import adjust_text
 from scipy.interpolate import interp1d
+from matplotlib.patches import Ellipse
+from matplotlib import transforms
 # %%
 """
 colostrum
@@ -15,34 +17,74 @@ score1_df = pd.read_csv(
   "./score_1.txt",
   delimiter="\t",
 )
-# %%
-replace_dict = {
-  -2: 'Predictive Axis (3.3%)', 
-  -1: 'Orthogonal Axis (13.0%)'
-}
-hues = score1_df["Class"].replace(
+score1_df["t"] = score1_df["M12.t[1]"].astype(float)
+score1_df["to"] = score1_df["M12.to[1]"].astype(float)
+score1_df["class"] = score1_df["Class"].replace(
   {
     1: 'Se+',
     2: 'Se-',
   }
 )
+order = score1_df["class"].unique()
+# %%
+replace_dict = {
+  -2: 'Predictive Axis (3.3%)', 
+  -1: 'Orthogonal Axis (13.0%)'
+}
+
 # %%
 fig = plt.figure(
   # figsize=(8,8)
 )
 ax = fig.add_subplot(111)
 sns.scatterplot(
-  x=score1_df.iloc[:, -2].astype(float),
-  y=score1_df.iloc[:, -1].astype(float),
-  hue=hues,
-  hue_order=sorted(hues.unique()),
-  palette='viridis',
+  data=score1_df,
+  x="t",
+  y="to",
+  hue="class",
+  hue_order=order,
+  # palette='deep',
   s=70,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+palette = sns.color_palette(n_colors=len(score1_df["class"].unique()))
+for i in range(len(score1_df["class"].unique())):
+  n_std = 2
+  x = score1_df[score1_df["class"]==order[i]]["t"]
+  y = score1_df[score1_df["class"]==order[i]]["to"]
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=palette[i],
+    edgecolor=palette[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
+ax.legend(
+  title=None,
+)
 plt.savefig(
   '../../feOPLSc_sec1Score.svg',
   bbox_inches='tight',
@@ -114,34 +156,71 @@ score2_df = pd.read_csv(
   "./score_2.txt",
   delimiter="\t",
 )
+score2_df["t"] = score2_df["M13.t[1]"].astype(float)
+score2_df["to"] = score2_df["M13.to[1]"].astype(float)
 # %%
 replace_dict = {
   -2: 'Predictive Axis (2.1%)', 
   -1: 'Orthogonal Axis (20.9%)'
 }
-hues = score2_df["Class"].replace(
+score2_df["Class"] = score2_df["Class"].replace(
   {
     1: 'Se+',
     2: 'Se-',
   }
 )
+order = score2_df["Class"].unique()
 # %%
 fig = plt.figure(
   # figsize=(8,8)
 )
 ax = fig.add_subplot(111)
 sns.scatterplot(
-  x=score2_df.iloc[:, -2].astype(float),
-  y=score2_df.iloc[:, -1].astype(float),
-  hue=hues,
-  hue_order=sorted(hues.unique()),
-  palette='viridis',
+  data=score2_df,
+  x="t",
+  y="to",
+  hue="Class",
+  hue_order=sorted(order),
+  # palette='viridis',
   s=70,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+palette = sns.color_palette(n_colors=len(score2_df["Class"].unique()))
+for i in range(len(score2_df["Class"].unique())):
+  n_std = 2
+  x = score2_df[score2_df["Class"]==order[i]]["t"]
+  y = score2_df[score2_df["Class"]==order[i]]["to"]
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=palette[i],
+    edgecolor=palette[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
+ax.legend_.remove()
 plt.savefig(
   '../../feOPLSc_sec2Score.svg',
   bbox_inches='tight',
@@ -212,34 +291,71 @@ score3_df = pd.read_csv(
   "./score_3.txt",
   delimiter="\t",
 )
+score3_df["t"] = score3_df["M14.t[1]"].astype(float)
+score3_df["to"] = score3_df["M14.to[1]"].astype(float)
 # %%
 replace_dict = {
   -2: 'Predictive Axis (1.9%)', 
   -1: 'Orthogonal Axis (10.8%)'
 }
-hues = score3_df["Class"].replace(
+score3_df["Class"] = score3_df["Class"].replace(
   {
     1: 'Se+',
     2: 'Se-',
   }
 )
+order = score3_df["Class"].unique()
 # %%
 fig = plt.figure(
   # figsize=(8,8)
 )
 ax = fig.add_subplot(111)
 sns.scatterplot(
-  x=score3_df.iloc[:, -2].astype(float),
-  y=score3_df.iloc[:, -1].astype(float),
-  hue=hues,
-  hue_order=sorted(hues.unique()),
-  palette='viridis',
+  data=score3_df,
+  x="t",
+  y="to",
+  hue=score3_df["Class"],
+  hue_order=order,
+  # palette='viridis',
   s=70,
   alpha=0.9,
   ax=ax
 )
+# 楕円
+palette = sns.color_palette(n_colors=len(score3_df["Class"].unique()))
+for i in range(len(score3_df["Class"].unique())):
+  n_std = 2
+  x = score3_df[score3_df["Class"]==order[i]]["t"]
+  y = score3_df[score3_df["Class"]==order[i]]["to"]
+  cov = np.cov(
+    x, y
+  )
+  pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+  ell_radius_x = np.sqrt(1 + pearson)
+  ell_radius_y = np.sqrt(1 - pearson)
+  ellipse = Ellipse(
+    (0,0),
+    width=ell_radius_x*2,
+    height=ell_radius_y*2,
+    facecolor=palette[i],
+    edgecolor=palette[i],
+    linestyle='--',
+    alpha=0.2,
+  )
+  scale_x = np.sqrt(cov[0,0]) * n_std
+  mean_x = np.mean(x)
+  scale_y = np.sqrt(cov[1,1]) * n_std
+  mean_y = np.mean(y)
+  transf = (transforms.Affine2D()
+  .rotate_deg(45)
+  .scale(scale_x, scale_y)
+  .translate(mean_x, mean_y)
+  )
+  ellipse.set_transform(transf + ax.transData)
+  ax.add_patch(ellipse)
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
+ax.legend_.remove()
 plt.savefig(
   '../../feOPLSc_sec3Score.svg',
   bbox_inches='tight',

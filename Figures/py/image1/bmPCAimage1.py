@@ -5,6 +5,8 @@ from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import itertools
 from adjustText import adjust_text
+from matplotlib.patches import Ellipse
+from matplotlib import transforms
 # %%
 # 3D画像の読み込み
 score_df = np.loadtxt('./score1.txt', delimiter="\t", skiprows=1, dtype=str)
@@ -43,9 +45,43 @@ for i in range(len(groups)):
     hue=score_c,
     s=20,
     alpha=0.7,
-    palette="mako",
+    palette="husl",
     ax=ax
   )
+
+  for j in range(len(set(score_c))):
+    paletteElipse = sns.color_palette("husl", n_colors=len(set(score_c)))[j]
+    n_std = 2
+    x = score_df[:, group[0]][np.array(score_c)==sorted(list(set(score_c)))[j]].astype(float)
+    y = score_df[:, group[1]][np.array(score_c)==sorted(list(set(score_c)))[j]].astype(float)
+    cov = np.cov(
+      x, y
+    )
+    pearson = cov[0, 1] / np.sqrt(cov[0, 0] * cov[1, 1])
+    ell_radius_x = np.sqrt(1+pearson)
+    ell_radius_y = np.sqrt(1-pearson)
+    ellipse = Ellipse(
+      (0,0),
+      width=ell_radius_x*2,
+      height=ell_radius_y*2,
+      facecolor=paletteElipse,
+      edgecolor=paletteElipse,
+      linestyle='--',
+      alpha=0.2,
+    )
+    scale_x = np.sqrt(cov[0,0]) * n_std
+    mean_x = np.mean(x)
+    scale_y = np.sqrt(cov[1,1]) * n_std
+    mean_y = np.mean(y)
+    transf = (
+      transforms.Affine2D()
+      .rotate_deg(45)
+      .scale(scale_x, scale_y)
+      .translate(mean_x, mean_y)
+    )
+    ellipse.set_transform(transf + ax.transData)
+    ax.add_patch(ellipse)
+
   ax.set_xlabel(replace_dict[group[0]])
   ax.set_ylabel(replace_dict[group[1]])
   # ax.set_xlabel("")
@@ -53,7 +89,7 @@ for i in range(len(groups)):
   handler, label = ax.get_legend_handles_labels()
   ax.legend(
     handler, 
-    ["Postpartum", "After 1 month", "After 4-5 months"],
+    ["Postpartum", "After 1 mo.", "After 4-5 mos."],
   )
   if i!=0:
     ax.legend_.remove()
