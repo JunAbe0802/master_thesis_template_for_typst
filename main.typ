@@ -19,13 +19,12 @@
 = 概要
 乳児期の環境が将来の健康に影響を与えるというDOHaD仮説において、腸内細菌叢はその鍵を握る因子である 。本研究では、母乳および母子糞便の代謝物プロファイルを包括的に解析することで、授乳期における栄養供給と代謝機能の発達過程を統合的に理解することを目的とした 。本論文では、岩見沢市母子健康調査（SMILE Iwamizawa）に参加する母子を対象に、核磁気共鳴（NMR）を用いたメタボローム解析を実施した 。
 
-800 MHz NMR分光計を用いて、母乳および母子糞便の測定を行った 。スペクトルから母乳では51種類、糞便では76種類の代謝物を同定・定量した 。また、母親のFUT2遺伝的多型に基づき、2'-Fucosyllactose（2'-FL）の分泌型（Se+）と非分泌型（Se-）に分類し、多変量解析および単変量解析を用いて比較検討した 。
-// 遺伝的多型だと、遺伝子解析した感じが出るので、分泌型/非分泌型で良いかも
+800 MHz NMR分光計を用いて、母乳および母子糞便の測定を行った 。スペクトルから母乳では51種類、糞便では76種類の代謝物を同定・定量した 。また、2'-fucosyllactose（2'-FL）の濃度に基づき、2'-FL分泌型（Se+）と非分泌型（Se-）の二群に分類し、多変量解析および単変量解析を用いて比較検討した 。
 // 化合物名の大文字→小文字へ
 
-母乳メタボロームは産後の経過に伴いダイナミックに変動し、初乳ではHMOsが、産後数ヶ月では脂肪酸が高値を示した 。分泌型別解析では、Se+群で2'-FLとFucoseが、Se-群では3-FLが有意に高かった 。これはFUT2とFUT3による基質の競合的利用による影響を示唆している 。 乳児糞便メタボロームも成長に伴い変化し、産後早期には未消化のLactoseや単糖類が高値であった 。特筆すべき点として、Se+群の乳児糞便では2'-FLに加え、粉ミルク由来のLactuloseが有意に蓄積していた 。これは豊富なHMOsが優先的に細菌に利用された結果、Lactuloseの消費が抑制された可能性を示唆している 。
+母乳メタボロームは産後の経過に伴い動的に変動し、初乳ではHMOsが、産後数ヶ月では脂肪酸が高値を示した 。分泌型別解析では、Se+群で2'-FLとfucoseが、Se-群では3-FLが有意に高かった 。これはFUT2とFUT3による基質の競合的利用による影響を示唆している 。 乳児糞便メタボロームも成長に伴い変化し、産後早期には未消化のlactoseや単糖類が高値であった 。特筆すべき点として、Se+群の乳児糞便では2'-FLに加え、粉ミルク由来のlactuloseが有意に蓄積していた 。これは豊富なHMOsが優先的に細菌に利用された結果、lactuloseの消費が抑制された可能性を示唆している 。
 
-本研究により、母親の遺伝的多型が母乳成分のみならず、乳児の腸内代謝環境の形成にまで直接的かつ顕著な影響を及ぼしていることが明らかとなった 。
+本研究により、母親の2'–FL分泌型/非分泌型の差異が母乳成分のみならず、乳児の腸内代謝環境の形成にまで直接的かつ顕著な影響を及ぼしていることが明らかとなった 。
 // もうちょいいいまとめ文章にする。少なくとも腸内代謝環境でないかな
 
 = 諸言
@@ -93,7 +92,7 @@
 //   - とくにHMOs
 //     - 乳児の腸内細菌叢形成に重要
 //     - 2'-FLのシェアが大きく、FUT2遺伝子の分泌型/非分泌型が影響を与える
-//     // 2'-FLは代表的なHMOsの一つで、LactoseにFucoseがα1,2結合したオリゴ糖であり、その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、HMOs全体の約30%を占める @vanniekerkHumanMilkOligosaccharides2014 。一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。// 引用文献を追加。
+//     // 2'-FLは代表的なHMOsの一つで、lactoseにfucoseがα1,2結合したオリゴ糖であり、その合成には_FUT2_遺伝子にコードされるα1,2-フコシルトランスフェラーゼ（FUT2）が関与している。FUT2の活性には遺伝的多型が影響を与え、分泌型（Se+）の個体は2'-FLを豊富に分泌し、HMOs全体の約30%を占める @vanniekerkHumanMilkOligosaccharides2014 。一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しないことが知られている。// 引用文献を追加。
 // - マクロ栄養素についてはよく調べられている
 //   - 時系列変化が存在する
 // - 母乳は乳児が摂取する唯一の栄養→腸内細菌のえさとして重要
@@ -109,11 +108,11 @@
 特定のビフィズス菌はHMOsを分解・利用する能力を有しており、HMOsはこれら有益菌の増殖を優先的に促進するプレバイオティクスとして機能する @borewiczEffectPrebioticFortified2019 。
 加えて、HMOsは乳児の細胞表面の糖鎖に類似した構造を持つため、病原体が宿主細胞へ結合するのを競合的に阻害し、感染を防御する抗感染作用も報告されている@rousseauxHumanMilkOligosaccharides2021a 。
 
-HMOsの中で最も含有量が多い成分は2'-Fucosyllactose (2'-FL)であり、総HMOsの約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
+HMOsの中で最も含有量が多い成分は2'-fucosyllactose (2'-FL)であり、総HMOsの約30%を占める@vanniekerkHumanMilkOligosaccharides2014 。
 2'-FLの合成には、_FUT2_遺伝子にコードされる$alpha$1,2-フコシルトランスフェラーゼ（FUT2）が関与している。
 FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与しており、分泌型（Se+）の個体は母乳中に2'-FLを豊富に分泌する一方、非分泌型（Se-）の個体は2'-FLをほとんど分泌しない。
 このSe+/Se-の比率は人種によって異なり、日本人集団ではSe+が約80%を占めることが知られている @kodaMolecularBasisSecretor1996 。
-こうした母体の遺伝的多型に起因する母乳中のHMOs組成の差異は、乳児の腸内細菌叢の定着や形成過程に直接的な影響を及ぼす可能性が示唆されている@lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 。
+こうした母体の2'–FL分泌型/非分泌型の差異に起因する母乳中のHMOs組成の差異は、乳児の腸内細菌叢の定着や形成過程に直接的な影響を及ぼす可能性が示唆されている@lewisMaternalFucosyltransferase22015 @matsukiKeyGeneticFactor2016 。
 // が未解決を言うとつながる
 
 乳児期の腸内環境形成プロセスを統合的に理解するには、供給源である母乳と、その代謝的出力である母子糞便の双方の代謝物プロファイルを同時に明らかにすることが不可欠である。
@@ -190,20 +189,20 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 == 産後時期別の母乳中メタボローム解析<sec5.3>
 母乳中メタボロームの経時的な変化を俯瞰的に評価するため、代謝物の濃度定量値に基づいた主成分分析（PCA）を実施した（@fig-bmPCA）。採取時期別に色分けしたスコアプロットの結果、初乳、産後1ヶ月、および産後4–5ヶ月の各群において、明確なクラスターの形成が認められた。
 
-第1主成分（PC1）および第2主成分（PC2）は、主に初乳とそれ以外の群（産後1ヶ月・4–5ヶ月）の分離に寄与していた。ローディングプロットの解析から、2'-Fucosyllactose (2'-FL)、3'-Sialyllactose (3'-SL)、6'-Sialyllactose (6'-SL) といったヒトミルクオリゴ糖（HMOs）や _myo_-Inositol が、初乳群を特徴付ける主要な代謝物であることが示された。対して、産後1ヶ月および4–5ヶ月群では、主要なエネルギー源である Lactose や、Butyrate、Caprate、Caprylateなどの脂肪酸が特徴的であった。
+第1主成分（PC1）および第2主成分（PC2）は、主に初乳とそれ以外の群（産後1ヶ月・4–5ヶ月）の分離に寄与していた。ローディングプロットの解析から、2'-fucosyllactose (2'-FL)、3'-sialyllactose (3'-SL)、6'-sialyllactose (6'-SL) といったヒトミルクオリゴ糖（HMOs）や _myo_-inositol が、初乳群を特徴付ける主要な代謝物であることが示された。対して、産後1ヶ月および4–5ヶ月群では、主要なエネルギー源である lactose や、butyrate、caprate、caprylateなどの脂肪酸が特徴的であった。
 // 特徴的は婉曲表現なので、多い少ないにする
 // 各化合物・化合物群の役割を簡単に説明する
 
-また、第3主成分（PC3）は、産後1ヶ月群と4–5ヶ月群の分離に寄与していた。産後1ヶ月群では、HMOsの一種である 3-Fucosyllactose (3-FL) や、Lactate、Pyruvate などの有機酸が相対的に高値を示した。一方、産後4–5ヶ月群では Citrate や _O_-Phosphocholine が特徴的な代謝物として同定された。
+また、第3主成分（PC3）は、産後1ヶ月群と4–5ヶ月群の分離に寄与していた。産後1ヶ月群では、HMOsの一種である 3-fucosyllactose (3-FL) や、lactate、pyruvate などの有機酸が相対的に高値を示した。一方、産後4–5ヶ月群では citrate や _O_-phosphocholine が特徴的な代謝物として同定された。
 
 
 == 分泌型/非分泌型における母乳中メタボロームの差異
 @sec5.3 におけるPCAおよび単変量解析の結果、2'-FLの濃度変動が顕著であった。そこで、2'-FLに注目した詳細な解析を行うため、分泌型（Se+）群および非分泌型（Se-）群を目的変数とした判別分析（OPLS-DA）を実施した（@fig-bmOPLSDA）。
 本解析の対象において、Se+群の個体は110名（81%）、Se-群は26名（19%）であり、日本人集団における 2'-FL 分泌型の頻度が約80%であるという既報と一致していた @kodaMolecularBasisSecretor1996 。
-構築されたOPLS-DAモデルは良好な分離能を示し（@fig-bmOPLSDA A）、ローディングプロットおよびVIP（Variable Importance in Projection）スコアの解析から、Fucose および 2'-FL がSe+群を、3-FL がSe-群をそれぞれ特徴付ける主要な代謝物であることが示された（@fig-bmOPLSDA B）。なお、これら以外の代謝物については、両群間で特徴的な差異は認められなかった。
+構築されたOPLS-DAモデルは良好な分離能を示し（@fig-bmOPLSDA A）、ローディングプロットおよびVIP（Variable Importance in Projection）スコアの解析から、fucose および 2'-FL がSe+群を、3-FL がSe-群をそれぞれ特徴付ける主要な代謝物であることが示された（@fig-bmOPLSDA B）。なお、これら以外の代謝物については、両群間で特徴的な差異は認められなかった。
 // OPLSはつくられたモデルに対する評価をかく、R2Q2を書いても良い
 
-続いて、母乳中の2'-FL、3-FL、および Fucose 濃度に対する分泌型／非分泌型の影響をより詳細に検討するため、産後時期別に単変量解析を実施した（@fig-bmSecConc）。その結果、すべての時期において、2'-FL および Fucose 濃度はSe+群で有意に高く、逆に 3-FL 濃度はSe-群において有意に高値を示した。これらの代謝物濃度には、群間で2倍以上の顕著な差異があることが確認された。
+続いて、母乳中の2'-FL、3-FL、および fucose 濃度に対する分泌型／非分泌型の影響をより詳細に検討するため、産後時期別に単変量解析を実施した（@fig-bmSecConc）。その結果、すべての時期において、2'-FL および fucose 濃度はSe+群で有意に高く、逆に 3-FL 濃度はSe-群において有意に高値を示した。これらの代謝物濃度には、群間で2倍以上の顕著な差異があることが確認された。
 
 
 == 糞便の#super[1]H-NMR測定及び代謝物同定
@@ -215,31 +214,31 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 
 乳児の糞便サンプルにおいて、採取時期別に色分けしたスコアプロットを作成したところ、成長に伴う明確なクラスターの形成が認められた。具体的には、第1主成分（PC1）の寄与により、日齢の低い「出産直後」及び「産後1ヶ月」の各群と、離乳が進んだ「産後1.5年」・「産後3年」・「産後5年」の各群が、それぞれ特徴的な領域にクラスターを形成して分布していた。
 そして、その間を産後4ヶ月から8ヶ月の群が経時的に変化するような分布を示していた。
-一方、母親の糞便サンプルにおいては、乳児で見られたような産後時期に伴う明確なクラスター形成や、経時的なメタボローム構成の変化は認められなかった。また、母子いずれのサンプルにおいても、母体の FUT2 遺伝的多型の違いに基づく明確な分離は確認されなかった。
+一方、母親の糞便サンプルにおいては、乳児で見られたような産後時期に伴う明確なクラスター形成や、経時的なメタボローム構成の変化は認められなかった。また、母子いずれのサンプルにおいても、母体の2'-FL 分泌型/非分泌型の差異に基づく明確な分離は確認されなかった。
 
 == 母子糞便中メタボロームの産後時期によるOPLS-R解析
 母子それぞれの糞便中メタボロームにおける経時的な変動をより詳細に評価するため、サンプルの採取時期を目的変数とした直交部分最小二乗回帰（OPLS-R）解析を実施した（@fig-feOPLSR）。
-乳児の糞便においては、@fig-feOPLSR A に示す通り、適合度および予測精度の高い回帰モデルを構築することができた。S-lineプロット（@fig-feOPLSR B）を用いた解析の結果、Glucose、Lactose、Galactose などの糖類や _myo_-Inositol が、産後早期の糞便を特徴付ける主要な代謝物であることが示された。
-母親の糞便中メタボロームについても、産後時期を目的変数とした回帰モデルを構築した（@fig-feOPLSR C）。S-lineプロット（@fig-feOPLSR D）の解析からは、Aspartateが産後後期の糞便において相対的に高い寄与を示す代謝物として同定された。
+乳児の糞便においては、@fig-feOPLSR A に示す通り、適合度および予測精度の高い回帰モデルを構築することができた。S-lineプロット（@fig-feOPLSR B）を用いた解析の結果、glucose、lactose、galactose などの糖類や _myo_-inositol が、産後早期の糞便を特徴付ける主要な代謝物であることが示された。
+母親の糞便中メタボロームについても、産後時期を目的変数とした回帰モデルを構築した（@fig-feOPLSR C）。S-lineプロット（@fig-feOPLSR D）の解析からは、aspartateが産後後期の糞便において相対的に高い寄与を示す代謝物として同定された。
 // aspartate: 2.83ppm
 // L-dopa (6.79 ppm)が出産後後期に特徴的かもしれない。周辺ビンは特徴的としてカウントされている。
 // 
 // 考察ポイント
 // 乳児糞便での糖類が初期で出てくるのは、母乳の糖類が未消化で出てくるから？
-// myo-Inositolは母乳中に多く出てくるからそれが反映されている？でもなんで町内に残っているかは不明すぎる
+// myo-inositolは母乳中に多く出てくるからそれが反映されている？でもなんで町内に残っているかは不明すぎる
 // 
 // 目的変数がカテゴリ関数であることを明記する
 // 母親のR2Q2が弱いことをかく
 
 == 分泌型/非分泌型における母子糞便中メタボロームの差異
-母体の FUT2 遺伝的多型が、母子それぞれの糞便中メタボロームに及ぼす影響を評価するため、Se+群およびSe-群を目的変数とした判別分析（OPLS-DA）を実施した（@fig-feOPLSDA）。
+母体の2'–FL分泌型（Se+）/非分泌型（Se-）の差異が、母子それぞれの糞便中メタボロームに及ぼす影響を評価するため、Se+群およびSe-群を目的変数とした判別分析（OPLS-DA）を実施した（@fig-feOPLSDA）。
 
-乳児の糞便については、出産直後、生後1ヶ月、および生後4-5ヶ月の各時期において、良好な判別能を有するモデルを構築することができた（@fig-feOPLSDA A, C, E）。S-lineプロットを用いた解析の結果、出産直後（@fig-feOPLSDA B）においては、2'-FL および Lactulose がSe+群を、3-FL および Inosine がSe-群をそれぞれ特徴付ける主要な代謝物として同定された。生後1ヶ月（@fig-feOPLSDA D）においても同様の傾向が認められ、2'-FL および Lactulose がSe+群において特徴的であった。また、生後4-5ヶ月においては、Inosine がSe-群を特徴付ける代謝物として抽出された。
+乳児の糞便については、出産直後、生後1ヶ月、および生後4-5ヶ月の各時期において、良好な判別能を有するモデルを構築することができた（@fig-feOPLSDA A, C, E）。S-lineプロットを用いた解析の結果、出産直後（@fig-feOPLSDA B）においては、2'-FL および lactulose がSe+群を、3-FL および inosine がSe-群をそれぞれ特徴付ける主要な代謝物として同定された。生後1ヶ月（@fig-feOPLSDA D）においても同様の傾向が認められ、2'-FL および lactulose がSe+群において特徴的であった。また、生後4-5ヶ月においては、inosine がSe-群を特徴付ける代謝物として抽出された。
 一方で、離乳が進む生後8ヶ月以降の乳児糞便、およびすべての時期の母親糞便においては、分泌型/非分泌型による明確なグループ間の分離は認められなかった。
 // 考察ポイント
 // 2'-FLと3-FLは母乳メタボライトを反映しているんだと思う
-// LactuloseがSe+で高いのは腸内で使い切れないから？
-// InosineはSe-で高いのはなぜ？母乳中にはほとんど含まれていない。
+// lactuloseがSe+で高いのは腸内で使い切れないから？
+// inosineはSe-で高いのはなぜ？母乳中にはほとんど含まれていない。
 
 = 考察
 本研究では、前向き母子コホート研究「岩見沢市母子健康調査」の参加者を対象とし、NMR法を用いたメタボローム解析を実施することで、母乳および母子糞便における代謝物動態の包括的な評価を試みた。母乳の成分組成と母子の腸内代謝環境の変化を統合的に解析した本成果は、乳児期における栄養供給と代謝機能の発達過程を理解する上で重要な知見を提供するものである。
@@ -249,29 +248,29 @@ Chenomx Profiler を用いてスペクトルのビニングを行い、各ビン
 本コホートは学童期までの追跡調査が継続中であり、今後、頭囲などの発達指標と本研究で得られた代謝物データとの関連性を詳細に検証する予定である。
 // 腸内細菌叢の形成が神経発達スコアに影響を与えるみたいな書き振りになっていて誤解を招きそう
 
-また、授乳期間の経過に従い増加した代謝物として、短鎖脂肪酸（Short Chain Fatty Acids; SCFAs）であるButyrateや、中鎖脂肪酸（Medium Chain Fatty Acids; MCFAs）であるCaprate、Caprylateなどの脂肪酸が同定されており、これらの傾向も既報と一致している @sundekildeEffectGestationalLactational2016 @poulsenDynamicChangesHuman2022 。MCFAs はエネルギー源としての機能に加え、免疫系への調整作用や腸内細菌叢への影響も指摘されている成分である @roopashreeEffectMediumChain2021 。母乳の脂肪酸組成は母親の食習慣を反映することが知られており、例えば低脂肪食を摂取する母親では母乳中の MCFAs が増加するという報告も存在する @nasserEffectControlledManipulation2010 。本コホートは母子の食習慣について、簡易型自記式食事歴法質問票（Brief Diet History Questionnaire; BDHQ） @sasakiFoodNutrientIntakes を用いた母親の栄養調査も実施されているため、今後は食事内容と母乳代謝物プロファイルとの相関関係についても解析を深めていく。
+また、授乳期間の経過に従い増加した代謝物として、短鎖脂肪酸（Short Chain Fatty Acids; SCFAs）であるbutyrateや、中鎖脂肪酸（Medium Chain Fatty Acids; MCFAs）であるcaprate、caprylateなどの脂肪酸が同定されており、これらの傾向も既報と一致している @sundekildeEffectGestationalLactational2016 @poulsenDynamicChangesHuman2022 。MCFAs はエネルギー源としての機能に加え、免疫系への調整作用や腸内細菌叢への影響も指摘されている成分である @roopashreeEffectMediumChain2021 。母乳の脂肪酸組成は母親の食習慣を反映することが知られており、例えば低脂肪食を摂取する母親では母乳中の MCFAs が増加するという報告も存在する @nasserEffectControlledManipulation2010 。本コホートは母子の食習慣について、簡易型自記式食事歴法質問票（Brief Diet History Questionnaire; BDHQ） @sasakiFoodNutrientIntakes を用いた母親の栄養調査も実施されているため、今後は食事内容と母乳代謝物プロファイルとの相関関係についても解析を深めていく。
 
-母体の FUT2 遺伝的多型（分泌型/非分泌型）が母乳中メタボロームに及ぼす影響を検討したところ、Fucose および 3-FL の濃度において顕著な群間差が認められた。Se+群では Fucose が高値を示したのに対し、Se-群では 3-FL が高値を示した。
-2'-FL及び3-FLはともにLactoseにFucoseが結合した構造を持つが、前者は$alpha$1,2-結合、後者は$alpha$1,3-結合と、その結合様式が異なる。FUT2 は 2'-FL の合成を担う一方で、3-FL の合成には関与せず、後者の合成には$alpha$1,3-フコシルトランスフェラーゼ（FUT3）が関与する。
+母体の 2'–FL分泌型（Se+）/非分泌型（Se-）の差異が母乳中メタボロームに及ぼす影響を検討したところ、fucose および 3-FL の濃度において顕著な群間差が認められた。Se+群では fucose が高値を示したのに対し、Se-群では 3-FL が高値を示した。
+2'-FL及び3-FLはともにlactoseにfucoseが結合した構造を持つが、前者は$alpha$1,2-結合、後者は$alpha$1,3-結合と、その結合様式が異なる。FUT2 は 2'-FL の合成を担う一方で、3-FL の合成には関与せず、後者の合成には$alpha$1,3-フコシルトランスフェラーゼ（FUT3）が関与する。
 // すなわち、両酵素は同一の基質を共有しており、2'-FL と 3-FL の合成は競合的な関係にあると推察される。
 // ↑この文章変える
 
 Se-群において 3-FL が高値を示した要因として、FUT2 の機能低下により 2'-FL の合成が抑制された結果、基質が 3-FL 合成経路へとシフトしたことが考えられる。
 _Bifidobacterium_属による利用において、2′-FL と 3-FL は同一の輸送体および代謝経路を共有することが報告されていることから@jamesMetabolismPredominantHuman2019a 、Se-群における 3-FL の増加は、2′-FL の欠乏を機能的に補完している可能性が示唆される。ただし、細菌種によってはいずれかのオリゴ糖を選択的に利用する場合もあるため、今後は菌叢データとの照合による検証が必要である。
 
-また、Se+群で Fucose が高値であった理由については、Se-群での生成制限といったフィードバック機構やSe+群での分解亢進の関与が想定され、これにはトランスクリプトーム解析等を用いた分子レベルでの追究が求められる。なお、フコース代謝に関連する成分以外に顕著な差異が見られなかった事実は、FUT2 遺伝的多型が母乳メタボローム全体に及ぼす影響は、主要な HMOs の組成変化に限定的であることを示していると考えられる。
+また、Se+群で fucose が高値であった理由については、Se-群での生成制限といったフィードバック機構やSe+群での分解亢進の関与が想定され、これにはトランスクリプトーム解析等を用いた分子レベルでの追究が求められる。なお、フコース代謝に関連する成分以外に顕著な差異が見られなかった事実は、Se+/Se-の差異が母乳メタボローム全体に及ぼす影響は、主要な HMOs の組成変化に限定的であることを示していると考えられる。
 // なんで限定的でない可能性があったのかを言及する。
 
-母体の糞便メタボロームが産後時期を通じて安定していたのに対し、乳児の糞便メタボロームは動的な変遷を遂げることが判明した。特に産後早期の乳児糞便において Lactose、Glucose、Galactose が高値を示した点は注目に値する。乳児の消化吸収機構は出生直後は未熟であり、離乳に向けて徐々に成熟していく @TengTianXinShengErQiRuYinQiLiRuQiniokeruChangnoXiShouJiGou2010。母乳中の主要な糖成分である Lactose は、小腸微絨毛膜のラクターゼにより加水分解されるが、消化機能が未発達な時期には未分解の Lactose やその分解産物である単糖類が完全に吸収されず、糞便中へと排出された結果であると考えられる。
-// 消化の影響を調べるために、Lactose/Galactose・Glucose比を調べるのもありかも
+母体の糞便メタボロームが産後時期を通じて安定していたのに対し、乳児の糞便メタボロームは動的な変遷を遂げることが判明した。特に産後早期の乳児糞便において lactose、glucose、galactose が高値を示した点は注目に値する。乳児の消化吸収機構は出生直後は未熟であり、離乳に向けて徐々に成熟していく @TengTianXinShengErQiRuYinQiLiRuQiniokeruChangnoXiShouJiGou2010。母乳中の主要な糖成分である lactose は、小腸微絨毛膜のラクターゼにより加水分解されるが、消化機能が未発達な時期には未分解の lactose やその分解産物である単糖類が完全に吸収されず、糞便中へと排出された結果であると考えられる。
+// 消化の影響を調べるために、lactose/galactose・glucose比を調べるのもありかも
 
-母体の FUT2 遺伝的多型は、離乳前の乳児糞便中メタボロームにも顕著な影響を及ぼし、2′-FL、3-FL、Lactulose、Inosine などの濃度差として反映された。
+母体の 2'–FL分泌型（Se+）/非分泌型（Se-）の差異は、離乳前の乳児糞便中メタボロームにも顕著な影響を及ぼし、2′-FL、3-FL、lactulose、inosine などの濃度差として反映された。
 Se+群で高値を示した2′-FL および Se-群で高値を示した3-FL の動態は母乳中の濃度差を直接反映したものと考えられる。
-一方でSe+群の糞便中で高値を示した Lactulose は母乳にはほとんど含まれず、主に粉ミルクに由来する成分である @beachLACTULOSEOTHERNONABSORBABLE1983 。
-本コホートの約半数が混合育児であったことを踏まえると、Se+群の乳児において粉ミルク由来の Lactulose が高頻度に検出されたことになる。
-LactuloseはHMOsと同様に_Bifidobacterium_属を始めとした腸内細菌に利用されることが知られている@rasoulimehrabaniLactuloseSelectivelyStimulates2025。
-そのため、Se+群では 2′-FL 等の豊富な HMOs が優先的に細菌に利用されることで、Lactulose が利用されずに残存した可能性、あるいは腸内細菌の代謝能を上回る糖類が供給された可能性が考えられる。
-Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたるため@maoVitroFermentationLactulose2014 、その蓄積メカニズムと腸内細菌叢の構成との関連については、さらなる解析が不可欠である。
+一方でSe+群の糞便中で高値を示した lactulose は母乳にはほとんど含まれず、主に粉ミルクに由来する成分である @beachLACTULOSEOTHERNONABSORBABLE1983 。
+本コホートの約半数が混合育児であったことを踏まえると、Se+群の乳児において粉ミルク由来の lactulose が高頻度に検出されたことになる。
+lactuloseはHMOsと同様に_Bifidobacterium_属を始めとした腸内細菌に利用されることが知られている@rasoulimehrabaniLactuloseSelectivelyStimulates2025。
+そのため、Se+群では 2′-FL 等の豊富な HMOs が優先的に細菌に利用されることで、lactulose が利用されずに残存した可能性、あるいは腸内細菌の代謝能を上回る糖類が供給された可能性が考えられる。
+lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたるため@maoVitroFermentationLactulose2014 、その蓄積メカニズムと腸内細菌叢の構成との関連については、さらなる解析が不可欠である。
 
 // *糞便・時系列*
 // - 乳児糞便でlactose, glucose, galactoseが前期に多く出てくる
@@ -285,18 +284,18 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
 //   - 出産時はプロテオバクテリア門が増えて、出産後徐々に減少していく
 //     - プロテオバクテリアはアスパラギン酸が餌になる
 // *糞便・分泌型*
-// - 乳児糞便で2'-FL, 3-FL, Lactulose, Inosineが分泌型/非分泌型で差が出ている
+// - 乳児糞便で2'-FL, 3-FL, lactulose, inosineが分泌型/非分泌型で差が出ている
 //   - 2'-FL, 3-FLは母乳中の影響を反映している
-//   - Lactuloseはなぜか分泌型で高い
+//   - lactuloseはなぜか分泌型で高い
 //     - 母乳中にはほとんど含まれておらず、粉ミルク中にいる
 //       - 混合育児と母乳のみが半々くらい
 //     - 全体的なHMOsの摂取量が多いと、腸内細菌が使い切れずに一部が糞便中に出てきている？
-//   - Inosineはなぜか非分泌型で高い（https://chatgpt.com/share/6958fb1a-785c-8006-be9a-1dd03a5d7b71 ）
+//   - inosineはなぜか非分泌型で高い（https://chatgpt.com/share/6958fb1a-785c-8006-be9a-1dd03a5d7b71 ）
 //     - 母乳中にはほとんど含まれていない
-//     - 非分泌型ではInosine産生菌が多い？
+//     - 非分泌型ではinosine産生菌が多い？
 //       - ビフィズス菌がイノシン産生する
 //       - 細菌叢解析の結果と付き合わせたい
-//     - 代謝経路がシフトし、核酸・ヌクレオチドをエネルギー源として使うようになると、イノシンが増える？AMP→Inosine
+//     - 代謝経路がシフトし、核酸・ヌクレオチドをエネルギー源として使うようになると、イノシンが増える？AMP→inosine
 //       - HMOsが少ないから、他のエネルギー源を使うようになる？
 
 = 結論
@@ -304,7 +303,7 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
 
 母乳サンプルの解析からは、授乳期間の進行に伴い主要な代謝物構成がシフトすることを捉え、母乳組成の動的変化を解明した。
 母子の糞便サンプルの解析からは、産後期間において、母体の糞便メタボロームが安定していたのに対し、乳児では顕著な動的変遷が確認され、産後早期の乳児糞便における乳糖および単糖類の高値は、新生児期の未熟な消化吸収能を反映していることを示した。
-また、母親のFUT2遺伝的多型（分泌型/非分泌型）が母乳中のHMO組成を決定づけるだけでなく、離乳前の乳児糞便中の2'-FL、3-FL、Lactulose等の代謝物プロファイルにも顕著な差をもたらすことを突き止めた 。
+また、母親の2'–FL分泌型/非分泌型の差異が母乳中のHMO組成を決定づけるだけでなく、離乳前の乳児糞便中の2'-FL、3-FL、lactulose等の代謝物プロファイルにも顕著な差をもたらすことを突き止めた 。
 // ここまでもうちょい主張したいこと考えて書いていいと思う
 
 以上の結果は、母体の遺伝的背景を考慮したパーソナライズされた育児支援や、乳児の健やかな成長に寄与する栄養戦略の構築において極めて重要な基盤情報となる。今後は、本研究で得られた代謝物データと腸内細菌叢データ、さらには学童期まで続く発達指標との関連性を詳細に検証することで、DOHaD仮説の分子メカニズムの解明を目指す 。
@@ -426,8 +425,7 @@ Lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
   ]
 )<fig-bmSpec>
 // アノテーションをつけた基準について、独立ピークでつけましたと明記する
-図中の番号は同定された代謝物を示す。1, Caprate; 2, Caprylate; 3, Butyrate; 4, Isoleucine; 5, Leucine; 6, 2-Aminobutyrate; 7, Valine; 8, 3-Fucosyllactose; 9, 2'-Fucosyllactose; 10, Fucose; 11, Threonine; 12, Lactate; 13, Alanine; 14, 6'-Sialyllactose; 15, 3'-Sialyllactose; 16, Acetate; 17, Proline; 18, Glutamate; 19, Acetate; 20, Pyruvate; 21, Succinate; 22, Glutamine; 23, Citrate; 24, Aspartate; 25, Asparagine; 26, 2-Oxoglutarate; 27, Lysine; 28, Creatine; 29, Creatine phosphate; 30, Creatinine; 31, _cis_-Aconitate;, 32, Ethanolamine; 33; Choline; 34, _O_-Phosphocholine; 35, _sn_-Glycero-3-phosphocholine; 36, Glucose, 37, Betaine; 38, Lactose; 39, Methanol; 40, Taurine; 41, Fucose;, 42, Glycine; 43, _myo_-Inositol; 44, Urea; 45, Fumarate; 46, Tyrosine;, 47, Histidine; 48, Tryptophan; 49, Phenylalanine, 50, Uridine; 51, Formate.
-// 19は何？Acetateではない
+図中の番号は同定された代謝物を示す。1, caprate; 2, caprylate; 3, butyrate; 4, Isoleucine; 5, leucine; 6, 2-aminobutyrate; 7, valine; 8, 3-fucosyllactose; 9, 2'-fucosyllactose; 10, fucose; 11, threonine; 12, lactate; 13, alanine; 14, 6'-sialyllactose; 15, 3'-sialyllactose; 16, acetate; 17, proline; 18, glutamate; 19, acetone; 20, pyruvate; 21, succinate; 22, glutamine; 23, citrate; 24, aspartate; 25, asparagine; 26, 2-oxoglutarate; 27, lysine; 28, creatine; 29, creatine phosphate; 30, creatinine; 31, _cis_-aconitate;, 32, ethanolamine; 33; choline; 34, _O_-phosphocholine; 35, _sn_-glycero-3-phosphocholine; 36, glucose, 37, betaine; 38, lactose; 39, methanol; 40, taurine; 41, fucose;, 42, glycine; 43, _myo_-inositol; 44, urea; 45, fumarate; 46, tyrosine;, 47, histidine; 48, tryptophan; 49, phenylalanine, 50, uridine; 51, formate.
 
 #figure(
   image(
@@ -471,7 +469,6 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 ]
 )<fig-bmPCA>
 左：スコアプロット。右：ローディングプロット。
-// スコアプロットの色をhlsにする
 
 // #figure(
 //   grid(
@@ -481,10 +478,10 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 //     image("Figures/bmUnivariate/3'-sialyllactose_timingStats.svg",),
 //     image("Figures/bmUnivariate/3-fucosyllactose_timingStats.svg",),
 //     image("Figures/bmUnivariate/6'-sialyllactose_timingStats.svg",),
-//     image("Figures/bmUnivariate/Fucose_timingStats.svg",),
-//     image("Figures/bmUnivariate/Galactose_timingStats.svg",),
-//     image("Figures/bmUnivariate/Glucose_timingStats.svg",),
-//     image("Figures/bmUnivariate/Lactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/fucose_timingStats.svg",),
+//     image("Figures/bmUnivariate/galactose_timingStats.svg",),
+//     image("Figures/bmUnivariate/glucose_timingStats.svg",),
+//     image("Figures/bmUnivariate/lactose_timingStats.svg",),
 //   ),
 //   caption: [
 //     糖類の経時変化による母乳中代謝物濃度の比較。
@@ -498,14 +495,14 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 //     image("Figures/bmUnivariate/2-Aminobutyrate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Alanine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Asparagine_timingStats.svg",),
-//     image("Figures/bmUnivariate/Aspartate_timingStats.svg",),
+//     image("Figures/bmUnivariate/aspartate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Betaine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Glutamate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Glutamine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Glycine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Histidine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Isoleucine_timingStats.svg",),
-//     image("Figures/bmUnivariate/Leucine_timingStats.svg",),
+//     image("Figures/bmUnivariate/leucine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Lysine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Methionine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Phenylalanine_timingStats.svg",),
@@ -529,13 +526,13 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 //     image("Figures/bmUnivariate/2-Oxoglutarate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Acetone_timingStats.svg",),
 //     image("Figures/bmUnivariate/cis-Aconitate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Citrate_timingStats.svg",),
+//     image("Figures/bmUnivariate/citrate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Creatine phosphate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Creatine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Creatinine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Fumarate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Lactate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Pyruvate_timingStats.svg",),
+//     image("Figures/bmUnivariate/lactate_timingStats.svg",),
+//     image("Figures/bmUnivariate/pyruvate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Succinate_timingStats.svg",),
 //   ),
 //   caption: [
@@ -548,14 +545,14 @@ A: 主成分分析（PCA）スコアプロット。5人の解析者が同一試�
 //     columns: 4,
 
 //     image("Figures/bmUnivariate/Acetate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Butyrate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Caprate_timingStats.svg",),
-//     image("Figures/bmUnivariate/Caprylate_timingStats.svg",),
+//     image("Figures/bmUnivariate/butyrate_timingStats.svg",),
+//     image("Figures/bmUnivariate/caprate_timingStats.svg",),
+//     image("Figures/bmUnivariate/caprylate_timingStats.svg",),
 //     image("Figures/bmUnivariate/Choline_timingStats.svg",),
 //     image("Figures/bmUnivariate/Ethanolamine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Methanol_timingStats.svg",),
-//     image("Figures/bmUnivariate/myo-Inositol_timingStats.svg",),
-//     image("Figures/bmUnivariate/O-Phosphocholine_timingStats.svg",),
+//     image("Figures/bmUnivariate/myo-inositol_timingStats.svg",),
+//     image("Figures/bmUnivariate/O-phosphocholine_timingStats.svg",),
 //     image("Figures/bmUnivariate/sn-Glycero-3-phosphocholine_timingStats.svg",),
 //     image("Figures/bmUnivariate/Uridine_timingStats.svg",),
     
@@ -594,7 +591,7 @@ A: スコアプロット。Se+（青色）は2'-FL分泌型個体、Se-（橙色
   grid(columns: 2,
     image("Figures/bmUnivariate/2'-fucosyllactose_timingSec_secStats.svg",),
     image("Figures/bmUnivariate/3-fucosyllactose_timingSec_secStats.svg",),
-    image("Figures/bmUnivariate/Fucose_timingSec_secStats.svg",),
+    image("Figures/bmUnivariate/fucose_timingSec_secStats.svg",),
   ),
 
   caption: [
@@ -612,7 +609,7 @@ Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
   母子糞便サンプルの代表的な #super[1]H-NMR スペクトル
 ]
 )<fig-feSpec>
-図中の番号は同定された一部の代謝物を示す。1, Lactate; 2, 3-Fucosyllactose; 3, 2'-Fucosyllactose; 4, Acetate; 5, Succinate; 6, 3'-Sialyllactose; 7, Galactose; 8, Glucose; 9, Lactose; 10, _myo_-Inositol; 11, Lactulose; 12, Fumarate; 13, Tyrosine; 14, Phenylalanine; 15, Formate
+図中の番号は同定された一部の代謝物を示す。1, lactate; 2, 3-fucosyllactose; 3, 2'-fucosyllactose; 4, acetate; 5, succinate; 6, 3'-sialyllactose; 7, galactose; 8, glucose; 9, lactose; 10, _myo_-inositol; 11, lactulose; 12, fumarate; 13, tyrosine; 14, phenylalanine; 15, formate
 
 #figure(
   grid(
@@ -635,7 +632,7 @@ Se+は2'-FL分泌型個体、Se-は2'-FL非分泌型個体を示す。
     母子糞便中メタボロームの産後時期別主成分分析（PCA）
   ]
 )<fig-fePCA>
-A, C: スコアプロット（A: 乳児、C: 母親）。スコアプロットは時期により色分けされている。b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年。B, D: ローディングプロット。
+A, C: スコアプロット（A: 乳児、C: 母親）。スコアプロットは時期により色分けされている。B, D: ローディングプロット。
 // b-kの説明は図中にする
 
 #figure(
@@ -659,7 +656,7 @@ A, C: スコアプロット（A: 乳児、C: 母親）。スコアプロット�
     母子糞便中メタボロームの経時的変化に関する OPLS-R 回帰分析
   ]
 )<fig-feOPLSR>
-A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母親（$R^2Y=0.396$, $Q^2=0.118$））。スコアプロットは時期により色分けされている（b, 出産前24週; c, 出産直後; d, 生後1ヶ月; e, 生後4-5ヶ月；f, 生後8ヶ月；g, 生後1年半；h, 生後3年；k, 生後5年）。B, D: S-lineプロット（B: 乳児, D: 母親）。横軸は#super[1]H-NMRのケミカルシフトである。縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与することを示す。
+A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母親（$R^2Y=0.396$, $Q^2=0.118$））。スコアプロットは時期により色分けされている。B, D: S-lineプロット（B: 乳児, D: 母親）。横軸は#super[1]H-NMRのケミカルシフトである。縦軸はビン積分値の変動量を示し、ピーク強度が大きいほど絶対値は大きくなる。色分けはグループ間スコアとの相関係数を示し、高いほど群分けに寄与することを示す。
 
 #figure(
   grid(
@@ -695,7 +692,7 @@ A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母�
   ]
 )<fig-feOPLSDA>
 A, C, E: スコアプロット（Se+ vs Se-）。A: 出産直後（$R^2Y=0.701$, $Q^2=0.332$）、C: 産後1ヶ月（$R^2Y=0.882$, $Q^2=0.37$）、E: 産後4-5ヶ月（$R^2Y=0.747$, $Q^2=-0.107$）。
-B, D, F: S-lineプロット。上方向のピークが Se- 群、下方向のピークが Se+ 群に特徴的な代謝物を示す。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
+B, D, F: S-lineプロット。上方向のピークが Se- 群、下方向のピークが Se+ 群で高値である代謝物を示す。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
 
 = 謝辞
 #set par(first-line-indent: 
