@@ -7,6 +7,7 @@
 #let master_thesis(
   // The master thesis title.
   title: "ここにtitleが入る",
+  en-title: "",
 
   // The paper`s author.
   author: "ここに著者が入る",
@@ -76,6 +77,12 @@
       size: 22pt,
     )[
       #title
+    ]
+
+    #text(
+      size: 16pt,
+    )[
+      #en-title
     ]
     #v(50pt)
     #text(
