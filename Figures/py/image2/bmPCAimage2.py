@@ -69,6 +69,7 @@ for i in range(len(order)):
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend(title=None,)
+ax.set_ylim(-10, 31)
 plt.savefig(
   '../../bmOPLSDA_secScore.svg',
   bbox_inches='tight',

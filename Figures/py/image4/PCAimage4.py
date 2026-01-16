@@ -95,6 +95,7 @@ ax.legend(
   borderpad=0.4,
   columnspacing=0.5,
 )
+ax.set_ylim(-20, 18)
 plt.savefig(
   '../../feOPLSc_TimeCourseScore.svg',
   bbox_inches='tight',

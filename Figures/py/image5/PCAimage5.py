@@ -85,6 +85,7 @@ ax.set_ylabel(replace_dict[-1])
 ax.legend(
   title=None,
 )
+ax.set_ylim(-22, 17)
 plt.savefig(
   '../../feOPLSc_sec1Score.svg',
   bbox_inches='tight',
@@ -221,6 +222,7 @@ for i in range(len(score2_df["Class"].unique())):
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend_.remove()
+ax.set_ylim(-22, 22)
 plt.savefig(
   '../../feOPLSc_sec2Score.svg',
   bbox_inches='tight',
@@ -356,6 +358,7 @@ for i in range(len(score3_df["Class"].unique())):
 ax.set_xlabel(replace_dict[-2])
 ax.set_ylabel(replace_dict[-1])
 ax.legend_.remove()
+ax.set_ylim(-20, 26)
 plt.savefig(
   '../../feOPLSc_sec3Score.svg',
   bbox_inches='tight',

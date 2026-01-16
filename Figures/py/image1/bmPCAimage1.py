@@ -84,6 +84,10 @@ for i in range(len(groups)):
 
   ax.set_xlabel(replace_dict[group[0]])
   ax.set_ylabel(replace_dict[group[1]])
+  if i==0:
+    ax.set_ylim(-10, 25)
+  if i==2:
+    ax.set_xlim(-10, 25)
   # ax.set_xlabel("")
   # ax.set_ylabel("")
   handler, label = ax.get_legend_handles_labels()

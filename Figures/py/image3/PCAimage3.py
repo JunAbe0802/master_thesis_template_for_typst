@@ -88,6 +88,7 @@ ax.set_ylabel(replace_dict[-1])
 ax.legend(
   ncol=2,
 )
+ax.set_ylim(-15, 25)
 plt.savefig(
   '../../fePCAc_Score.svg',
   bbox_inches='tight',
@@ -213,6 +214,7 @@ ax.set_ylabel(replace_dict[-1])
 ax.legend(
   ncol=2,
 )
+ax.set_xlim(-17, 28)
 plt.savefig(
   '../../fePCAm_Score.svg',
   bbox_inches='tight',
