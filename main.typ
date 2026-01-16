@@ -131,7 +131,7 @@ FUT2の活性には遺伝的多型（分泌型/非分泌型）が関与してお
 なお、乳児の研究参加については、代諾者である母親の同意をもってこれに代えた。
 同意を得られた参加者（母、子）に対して、調査票などによる調査や母乳・糞便の採取を実施した。
 採取された試料は速やかに -20 $degree$C で保管され、採取から約1ヶ月以内に分析時まで -80 $degree$C で凍結保存された。参加者の臨床的特性については、@tbl-basicInfo に、サンプルの採取時期およびサンプル数については、@tbl-sampleInfo に示す通りである。
-また、授乳期の栄養方法について、分泌型/非分泌型別での状況については、@fig-nutrition に示す通りである。
+// また、授乳期の栄養方法について、分泌型/非分泌型別での状況については、@fig-nutrition に示す通りである。
 // @fig-nutrition は後回し、たぶんDiscussionで見せる
 // もしくは全体栄養状況はここに入れて、sec別はDiscussionに入れる
 
@@ -265,7 +265,7 @@ _Bifidobacterium_属による利用において、2′-FL と 3-FL は同一の�
 母体の 2'–FL分泌型（Se+）/非分泌型（Se-）の差異は、離乳前の乳児糞便中メタボロームにも顕著な影響を及ぼし、2′-FL、3-FL、lactulose、inosine などの濃度差として反映された。
 Se+群で高値を示した2′-FL および Se-群で高値を示した3-FL の動態は母乳中の濃度差を直接反映したものと考えられる。
 一方でSe+群の糞便中で高値を示した lactulose は母乳にはほとんど含まれず、主に粉ミルクに由来する成分である @beachLACTULOSEOTHERNONABSORBABLE1983 。
-本コホートの約半数が混合育児であったことを踏まえると、Se+群の乳児において粉ミルク由来の lactulose が高頻度に検出されたことになる。
+本コホートに参加した母親に対して行った調査によると、Se+群および Se-群の双方において四分の一から半数の母親が授乳時に粉ミルクを使用していたため （@fig-nutrition）、Se+群の乳児において粉ミルク由来の lactulose が高頻度に検出されたことになる。
 lactuloseはHMOsと同様に_Bifidobacterium_属を始めとした腸内細菌に利用されることが知られている@rasoulimehrabaniLactuloseSelectivelyStimulates2025。
 そのため、Se+群では 2′-FL 等の豊富な HMOs が優先的に細菌に利用されることで、lactulose が利用されずに残存した可能性、あるいは腸内細菌の代謝能を上回る糖類が供給された可能性が考えられる。
 lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたるため@maoVitroFermentationLactulose2014 、その蓄積メカニズムと腸内細菌叢の構成との関連については、さらなる解析が不可欠である。
@@ -390,25 +390,6 @@ lactulose を利用可能な細菌群は 他のHMOsに比べ多岐にわたる�
   ],
 )<tbl-sampleInfo>
 \- はサンプル未採取を示す。
-
-#figure(
-  grid(
-    columns: 1,
-    image(
-      "Figures/nutrients_Se+.svg", height: 45%,
-    ),
-    image(
-      "Figures/nutrients_Se-.svg", height: 45%,
-    ),
-    box(width: 100%)
-  ),
-  caption: [
-    分泌型別での授乳期の栄養方法
-  ]
-)<fig-nutrition>
-
-上図: Se+（分泌型）、下図: Se-（非分泌型）。
-
 
 #figure(
   grid(
@@ -691,6 +672,24 @@ A, C: スコアプロット（A: 乳児（$R^2Y=0.907$, $Q^2=0.866$）, C: 母�
 )<fig-feOPLSDA>
 A, C, E: スコアプロット（Se+ vs Se-）。A: 出産直後（$R^2Y=0.701$, $Q^2=0.332$）、C: 産後1ヶ月（$R^2Y=0.882$, $Q^2=0.37$）、E: 産後4-5ヶ月（$R^2Y=0.747$, $Q^2=-0.107$）。
 B, D, F: S-lineプロット。上方向のピークが Se- 群、下方向のピークが Se+ 群で高値である代謝物を示す。B: 出産直後、D: 産後1ヶ月、F: 産後4-5ヶ月。
+
+#figure(
+  grid(
+    columns: 1,
+    image(
+      "Figures/nutrients_Se+.svg", height: 45%,
+    ),
+    image(
+      "Figures/nutrients_Se-.svg", height: 45%,
+    ),
+    box(width: 100%)
+  ),
+  caption: [
+    分泌型別での授乳期の栄養方法
+  ]
+)<fig-nutrition>
+
+上図: Se+（分泌型）、下図: Se-（非分泌型）。
 
 = 謝辞
 #set par(first-line-indent: 
