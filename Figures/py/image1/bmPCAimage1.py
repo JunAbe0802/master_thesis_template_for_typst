@@ -93,7 +93,7 @@ for i in range(len(groups)):
   handler, label = ax.get_legend_handles_labels()
   ax.legend(
     handler, 
-    ["Postpartum", "After 1 mo.", "After 4-5 mos."],
+    ["Colostrum", "Aft. 1 mo.", "Aft. 4-5 mos."],
   )
   if i!=0:
     ax.legend_.remove()

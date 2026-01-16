@@ -173,7 +173,7 @@ replace_dict = {
 }
 score_m_df["hue"] = score_m_df["Primary ID"].str[10].map({
   "b": "24 wks. pregnant",
-  "c": "Postpartum",
+  "c": "Just after birth",
   "d": "Aft. 1 mo.",
   "e": "Aft. 4-5 mos.",
 })
@@ -184,7 +184,7 @@ fig = plt.figure(
 ax = fig.add_subplot(111)
 order = [
   "24 wks. pregnant",
-  "Postpartum",
+  "Just after birth",
   "Aft. 1 mo.",
   "Aft. 4-5 mos."
 ]

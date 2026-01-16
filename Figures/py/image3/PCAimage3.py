@@ -146,11 +146,11 @@ Mother
 scoreM_df = np.loadtxt('./score_m.txt', delimiter="\t", skiprows=1, dtype=str)
 score_labels = pd.Series(scoreM_df[:, 0]).str[10].map({
   "b": "24 wks. pregnant",
-  "c": "Postpartum",
+  "c": "Just after birth",
   "d": "Aft. 1 mo.",
   "e": "Aft. 4-5 mos.",
 })
-order = ["24 wks. pregnant", "Postpartum", "Aft. 1 mo.", "Aft. 4-5 mos."]
+order = ["24 wks. pregnant", "Just after birth", "Aft. 1 mo.", "Aft. 4-5 mos."]
 # 3D画像の読み込み
 loadingM_df = np.loadtxt('./loading_m.txt', delimiter="\t", skiprows=1, dtype=str)
 loading_labels = loadingM_df[:, 0]  # 化合物名
@@ -169,7 +169,7 @@ sns.scatterplot(
   x=scoreM_df[:, -2].astype(float),
   y=scoreM_df[:, -1].astype(float),
   hue=score_labels,
-  hue_order=["24 wks. pregnant", "Postpartum", "Aft. 1 mo.", "Aft. 4-5 mos."],
+  hue_order=["24 wks. pregnant", "Just after birth", "Aft. 1 mo.", "Aft. 4-5 mos."],
   palette="husl",
   s=40,
   alpha=0.9,
